@@ -1,0 +1,122 @@
+.read_more {
+    width: max-content;
+    background-color: var(--blue);
+    margin: auto;
+    padding: 20px 40px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.blue_board {
+    background-color: var(--blue);
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 50vh;
+    color: white;
+    text-align: center;
+    position: relative !important;
+}
+
+.heading {
+    font-weight: 400;
+    font-size: 22px;
+    padding: 40px 0;
+    text-transform: uppercase;
+}
+
+.sub_heading {
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.white_board {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: white;
+    height: 100vh;
+    width: 70%;
+    margin: auto;
+    box-shadow: 0 2px 21px grey;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.white_heading {
+    font-size: 40px;
+    border-top: 2px solid var(--blue);
+    width: 40%;
+    padding: 100px 0;
+}
+
+.white_sub_heading {
+    font-size: 16px;
+    width: 40%;
+    line-height: 27px;
+}
+
+.media_relaionship,
+.media_kit {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left,
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: left;
+}
+
+.left img,
+.right img {
+    width: 100%;
+    display: block;
+}
+
+.media_relaionship .left,
+.media_kit .right {
+    padding: 0 50px;
+}
+
+.left_heading,
+.right_heading {
+    font-size: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--skyblue);
+    padding-bottom: 20px;
+    width: max-content;
+    border-bottom: 1px solid var(--blue);
+}
+
+.left_subheading {
+    width: 70%;
+}
+.right_sub_heading{
+    font-size: 24px;
+    font-weight: 500;
+    width: max-content;
+    padding: 10px 0;
+    border-top: 1px solid var(--skyblue);
+    /* border-bottom: 1px solid var(--skyblue); */
+}
+
+.right_button,
+.left_button {
+    background-color: var(--blue);
+    color: white;
+    width: max-content;
+    padding: 20px 40px;
+    text-transform: uppercase;
+}

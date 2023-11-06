@@ -15,7 +15,7 @@ import ConsHeading from '../../components/ConsHeading/ConsHeading';
 import homescreen from '../../images/home/homescreen.jpg'
 import employment from '../../images/home/employment.jpg'
 import board from '../../images/home/board.jpg'
-import value from '../../images/home/ourvalue.jpg'
+import value from '../../images/invest.jpg'
 
 const HomeScreen = () => {
     return (
