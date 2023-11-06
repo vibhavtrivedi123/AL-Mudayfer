@@ -1,0 +1,128 @@
+.container {
+    position: sticky;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    /* background-color: rgba(0, 0, 0, 0.642); */
+    background-color: #15170D;
+
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    align-items: center;
+    padding: 30px 0;
+    font-family: 'monteserrat';
+    width: 100%;
+}
+
+.logo {
+    width: 15%;
+    /* border: 1px solid lime; */
+    /* padding: 10px; */
+    /* margin: auto; */
+}
+
+.logo img {
+    width: 70%;
+    /* text-align: center; */
+}
+
+.links {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    color: #CFCA4C;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.link {
+    padding: 10px 20px;
+}
+
+.button {
+    width: max-content;
+    /* width: 15%; */
+    background-color: #006642;
+    padding: 15px 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.mobile_container {
+    display: none;
+}
+
+
+@media (max-width:600px) {
+    .container {
+        display: none;
+    }
+
+    .mobile_container {
+        display: block;
+        position: fixed;
+        background-color: #15170D;
+        width: 100%;
+        padding: 20px 0;
+        z-index: 9999;
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .left_mobile {
+        width: 40%;
+    }
+
+    .left_mobile img {
+        width: 100%;
+    }
+
+    .right_mobile {
+        width: max-content;
+        /* width: 15%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #006642;
+
+        padding: 5px 10px;
+        font-weight: 600;
+        color: white;
+        font-size: 14px;
+        /* background-color: red; */
+        text-transform: uppercase;
+    }
+
+    .bottom {
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        justify-content: flex-stat;
+        text-align: center;
+        margin: auto;
+        height: 100vh;
+    }
+
+    .mobile_link {
+        width: 90%;
+        margin: auto;
+        white-space: nowrap;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #CFCA4C;
+        font-size: 24px;
+        border-radius: 2px;
+        padding: 10px 0;
+        margin-top: 39px;
+        /* border: 1px solid rgba(255, 255, 0, 0.373); */
+        /* padding:6px; */
+        /* background-color: rgb(56, 56, 56);   */
+    }
+
+}
