@@ -3,6 +3,7 @@ import styles from './Footer.module.css';
 import { AiOutlineTwitter } from 'react-icons/ai'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
+import logo from '../../images/logo0.svg'
 
 
 const Footer = () => {
@@ -16,7 +17,7 @@ const Footer = () => {
                     <div className={styles.footer_container}>
                         <div className={styles.left}>
                             <div className={styles.logo}>
-                                <img src="https://customers.seomanager.com/knowledgegraph/logo/loogguitars_myshopify_com_logo.jpg" alt="" />
+                                <img src={logo} alt="" />
                             </div>
                             <div className={styles.left_box}>
                                 <div className={styles.tag_line}>ALWAYS BE WITH US</div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './HomScreen.module.css';
 import NewsHealdine from '../../components/NewsHeadline/NewsHeadline';
 import ImageBoxLeft from '../../components/ImageBoxLeft/ImageBoxLeft';
 import Company from '../../components/Company/Company';
