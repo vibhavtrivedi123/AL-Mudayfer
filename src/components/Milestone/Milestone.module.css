@@ -1,0 +1,28 @@
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 50px 100px 100px 100px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: max-content;
+    text-align: center;
+}
+
+.heading {
+    color: var(--skyblue);
+    font-size: 40px;
+    font-weight: 600;
+    /* line-height: 44px; */
+}
+
+.sub_heading {
+    color: var(--grey);
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 17px;
+    text-transform: uppercase;
+}

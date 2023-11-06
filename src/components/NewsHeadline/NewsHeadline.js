@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './NewsHealdine.module.css';
-// import boy from '../../images/boy.svg';
-// import man from '../../images/man.svg'
-// import woman from '../../images/woman.svg';
+import build0 from '../../images/home/building0.jpg';
+import build1 from '../../images/home/building1.jpg';
+import build2 from '../../images/home/building2.jpg';
 
 const NewsHealdine = () => {
   return (
@@ -10,7 +10,7 @@ const NewsHealdine = () => {
       <div className={styles.container}>
         {/* LEFT */}
         <div className={styles.left}>
-          <img src='https://thumbs.dreamstime.com/b/bengal-tiger-tige-basking-sun-zoo-51748104.jpg' alt="" />
+          <img src={build0} alt="" />
           <div className={styles.content}>
             <div className={styles.content_heading}>News Headline</div>
             <div className={styles.content_sub_heading}>
@@ -22,12 +22,12 @@ const NewsHealdine = () => {
 
         {/* RIGHT */}
         <div className={styles.right}>
-          {/* <div className={styles.top}>
-            <img src='https://thumbs.dreamstime.com/b/bengal-tiger-tige-basking-sun-zoo-51748104.jpg' alt="" />
+          <div className={styles.top}>
+            <img src={build1} alt="" />
           </div>
           <div className={styles.bottom}>
-            <img src='https://thumbs.dreamstime.com/b/bengal-tiger-tige-basking-sun-zoo-51748104.jpg' alt="" />
-          </div> */}
+            <img src={build2} alt="" />
+          </div>
         </div>
       </div>
     </>

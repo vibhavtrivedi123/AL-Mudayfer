@@ -6,7 +6,6 @@ const ImageBoxLeft = ({ imageSrc, heading, text, buttonText }) => {
         <>
             <div className={styles.container}>
                 <div className={styles.left}>
-                    {/* <img src='https://thumbs.dreamstime.com/b/bengal-tiger-tige-basking-sun-zoo-51748104.jpg' alt="" /> */}
                     <img src={imageSrc} alt="" />
                 </div>
                 <div className={styles.right}>

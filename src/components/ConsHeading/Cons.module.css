@@ -1,0 +1,23 @@
+.container{
+    width: 100%;
+    background-color: var(--blue);
+    color: white;
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+.heading{
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.sub_heading{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 4px ;
+}

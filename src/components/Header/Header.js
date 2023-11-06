@@ -1,6 +1,10 @@
-import React, { useState } from 'react'
-import styles from './Header.module.css'
+
 import Hamburger from 'hamburger-react'
+import { NavLink } from 'react-router-dom'
+import React, { useState } from 'react'
+
+import logo from '../../images/logo0.svg'
+import styles from './Header.module.css'
 
 const Header = () => {
 
@@ -15,33 +19,27 @@ const Header = () => {
 
                 <div className={styles.logo}>
                     <a href="/">
-                        <img src="./images/logo.svg" alt="" />
+                        <img src={logo} alt="" />
                     </a>
                 </div>
 
                 <div className={styles.links}>
-                    <a href="#about"><div className={styles.link}>About us</div></a>
-                    <a href="#vision"><div className={styles.link}>our vision</div></a>
-
-
-
-                    <a href="#service"><div className={styles.link}>services</div></a>
-                    <a href="#value"><div className={styles.link}>our values</div></a>
-
-
-
+                    <NavLink to="/about">
+                        <div className={styles.link}>About</div>
+                    </NavLink>
+                    <div className={styles.link}>our investments</div>
+                    <div className={styles.link}>Join us</div>
+                    <div className={styles.link}>media</div>
                 </div>
 
-                <a href="#newsletter">
-                    <div className={styles.button}>
-                        contact us
-                    </div>
-                </a>
+                <div className={styles.button}>
+                    contact us
+                </div>
             </div>
 
 
             {/* mobile view */}
-            <div className={styles.mobile_container}>
+            {/* <div className={styles.mobile_container}>
 
                 <div className={styles.top}>
                     <div className={styles.left_mobile}>
@@ -68,7 +66,7 @@ const Header = () => {
                     </>
 
                 }
-            </div>
+            </div> */}
         </>
     )
 }

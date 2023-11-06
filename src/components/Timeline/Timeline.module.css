@@ -1,0 +1,10 @@
+.image {
+    width: 80%;
+    padding: 100px 0;
+    margin: auto;
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+}
