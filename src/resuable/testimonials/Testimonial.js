@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Testimonial.module.css'
-import girl from '../../images/about/block.jpg'
+import girls from '../../images/girls.jpg'
 
 const Testimonial = () => {
   return (
