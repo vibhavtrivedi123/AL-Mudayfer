@@ -1,11 +1,54 @@
 .container {
-    background-image: url('../../images/about/block.jpg');
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
 }
 
-.top {}
+.main_container {
+    background-image: url('../../images/about/skirting.jpg');
+    width: 47%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-transform: uppercase;
+    border: 1px solid var(--blue);
+}
 
-.date {}
+.date {
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    background-color: var(--skyblue);
+    padding: 10px 20px;
+    margin: 10px;
+}
 
-.headline {}
+.headline {
+    /* position: absolute; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    text-transform: capitalize;
+}
 
-.bottom {}
+.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    padding: 40px 30px;
+    color: var(--blue);
+}
+
+.line {
+    border: 1px solid var(--skyblue);
+    width: 100px;
+    /* margin: 20px 0; */
+}
