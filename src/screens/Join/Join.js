@@ -7,6 +7,7 @@ import aboutscreen from '../../images/about/aboutscreen.jpg'
 import Company from '../../components/Company/Company'
 import value from '../../images/invest.jpg'
 import { AiOutlineLine } from 'react-icons/ai'
+import Slider from '../../resuable/slider/Slider';
 
 const Join = () => {
   const handleSubmit = () => { }
@@ -22,6 +23,8 @@ const Join = () => {
         heading1="Partner with AL-MUDAIFER"
         heading2="explore jobs"
       />
+
+      <Slider />
 
       {/* supplier */}
       <div className={styles.container}>

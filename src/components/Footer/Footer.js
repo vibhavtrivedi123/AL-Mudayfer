@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './Footer.module.css';
-import { AiOutlineTwitter } from 'react-icons/ai'
+import { AiOutlineTwitter, AiFillGithub } from 'react-icons/ai'
+import { BiLogoFacebook } from 'react-icons/bi'
+import { BsInstagram } from 'react-icons/bs'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 import logo from '../../images/logo0.svg'
@@ -34,13 +36,13 @@ const Footer = () => {
                                     <AiOutlineTwitter />
                                 </div>
                                 <div className={styles.icon}>
-                                    <AiOutlineTwitter />
+                                    <BiLogoFacebook />
                                 </div>
                                 <div className={styles.icon}>
-                                    <AiOutlineTwitter />
+                                    <BsInstagram />
                                 </div>
                                 <div className={styles.icon}>
-                                    <AiOutlineTwitter />
+                                    <AiFillGithub />
                                 </div>
                             </div>
                         </div>
@@ -52,35 +54,38 @@ const Footer = () => {
                                     About AL-Mudaifer
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    About AL-Mudaifer
+                                    Vision and Mission
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    About AL-Mudaifer
+                                    Our History
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    Environmental Responsibility
-                                </div>
-                                <div className={styles.right_company_content}>
-                                    About AL-Mudaifer
+                                    Social Responsibility
                                 </div>
                                 <div className={styles.right_company_content}>
                                     Environmental Responsibility
+                                </div>
+                                <div className={styles.right_company_content}>
+                                    National Responsibility
                                 </div>
                             </div>
 
                             <div className={styles.right_company}>
                                 <div className={styles.right_company_heading}>Company</div>
                                 <div className={styles.right_company_content}>
-                                    About AL-Mudaifer
+                                    Our Investments
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    About AL-Mudaifer
+                                    Invest with us
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    About AL-Mudaifer
+                                    Join as a Supplier
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    About AL-Mudaifer
+                                    Join as a Client
+                                </div>
+                                <div className={styles.right_company_content}>
+                                    Join as an Employee
                                 </div>
                             </div>
                         </div>
