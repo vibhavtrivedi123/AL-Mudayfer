@@ -61,7 +61,7 @@ const Slider = () => {
                     </div>
                 </div>
 
-                <div className={styles.card_container} >
+                {/* <div className={styles.card_container} >
                     <div className={styles.image}>
                         <div className={styles.badge}>dealer</div>
                         <img src={worker} alt="" />
@@ -71,7 +71,7 @@ const Slider = () => {
                         <div className={styles.sub_heading}>Lorem ipsum dolor sit amet </div>
                         <div className={styles.button}>read more</div>
                     </div>
-                </div>
+                </div> */}
 
             </div>
 

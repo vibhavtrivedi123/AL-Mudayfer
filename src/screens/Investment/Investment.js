@@ -5,14 +5,14 @@ import aboutscreen from '../../images/about/aboutscreen.jpg'
 
 import styles from './Investment.module.css';
 import building from '../../images/investment/buildings.jpg'
-import company1 from '../../images/home/company1.jpg'
-import company2 from '../../images/home/company2.jpg'
-import company3 from '../../images/home/company3.jpg'
-import company4 from '../../images/home/company4.jpg'
-import company5 from '../../images/home/company5.jpg'
-import company6 from '../../images/home/company6.jpg'
-import company7 from '../../images/home/company7.jpg'
-import company8 from '../../images/home/company8.jpg'
+import company1 from '../../images/investment/company1.svg'
+import company2 from '../../images/investment/company2.svg'
+import company3 from '../../images/investment/company3.svg'
+import company4 from '../../images/investment/company4.svg'
+import company5 from '../../images/investment/company5.svg'
+import company6 from '../../images/investment/company6.svg'
+import company7 from '../../images/investment/company7.svg'
+import company8 from '../../images/investment/company8.svg'
 // import company1 from '../../images/investment/materialcompany.png'
 
 
@@ -119,7 +119,7 @@ const Investment = () => {
       date2: 1976,
       date_desc2: "Advanced",
       date3: "20M",
-      date3: "Branches",
+      date_desc3: "Branches",
       link: "https://comaco.sa"
     },
   ]
@@ -141,7 +141,9 @@ const Investment = () => {
 
       <div className={styles.container}>
 
-        <div className={styles.left_container}></div>
+        <div className={styles.left_container}>
+          
+        </div>
         <div className={styles.right_container}>
           {arr && arr.length > 0 ? (
             arr.map((item, idx) => (
@@ -150,41 +152,41 @@ const Investment = () => {
                 <div className={styles.top}>
                   <div className={styles.top_left}>
                     <div className={styles.logo}>
-                      <img src={company} alt="" />
+                      <img src={item.company_logo} alt="" />
                     </div>
                     <div className={styles.blue_underline}></div>
                     <div className={styles.left_description}>
-                      We invested in building a nation, and in developing a human being, so the products of Saleh Al-Mudaifer Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                      {item.description1}
                     </div>
                     <div className={styles.left_description}>
-                      We invested in building a nation, and in developing a human being, so the products of Saleh Al-Mudaifer Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                      {item.description2}
                     </div>
                   </div>
 
                   <div className={styles.top_right}>
                     <div className={styles.logo}>
-                      <img src={company} alt="" />
+                      <img src={item.company_logo} alt="" />
                     </div>
                     <div className={styles.numbers}>
-                      1979
+                      {item.date}
                       <div className={styles.numbers_description}>
-                        Advanced
+                        {item.date_desc}
                       </div>
                     </div>
                     <div className={styles.numbers}>
-                      1979
+                      {item.date2}
                       <div className={styles.numbers_description}>
-                        Advanced
+                        {item.date_desc2}
                       </div>
                     </div>
                     <div className={styles.numbers}>
-                      20M
+                      {item.date3}
                       <div className={styles.numbers_description}>
-                        Branches
+                        {item.date_desc3}
                       </div>
                     </div>
                     <div className={styles.right_button}>
-                      https://comaco.sa
+                      {item.link}
                     </div>
                   </div>
                 </div>
@@ -194,7 +196,7 @@ const Investment = () => {
                     Gallery
                   </div>
                   <div className={styles.bottom_image}>
-                    <img src={building} alt="" />
+                    <img src={item.mainimage} alt="" />
                   </div>
                 </div>
               </div>

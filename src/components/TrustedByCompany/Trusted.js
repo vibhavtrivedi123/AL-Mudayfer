@@ -1,11 +1,13 @@
 import React from 'react'
 import styles from './Trusted.module.css';
-import company1 from '../../images/home/company1.jpg'
-import company2 from '../../images/home/company2.jpg'
-import company3 from '../../images/home/company3.jpg'
-import company4 from '../../images/home/company4.jpg'
-import company5 from '../../images/home/company5.jpg'
-import company6 from '../../images/home/company6.jpg'
+import company1 from '../../images/investment/company1.svg'
+import company2 from '../../images/investment/company2.svg'
+import company3 from '../../images/investment/company3.svg'
+import company4 from '../../images/investment/company4.svg'
+import company5 from '../../images/investment/company5.svg'
+import company6 from '../../images/investment/company6.svg'
+import company7 from '../../images/investment/company7.svg'
+import company8 from '../../images/investment/company8.svg'
 
 const Trusted = () => {
     return (
@@ -30,6 +32,12 @@ const Trusted = () => {
                     </div>
                     <div className={styles.image}>
                         <img src={company6} alt="" />
+                    </div>
+                    <div className={styles.image}>
+                        <img src={company7} alt="" />
+                    </div>
+                    <div className={styles.image}>
+                        <img src={company8} alt="" />
                     </div>
                 </div>
             </div>
