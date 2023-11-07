@@ -104,24 +104,28 @@ const Contact = () => {
                 <div className={styles.label_name}>First name</div>
                 <input
                   type="text"
-                  placeholder='Enter Your First Name'
+                  placeholder='Ex. Aamir'
+                  required
                 />
                 <div className={styles.label_name}>email</div>
                 <input
-                  type="text"
-                  placeholder='Enter Your First Name'
+                  type="email"
+                  placeholder='Email'
+                  required
                 />
               </div>
               <div className={styles.left_form_container}>
                 <div className={styles.label_name}>Last name</div>
                 <input
                   type="text"
-                  placeholder='Enter Your First Name'
+                  placeholder='Ex. Doe'
+                  required
                 />
                 <div className={styles.label_name}>Telephone</div>
                 <input
-                  type="text"
-                  placeholder='Enter Your First Name'
+                  type="number"
+                  placeholder='Telephone'
+                  required
                 />
               </div>
             </div>
@@ -130,11 +134,14 @@ const Contact = () => {
               <input
                 type="textarea"
                 placeholder='Write Message'
+                required
               />
 
 
               <div className={styles.send_button}>
-                send message
+                <button>
+                  SEND MESSAGE
+                </button>
               </div>
             </div>
             {/* <div className={styles.right_form_container}></div> */}

@@ -69,11 +69,12 @@
     width: 35%;
     display: flex;
     justify-content: space-between;
+    /* margin-right: 30px; */
 }
 
 .right_company {
+
     white-space: nowrap;
-    /* margin-left: 20px; */
     /* background-color: red; */
 }
 
@@ -86,4 +87,5 @@
 
 .right_company_content {
     padding: 15px 0;
+    margin-right: 20px;
 }

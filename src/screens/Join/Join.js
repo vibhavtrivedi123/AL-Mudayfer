@@ -56,34 +56,40 @@ const Join = () => {
                   <div className={styles.label_name}>First name</div>
                   <input
                     type="text"
-                    placeholder='Enter Your First Name'
+                    placeholder='Ex. Aamir'
+                    required
                   />
                   <div className={styles.label_name}>Email</div>
                   <input
-                    type="text"
-                    placeholder='Enter Your First Name'
+                    type="email"
+                    placeholder='Email'
+                    required
                   />
                   <div className={styles.label_name}>Choose Industry</div>
                   <input
                     type="text"
-                    placeholder='Enter Your First Name'
+                    placeholder='Enter Your Industry Name'
+                    required
                   />
                 </div>
                 <div className={styles.left_form_container}>
                   <div className={styles.label_name}>Last name</div>
                   <input
                     type="text"
-                    placeholder='Enter Your First Name'
+                    placeholder='Ex. Doe'
+                    required
                   />
                   <div className={styles.label_name}>Telephone</div>
                   <input
-                    type="text"
-                    placeholder='Enter Your First Name'
+                    type="number"
+                    placeholder='Telephone'
+                    required
                   />
                   <div className={styles.label_name}>Choose Package</div>
                   <input
                     type="text"
-                    placeholder='Enter Your First Name'
+                    placeholder='Enter Your Package Name'
+                    required
                   />
                 </div>
 
@@ -91,7 +97,9 @@ const Join = () => {
               <div className={styles.button_and_textarea}>
 
                 <div className={styles.send_button}>
-                  submit now
+                  <button>
+                    submit now
+                  </button>
                 </div>
               </div>
               {/* <div className={styles.right_form_container}></div> */}
@@ -119,34 +127,40 @@ const Join = () => {
                   <div className={styles.label_name}>First name</div>
                   <input
                     type="text"
-                    placeholder='Enter Your First Name'
+                    placeholder='Ex. Aamir'
+                    required
                   />
                   <div className={styles.label_name}>Email</div>
                   <input
-                    type="text"
-                    placeholder='Enter Your First Name'
+                    type="email"
+                    placeholder='Email'
+                    required
                   />
                   <div className={styles.label_name}>Choose Industry</div>
                   <input
                     type="text"
-                    placeholder='Enter Your First Name'
+                    placeholder='Enter Your Industry Name'
+                    required
                   />
                 </div>
                 <div className={styles.left_form_container}>
                   <div className={styles.label_name}>Last name</div>
                   <input
                     type="text"
-                    placeholder='Enter Your First Name'
+                    placeholder='Ex. Doe'
+                    required
                   />
                   <div className={styles.label_name}>Telephone</div>
                   <input
-                    type="text"
-                    placeholder='Enter Your First Name'
+                    type="number"
+                    placeholder='Telephone'
+                    required
                   />
                   <div className={styles.label_name}>Choose Package</div>
                   <input
                     type="text"
-                    placeholder='Enter Your First Name'
+                    placeholder='Enter Your Package Name'
+                    required
                   />
                 </div>
 
@@ -154,7 +168,9 @@ const Join = () => {
               <div className={styles.button_and_textarea}>
 
                 <div className={styles.send_button}>
-                  submit now
+                  <button>
+                    submit now
+                  </button>
                 </div>
               </div>
               {/* <div className={styles.right_form_container}></div> */}

@@ -129,11 +129,14 @@ input[type="textarea"] {
     margin: auto;
 }
 
-.send_button {
+.send_button button{
+    width: 100%;
+    border: none;
     text-align: center;
     color: var(--blue);
     padding: 20px;
     background-color: white;
+    cursor: pointer;
 }
 
 .name {}
