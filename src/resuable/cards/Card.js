@@ -35,13 +35,13 @@ const Card = () => {
                     </div>
                     <div className={styles.content}>
                         <div className={styles.icon}>
-                            <img src={vision} alt="" />
+                            <img src={message} alt="" />
                         </div>
                         <div className={styles.heading}>
-                            our vision
+                            our message
                         </div>
                         <div className={styles.sub_heading}>
-                            Continuous development to maintain a prominent brand in the field of construction in order to continue to lead and provide a national product with high efficiency.
+                            Together towards the future - our slogan that we believe in and always strive to achieve by becoming the future for the industrial sector in the field of construction.
                         </div>
                     </div>
                 </div>
@@ -57,10 +57,12 @@ const Card = () => {
                             <img src={vision} alt="" />
                         </div>
                         <div className={styles.heading}>
-                            our vision
+                            our values
                         </div>
                         <div className={styles.sub_heading}>
-                            Continuous development to maintain a prominent brand in the field of construction in order to continue to lead and provide a national product with high efficiency.
+                            Leadership and Development.
+                            Honest and Integrity.
+                            Community Service.
                         </div>
                     </div>
                 </div>

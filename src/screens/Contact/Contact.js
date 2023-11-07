@@ -5,6 +5,9 @@ import location from '../../images/contact/location.svg'
 import Investment from '../../components/InvestmentOpp/Investment';
 
 import contact from '../../images/about/aboutscreen.jpg'
+import phone from '../../images/contact/phone.svg'
+import email from '../../images/contact/message.svg'
+import whatsapp from '../../images/contact/whatsapp.svg'
 
 
 const Contact = () => {
@@ -18,11 +21,11 @@ const Contact = () => {
         heading1="still curious?"
         heading2="contact us"
         sub_heading="New Industrial City - Al-Musafa
-District - Street 194 Riyadh - Kingdom of Saudi Arabia"
+        District - Street 194 Riyadh - Kingdom of Saudi Arabia"
         button="Know More "
       />
       <div className={styles.blue_heading}>
-        stay in touch
+        <div className={styles.blue_line}></div> stay in touch
       </div>
       <Heading
         heading2="LET’S GET IN TOUCH WITH OUR PROFESSIONALS TEAM WORKING"
@@ -43,31 +46,31 @@ District - Street 194 Riyadh - Kingdom of Saudi Arabia"
 
         <div className={styles.box}>
           <div className={styles.icon}>
-            <img src={location} alt="" />
+            <img src={email} alt="" />
           </div>
-          <div className={styles.heading}>office location</div>
+          <div className={styles.heading}>Email</div>
           <div className={styles.sub_heading}>
-            New Industrial City - Al-Musafa
+            info@smsh.com.sa
           </div>
         </div>
 
         <div className={styles.box}>
           <div className={styles.icon}>
-            <img src={location} alt="" />
+            <img src={phone} alt="" />
           </div>
-          <div className={styles.heading}>office location</div>
+          <div className={styles.heading}>Phone</div>
           <div className={styles.sub_heading}>
-            New Industrial City - Al-Musafa
+            920000116
           </div>
         </div>
 
         <div className={styles.box}>
           <div className={styles.icon}>
-            <img src={location} alt="" />
+            <img src={whatsapp} alt="" />
           </div>
-          <div className={styles.heading}>office location</div>
+          <div className={styles.heading}>Whatsapp</div>
           <div className={styles.sub_heading}>
-            New Industrial City - Al-Musafa
+            966501906677
           </div>
         </div>
 

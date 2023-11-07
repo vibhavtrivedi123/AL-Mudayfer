@@ -8,6 +8,7 @@ import About from './screens/About/About';
 import Investment from './screens/Investment/Investment';
 import Join from './screens/Join/Join';
 import Contact from './screens/Contact/Contact';
+import PageNotFound from './screens/PageNotFound/PageNotFound';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path='/investment' element={<Investment />} />
         <Route path='/join' element={<Join />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='*' element={<PageNotFound />} />
       </Routes>
       <Footer />
     </>

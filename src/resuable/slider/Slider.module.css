@@ -1,0 +1,76 @@
+.image_img {
+    height: 400px;
+}
+
+.image_img img {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.image_img::-webkit-scrollbar {
+    display: none;
+}
+
+.image_img {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.card_container {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+    background-color: var(--blue);
+}
+
+.image {
+    width: 100%;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+}
+
+.badge {
+    position: absolute;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 12px;
+    margin: 10px;
+    background-color: var(--blue);
+}
+
+.content {
+    padding: 20px 20px;
+}
+
+.heading {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.sub_heading {
+    font-size: 17px;
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+.button {
+    margin: 20px 0;
+    font-size: 16px;
+    padding: 20px 40px;
+    width: max-content;
+    text-transform: uppercase;
+    background-color: white;
+    color: var(--blue);
+}

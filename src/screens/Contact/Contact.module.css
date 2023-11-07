@@ -16,6 +16,25 @@
     width: 23%;
 }
 
+.blue_heading {
+    font-size: 34px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    color: var(--skyblue);
+    margin: auto;
+    padding-top: 100px ;
+}
+
+.blue_line {
+    width: 100px;
+    color: var(--skyblue);
+    border: 1px solid var(--skyblue);
+}
+
 .icon {}
 
 .icon img {
@@ -58,9 +77,11 @@
     /* align-items: center; */
     flex-direction: column;
 }
-.form_top{
+
+.form_top {
     text-align: center;
 }
+
 .form_heading {
     font-size: 25px;
     font-weight: 700;
@@ -88,6 +109,7 @@ input::placeholder {
     color: rgb(224, 224, 224);
     text-transform: capitalize;
 }
+
 input[type="textarea"] {
     width: 100%;
     padding-bottom: 100px;
@@ -106,7 +128,8 @@ input[type="textarea"] {
     width: 95%;
     margin: auto;
 }
-.send_button{
+
+.send_button {
     text-align: center;
     color: var(--blue);
     padding: 20px;

@@ -13,7 +13,7 @@ const Media = () => {
             <Investment
                 backgroundImage={aboutscreen}
                 heading1="media center"
-                heading2="contact us"
+                // heading2="contact us"
                 sub_heading="Always be close to us and part of our journey and get what you want from it’s source."
                 button="get started"
             />
@@ -33,9 +33,9 @@ const Media = () => {
                 </div>
                 <div className={styles.right}>
                     <div className={styles.right_heading}>media kit</div>
-                    <div className={styles.right_sub_heading}>logo</div>
-                    <div className={styles.right_sub_heading}>assets</div>
-                    <div className={styles.right_sub_heading}>management</div>
+                    <div className={styles.right_sub_heading}>Logo</div>
+                    <div className={styles.right_sub_heading}>Assets</div>
+                    <div className={styles.right_sub_heading}>Management</div>
                     <div className={styles.right_button}>open media kit</div>
                 </div>
             </div>

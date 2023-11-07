@@ -28,33 +28,33 @@ const About = () => {
       <Heading
         heading1="Partner with AL-MUDAIFER"
         heading2="The BUILDING & CONSTRUCTION EXPERT"
-        description1="Al-Mudafir is an award-winning company that understands what it means to provide solutions on time and within budget to bring your vision to fruition. With our team of experts all under one roof, Premier handles the project from Design to Completion. As owner operators ourselves, we think and act just like you, from concept to completion. So, it’s no wonder that Premier has been a leading full-service company for design, architecture, procurement, project management and capital management for more than 25 years. "
+        description1="Al-Omraniah for Trade, Industry and Contracting Company was established at the beginning of the seventh decade of the last century. Since it’s establishment in 1972, it has been a pioneer in the manufacture of terrazzo tiles, blocks, cement tiles, interlocks and balconies in the middle east. "
       />
       <Card />
       <Trusted />
       <ImageBoxLeft
         imageSrc={block}
-        heading="Employment Portal"
+        heading="BLOCK"
         text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-Mudaifer Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
-        buttonText="know more"
+        buttonText="read more"
       />
       <ImageBoxRight
         imageSrc={interlock}
-        heading="the board of directors"
+        heading="interlock"
         text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-Mudaifer Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
-        buttonText="Get to know"
+        buttonText="read more"
       />
       <ImageBoxLeft
         imageSrc={skirting}
-        heading="Employment Portal"
+        heading="SKIRTING"
         text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-Mudaifer Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
-        buttonText="know more"
+        buttonText="read more"
       />
       <ImageBoxRight
         imageSrc={tiles}
-        heading="the board of directors"
+        heading="tiles"
         text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-Mudaifer Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
-        buttonText="Get to know"
+        buttonText="read more"
       />
       <Heading
         heading1="Partner with AL-MUDAIFER"
