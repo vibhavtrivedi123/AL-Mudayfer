@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './NewsHealdine.module.css';
 import build0 from '../../images/home/building0.jpg';
-import build1 from '../../images/home/building1.jpg';
+import truck from '../../images/home/truck.jpg';
 import build2 from '../../images/home/building2.jpg';
 
 import { Link } from 'react-router-dom';
@@ -27,11 +27,11 @@ const NewsHealdine = () => {
         {/* RIGHT */}
         <div className={styles.right}>
           <div className={styles.top}>
-            <img src={build1} alt="" />
+            <img src={truck} alt="" />
           </div>
-          <div className={styles.bottom}>
+          {/* <div className={styles.bottom}>
             <img src={build2} alt="" />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

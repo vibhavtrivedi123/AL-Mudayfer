@@ -14,8 +14,9 @@ import ConsHeading from '../../components/ConsHeading/ConsHeading';
 
 import homescreen from '../../images/home/homescreen.jpg'
 import employment from '../../images/home/employment.jpg'
+import exp from '../../images/home/exp.jpg'
 import board from '../../images/home/board.jpg'
-import value from '../../images/invest.jpg'
+import invest from '../../images/home/ourvalue.jpg'
 
 const HomeScreen = () => {
     return (
@@ -35,7 +36,7 @@ const HomeScreen = () => {
             />
             <Milestone />
             <Experience62
-                imageSrc={employment}
+                imageSrc={exp}
                 heading="Experience 62+ Years"
                 text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
                 buttonText="Learn More"
@@ -52,7 +53,7 @@ const HomeScreen = () => {
                 buttonText="Get to know"
             />
             <Company
-                backgroundImage={value}
+                backgroundImage={invest}
                 heading1="INVESTMENT"
                 heading2="OPPORTUNITIES"
                 sub_heading="The name that has been associated with building and construction works for development monuments over generations from the Kingdom of Saudi Arabia and to the Middle East."

@@ -8,7 +8,7 @@ import Heading from '../../components/Heading/Heading';
 import location from '../../images/contact/location.svg'
 import Investment from '../../components/InvestmentOpp/Investment';
 
-import contact from '../../images/about/aboutscreen.jpg'
+import contact from '../../images/contact/contactscreen.jpg'
 import phone from '../../images/contact/phone.svg'
 import email from '../../images/contact/message.svg'
 import whatsapp from '../../images/contact/whatsapp.svg'

@@ -7,7 +7,7 @@ import Investment from '../../components/InvestmentOpp/Investment'
 import Heading from '../../components/Heading/Heading'
 import aboutscreen from '../../images/about/aboutscreen.jpg'
 import Company from '../../components/Company/Company'
-import value from '../../images/invest.jpg'
+import value from '../../images/home/ourvalue.jpg'
 import { AiOutlineLine } from 'react-icons/ai'
 import Slider from '../../resuable/slider/Slider';
 

@@ -176,13 +176,13 @@ const Investment = () => {
               <div className={styles.builder_names}> OMRANIA LOGISTICS SUPPORT</div>
             </a>
           </div>
-          
+
         </div>
         <div className={styles.right_container}>
           {arr && arr.length > 0 ? (
             arr.map((item, idx) => (
               <div className={styles.company}>
-
+                {item.id}
                 <div className={styles.top}>
                   <div className={styles.top_left}>
                     <div className={styles.logo}>
@@ -239,6 +239,9 @@ const Investment = () => {
           }
 
         </div>
+
+
+        
       </div>
     </>
   )
