@@ -178,7 +178,9 @@ const Investment = () => {
           </div>
 
         </div>
-        <div className={styles.right_container}>
+
+        {/* PROPERLY WORKING */}
+        {/* <div className={styles.right_container}>
           {arr && arr.length > 0 ? (
             arr.map((item, idx) => (
               <div className={styles.company}>
@@ -238,10 +240,471 @@ const Investment = () => {
           ) : null
           }
 
+        </div> */}
+
+
+        {/* TESTING */}
+        <div className={styles.right_container}>
+
+          {/* COMPANY 1 */}
+          <div className={styles.company} id='section1'>
+            <div className={styles.top}>
+              <div className={styles.top_left}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.blue_underline}></div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+              </div>
+
+              <div className={styles.top_right}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+
+                <div className={styles.right_button}>
+                  <a href="">
+                    Link
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.bottom}>
+              <div className={styles.bottom_heading}>
+                Gallery
+              </div>
+              <div className={styles.bottom_image}>
+                <img src={building} alt="" />
+              </div>
+            </div>
+          </div>
+
+          {/* COMPANY 2 */}
+          <div className={styles.company} id='section2'>
+            <div className={styles.top}>
+              <div className={styles.top_left}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.blue_underline}></div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+              </div>
+
+              <div className={styles.top_right}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+
+                <div className={styles.right_button}>
+                  <a href="">
+                    Link
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.bottom}>
+              <div className={styles.bottom_heading}>
+                Gallery
+              </div>
+              <div className={styles.bottom_image}>
+                <img src={building} alt="" />
+              </div>
+            </div>
+          </div>
+
+          {/* COMPANY 3 */}
+          <div className={styles.company} id='section3'>
+            <div className={styles.top}>
+              <div className={styles.top_left}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.blue_underline}></div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+              </div>
+
+              <div className={styles.top_right}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+
+                <div className={styles.right_button}>
+                  <a href="">
+                    Link
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.bottom}>
+              <div className={styles.bottom_heading}>
+                Gallery
+              </div>
+              <div className={styles.bottom_image}>
+                <img src={building} alt="" />
+              </div>
+            </div>
+          </div>
+
+          {/* COMPANY 4 */}
+          <div className={styles.company} id='section4'>
+            <div className={styles.top}>
+              <div className={styles.top_left}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.blue_underline}></div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+              </div>
+
+              <div className={styles.top_right}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+
+                <div className={styles.right_button}>
+                  <a href="">
+                    Link
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.bottom}>
+              <div className={styles.bottom_heading}>
+                Gallery
+              </div>
+              <div className={styles.bottom_image}>
+                <img src={building} alt="" />
+              </div>
+            </div>
+          </div>
+
+          {/* COMPANY 5 */}
+          <div className={styles.company} id='section5'>
+            <div className={styles.top}>
+              <div className={styles.top_left}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.blue_underline}></div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+              </div>
+
+              <div className={styles.top_right}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+
+                <div className={styles.right_button}>
+                  <a href="">
+                    Link
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.bottom}>
+              <div className={styles.bottom_heading}>
+                Gallery
+              </div>
+              <div className={styles.bottom_image}>
+                <img src={building} alt="" />
+              </div>
+            </div>
+          </div>
+
+          {/* COMPANY 6 */}
+          <div className={styles.company} id='section6'>
+            <div className={styles.top}>
+              <div className={styles.top_left}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.blue_underline}></div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+              </div>
+
+              <div className={styles.top_right}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+
+                <div className={styles.right_button}>
+                  <a href="">
+                    Link
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.bottom}>
+              <div className={styles.bottom_heading}>
+                Gallery
+              </div>
+              <div className={styles.bottom_image}>
+                <img src={building} alt="" />
+              </div>
+            </div>
+          </div>
+
+          {/* COMPANY 7 */}
+          <div className={styles.company} id='section7'>
+            <div className={styles.top}>
+              <div className={styles.top_left}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.blue_underline}></div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+              </div>
+
+              <div className={styles.top_right}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+
+                <div className={styles.right_button}>
+                  <a href="">
+                    Link
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.bottom}>
+              <div className={styles.bottom_heading}>
+                Gallery
+              </div>
+              <div className={styles.bottom_image}>
+                <img src={building} alt="" />
+              </div>
+            </div>
+          </div>
+
+          {/* COMPANY 8 */}
+          <div className={styles.company} id='section8'>
+            <div className={styles.top}>
+              <div className={styles.top_left}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.blue_underline}></div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+                <div className={styles.left_description}>
+                  We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+              </div>
+
+              <div className={styles.top_right}>
+                <div className={styles.logo}>
+                  <img src={company1} alt="" />
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  date 1
+                  <div className={styles.numbers_description}>
+                    date desc
+                  </div>
+                </div>
+
+                <div className={styles.right_button}>
+                  <a href="">
+                    Link
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.bottom}>
+              <div className={styles.bottom_heading}>
+                Gallery
+              </div>
+              <div className={styles.bottom_image}>
+                <img src={building} alt="" />
+              </div>
+            </div>
+          </div>
+
+
         </div>
 
-
-        
       </div>
     </>
   )
