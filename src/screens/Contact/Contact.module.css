@@ -76,6 +76,8 @@
     justify-content: space-around;
     /* align-items: center; */
     flex-direction: column;
+    /* border: 1px solid lime; */
+    padding:  10px;
 }
 
 .form_top {
@@ -93,6 +95,7 @@
     font-size: 16px;
     font-weight: 400;
     /* line-height: 26px; */
+    /* border: 1px solid lime; */
 }
 
 input {
@@ -118,10 +121,15 @@ input[type="textarea"] {
 .main_form_container {
     display: flex;
     justify-content: space-around;
+    /* border: 1px solid lime; */
 }
 
 .left_form_container {
     width: 45%;
+}
+.label_name{
+    padding: 10px 0;
+    /* border: 1px solid rgb(205, 16, 16); */
 }
 
 .button_and_textarea {

@@ -1,5 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+
 import HomeScreen from './screens/HomeScreen/HomeScreen';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -23,7 +25,9 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
+
       <Footer />
+      <ToastContainer />
     </>
   )
 }

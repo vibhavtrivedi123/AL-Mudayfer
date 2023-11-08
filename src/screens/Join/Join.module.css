@@ -11,7 +11,8 @@
 .right {
     width: 45%;
 }
-.left{
+
+.left {
     width: 40%;
 }
 
@@ -67,12 +68,16 @@ input::placeholder {
     width: 45%;
 }
 
+.label_name {
+    padding: 10px 0;
+}
+
 .button_and_textarea {
     width: 95%;
     margin: auto;
 }
 
-.send_button button{
+.send_button button {
     text-align: center;
     color: var(--blue);
     padding: 20px;

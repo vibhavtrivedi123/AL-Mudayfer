@@ -2,19 +2,24 @@
     width: 100%;
     background-color: var(--blue);
     color: white;
-    height: 50vh;
+    /* height: 50vh; */
 
     display: flex;
     justify-content: center;
     align-items: center;
-
     flex-direction: column;
+
+    padding: 150px 0;
+    /* border: 2px solid lime; */
 }
 .heading{
     font-size: 22px;
     letter-spacing: 3px;
     line-height: 24px;
     text-transform: uppercase;
+
+    padding: 40px 0;
+    /* background-color: red; */
 }
 .sub_heading{
     text-align: center;

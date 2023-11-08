@@ -13,7 +13,7 @@
 }
 
 .images {
-    width: 70%;
+    width: 85%;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -26,5 +26,5 @@
 }
 
 .image img {
-    width: 70px;
+    width: 100px;
 }

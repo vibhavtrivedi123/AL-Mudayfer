@@ -1,4 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
+
 import styles from './Contact.module.css';
 import Heading from '../../components/Heading/Heading';
 import location from '../../images/contact/location.svg'
@@ -11,7 +15,45 @@ import whatsapp from '../../images/contact/whatsapp.svg'
 
 
 const Contact = () => {
-  const handleSubmit = () => { }
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    telephone: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      axios.post('url_come_here', formData);
+      toast.success('Form submitted successfully!', {
+        position: 'top-right',
+        autoClose: 3000,
+      });
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        telephone: '',
+        message: '',
+      });
+
+    } catch (error) {
+      toast.error('Please Check Fields!', {
+        position: 'top-right',
+        autoClose: 3000,
+      });
+    }
+  };
 
 
   return (
@@ -99,7 +141,6 @@ const Contact = () => {
 
           <form onSubmit={handleSubmit}>
             <div className={styles.main_form_container}>
-
               <div className={styles.left_form_container}>
                 <div className={styles.label_name}>First name</div>
                 <input
@@ -110,6 +151,7 @@ const Contact = () => {
                 <div className={styles.label_name}>email</div>
                 <input
                   type="email"
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$"
                   placeholder='Email'
                   required
                 />
@@ -123,8 +165,10 @@ const Contact = () => {
                 />
                 <div className={styles.label_name}>Telephone</div>
                 <input
-                  type="number"
+                  type="text"
+                  pattern="^\d{7}$|^\d{10}$"
                   placeholder='Telephone'
+                  title="Please Enter The Mobile Number"
                   required
                 />
               </div>
@@ -136,8 +180,6 @@ const Contact = () => {
                 placeholder='Write Message'
                 required
               />
-
-
               <div className={styles.send_button}>
                 <button>
                   SEND MESSAGE

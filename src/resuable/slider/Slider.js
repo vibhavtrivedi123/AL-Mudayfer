@@ -75,14 +75,14 @@ const Slider = () => {
 
             </div>
 
-            <div className={styles.arrow_container}>
+            {/* <div className={styles.arrow_container}>
                 <div className={styles.arrow} onClick={scrollLeft}>
                     <BsArrowLeftCircle size={40} />
                 </div>
                 <div className={styles.arrow} onClick={scrollRight}>
                     <BsArrowRightCircle size={40} />
                 </div>
-            </div>
+            </div> */}
 
 
 

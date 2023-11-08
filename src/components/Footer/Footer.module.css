@@ -12,9 +12,10 @@
 
 .main_line {
     text-align: center;
-    font-size: 24px;
-    width: 100%;
+    font-size: 22px;
+    /* width: 100%; */
     padding: 70px 0;
+    white-space: nowrap ;
     border-bottom: 1px solid white;
 }
 

@@ -142,7 +142,16 @@ const Investment = () => {
       <div className={styles.container}>
 
         <div className={styles.left_container}>
-          
+          <div className={styles.sticky_container}>
+            <div className={styles.builder_names}> Omrania Crusher</div>
+            <div className={styles.builder_names}> OMRANIA FOR CONCRETE</div>
+            <div className={styles.builder_names}> OMRANIA MATERIALS</div>
+            <div className={styles.builder_names}> OMRANIA METAL POWER</div>
+            <div className={styles.builder_names}> OMRANIA WOOD PRODUCTS</div>
+            <div className={styles.builder_names}> saudi player for polishing materials</div>
+            <div className={styles.builder_names}> OMRANIA MATERIALS FOR ROAD TRANSPORT</div>
+            <div className={styles.builder_names}> OMRANIA LOGISTICS SUPPORT</div>
+          </div>
         </div>
         <div className={styles.right_container}>
           {arr && arr.length > 0 ? (

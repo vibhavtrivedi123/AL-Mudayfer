@@ -1,6 +1,8 @@
 import React from 'react'
-import styles from './Join.module.css';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
+import styles from './Join.module.css';
 import Investment from '../../components/InvestmentOpp/Investment'
 import Heading from '../../components/Heading/Heading'
 import aboutscreen from '../../images/about/aboutscreen.jpg'
@@ -10,7 +12,22 @@ import { AiOutlineLine } from 'react-icons/ai'
 import Slider from '../../resuable/slider/Slider';
 
 const Join = () => {
-  const handleSubmit = () => { }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    try {
+      toast.success('Form submitted successfully!', {
+        position: 'top-right',
+        autoClose: 3000,
+        
+      });
+    } catch (error) {
+      toast.error('Please Check Fields!', {
+        position: 'top-right',
+        autoClose: 3000,
+      });
+    }
+
+  };
   return (
     <>
       <Investment
@@ -65,12 +82,12 @@ const Join = () => {
                     placeholder='Email'
                     required
                   />
-                  <div className={styles.label_name}>Choose Industry</div>
+                  {/* <div className={styles.label_name}>Choose Industry</div>
                   <input
                     type="text"
                     placeholder='Enter Your Industry Name'
                     required
-                  />
+                  /> */}
                 </div>
                 <div className={styles.left_form_container}>
                   <div className={styles.label_name}>Last name</div>
@@ -85,16 +102,22 @@ const Join = () => {
                     placeholder='Telephone'
                     required
                   />
-                  <div className={styles.label_name}>Choose Package</div>
+                  {/* <div className={styles.label_name}>Choose Package</div>
                   <input
                     type="text"
                     placeholder='Enter Your Package Name'
                     required
-                  />
+                  /> */}
                 </div>
 
               </div>
               <div className={styles.button_and_textarea}>
+                <div className={styles.label_name}>Message</div>
+                <input
+                  type="textarea"
+                  placeholder='Write Message'
+                  required
+                />
 
                 <div className={styles.send_button}>
                   <button>
@@ -136,12 +159,12 @@ const Join = () => {
                     placeholder='Email'
                     required
                   />
-                  <div className={styles.label_name}>Choose Industry</div>
+                  {/* <div className={styles.label_name}>Choose Industry</div>
                   <input
                     type="text"
                     placeholder='Enter Your Industry Name'
                     required
-                  />
+                  /> */}
                 </div>
                 <div className={styles.left_form_container}>
                   <div className={styles.label_name}>Last name</div>
@@ -156,16 +179,22 @@ const Join = () => {
                     placeholder='Telephone'
                     required
                   />
-                  <div className={styles.label_name}>Choose Package</div>
+                  {/* <div className={styles.label_name}>Choose Package</div>
                   <input
                     type="text"
                     placeholder='Enter Your Package Name'
                     required
-                  />
+                  /> */}
                 </div>
 
               </div>
               <div className={styles.button_and_textarea}>
+                <div className={styles.label_name}>Message</div>
+                <input
+                  type="textarea"
+                  placeholder='Write Message'
+                  required
+                />
 
                 <div className={styles.send_button}>
                   <button>

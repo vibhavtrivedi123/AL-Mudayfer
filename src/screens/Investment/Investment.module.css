@@ -2,10 +2,39 @@
     display: flex;
     justify-content: space-around;
     padding: 50px 0;
+    position: relative;
 }
 
 .left_container {
-    width: 30%;
+    width: 30%; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    /* border: 2px solid silver; */
+}
+.sticky_container{
+    top: 140px;
+    position: sticky;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.builder_names {
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: left;
+    font-weight: 800;
+    width: 80%;
+    /* background-color: red; */
+    color: var(--grey);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.builder_names:hover{
+    color: var(--blue);
 }
 
 .right_container {
