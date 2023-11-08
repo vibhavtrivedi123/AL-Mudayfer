@@ -4,6 +4,8 @@ import build0 from '../../images/home/building0.jpg';
 import build1 from '../../images/home/building1.jpg';
 import build2 from '../../images/home/building2.jpg';
 
+import { Link } from 'react-router-dom';
+
 const NewsHealdine = () => {
   return (
     <>
@@ -14,9 +16,11 @@ const NewsHealdine = () => {
           <div className={styles.content}>
             <div className={styles.content_heading}>News Headline</div>
             <div className={styles.content_sub_heading}>
-              We invested in building a nation, and in developing a human being, so the products of Saleh Al-Mudaifer Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+              We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
             </div>
-            <div className={styles.content_button}>Read More</div>
+            <Link to='/contact'>
+              <div className={styles.content_button}>Read More</div>
+            </Link>
           </div>
         </div>
 

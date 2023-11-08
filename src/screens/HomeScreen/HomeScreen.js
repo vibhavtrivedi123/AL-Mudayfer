@@ -22,13 +22,13 @@ const HomeScreen = () => {
         <>
             <Investment
                 backgroundImage={homescreen}
-                heading1="AL-MUDAIFER"
+                heading1="AL-MUDAYFER"
                 heading2="HOLDING"
                 sub_heading="The name that has been associated with building and construction works for development monuments over generations from the Kingdom of Saudi Arabia and to the Middle East."
                 button="Know More "
             />
             <Heading
-                heading1="Partner with AL-MUDAIFER"
+                heading1="Partner with AL-MUDAYFER"
                 heading2="The BUILDING & CONSTRUCTION EXPERT"
                 description1="Al-Mudafir is an award-winning company that understands what it means to provide solutions on time and within budget to bring your vision to fruition. With our team of experts all under one roof, Premier handles the project from Design to Completion. As owner operators ourselves, we think and act just like you, from concept to completion. So, it’s no wonder that Premier has been a leading full-service company for design, architecture, procurement, project management and capital management for more than 25 years. "
                 description2="Trust our project management experts at Al-Mudafir Holdings from Design to Completion!"
@@ -37,7 +37,7 @@ const HomeScreen = () => {
             <Experience62
                 imageSrc={employment}
                 heading="Experience 62+ Years"
-                text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-Mudaifer Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
+                text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
                 buttonText="Learn More"
             />
 
@@ -48,7 +48,7 @@ const HomeScreen = () => {
             <ImageBoxRight
                 imageSrc={board}
                 heading="the board of directors"
-                text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-Mudaifer Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
+                text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
                 buttonText="Get to know"
             />
             <Company
@@ -61,7 +61,7 @@ const HomeScreen = () => {
             <ImageBoxLeft
                 imageSrc={employment}
                 heading="Employment Portal"
-                text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-Mudaifer Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
+                text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
                 buttonText="know more"
             />
             <Timeline />

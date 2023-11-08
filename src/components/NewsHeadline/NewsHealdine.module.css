@@ -46,13 +46,13 @@
 
 .content_button {
     text-transform: uppercase;
-    background-color: #CFCA4C;
+    background-color: #ffffff;
     width: max-content;
     padding: 20px 40px;
     border-radius: 2px;
     font-size: 17px;
-    color: white;
-    font-weight: 700;
+    color: var(--blue);
+    font-weight: 400;
     cursor: pointer;
 }
 

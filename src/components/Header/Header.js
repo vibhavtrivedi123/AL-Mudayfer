@@ -38,11 +38,11 @@ const Header = () => {
                     </Link>
                 </div>
 
-                <div className={styles.button}>
-                    <Link to="/contact">
+                <Link to="/contact">
+                    <div className={styles.button}>
                         contact us
-                    </Link>
-                </div>
+                    </div>
+                </Link>
             </div>
 
 

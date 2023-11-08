@@ -18,7 +18,7 @@ const Join = () => {
       toast.success('Form submitted successfully!', {
         position: 'top-right',
         autoClose: 3000,
-        
+
       });
     } catch (error) {
       toast.error('Please Check Fields!', {
@@ -37,7 +37,7 @@ const Join = () => {
         button="get started"
       />
       <Heading
-        heading1="Partner with AL-MUDAIFER"
+        heading1="Partner with AL-MUDAYFER"
         heading2="explore jobs"
       />
 

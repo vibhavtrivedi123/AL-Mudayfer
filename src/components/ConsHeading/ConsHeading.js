@@ -5,7 +5,7 @@ const ConsHeading = () => {
     return (
         <>
             <div className={styles.container}>
-                <div className={styles.heading}>with AL-MUDAIFER</div>
+                <div className={styles.heading}>with AL-MUDAYFER</div>
                 <div className={styles.sub_heading}>
                     CONSCIOUS LEADERSHIP
                     <br />

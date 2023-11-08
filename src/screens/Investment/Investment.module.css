@@ -14,12 +14,13 @@
     /* border: 2px solid silver; */
 }
 .sticky_container{
-    top: 140px;
+    top: 180px;
     position: sticky;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: red; */
 }
 
 .builder_names {
@@ -27,7 +28,7 @@
     padding: 10px 0;
     text-align: left;
     font-weight: 800;
-    width: 80%;
+    width: 60%;
     /* background-color: red; */
     color: var(--grey);
     text-transform: uppercase;
