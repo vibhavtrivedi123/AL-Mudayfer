@@ -246,7 +246,7 @@ const Investment = () => {
         {/* TESTING */}
         <div className={styles.right_container}>
 
-          {/* COMPANY 1 */}
+          {/* COM2000 */}
           <div className={styles.company} id='section1'>
             <div className={styles.top}>
               <div className={styles.top_left}>
@@ -267,21 +267,21 @@ const Investment = () => {
                   <img src={company1} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
 
@@ -308,7 +308,7 @@ const Investment = () => {
             <div className={styles.top}>
               <div className={styles.top_left}>
                 <div className={styles.logo}>
-                  <img src={company1} alt="" />
+                  <img src={company2} alt="" />
                 </div>
                 <div className={styles.blue_underline}></div>
                 <div className={styles.left_description}>
@@ -321,24 +321,24 @@ const Investment = () => {
 
               <div className={styles.top_right}>
                 <div className={styles.logo}>
-                  <img src={company1} alt="" />
+                  <img src={company2} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
 
@@ -365,7 +365,7 @@ const Investment = () => {
             <div className={styles.top}>
               <div className={styles.top_left}>
                 <div className={styles.logo}>
-                  <img src={company1} alt="" />
+                  <img src={company3} alt="" />
                 </div>
                 <div className={styles.blue_underline}></div>
                 <div className={styles.left_description}>
@@ -378,24 +378,24 @@ const Investment = () => {
 
               <div className={styles.top_right}>
                 <div className={styles.logo}>
-                  <img src={company1} alt="" />
+                  <img src={company3} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
 
@@ -422,7 +422,7 @@ const Investment = () => {
             <div className={styles.top}>
               <div className={styles.top_left}>
                 <div className={styles.logo}>
-                  <img src={company1} alt="" />
+                  <img src={company4} alt="" />
                 </div>
                 <div className={styles.blue_underline}></div>
                 <div className={styles.left_description}>
@@ -435,24 +435,24 @@ const Investment = () => {
 
               <div className={styles.top_right}>
                 <div className={styles.logo}>
-                  <img src={company1} alt="" />
+                  <img src={company4} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
 
@@ -479,7 +479,7 @@ const Investment = () => {
             <div className={styles.top}>
               <div className={styles.top_left}>
                 <div className={styles.logo}>
-                  <img src={company1} alt="" />
+                  <img src={company5} alt="" />
                 </div>
                 <div className={styles.blue_underline}></div>
                 <div className={styles.left_description}>
@@ -492,24 +492,24 @@ const Investment = () => {
 
               <div className={styles.top_right}>
                 <div className={styles.logo}>
-                  <img src={company1} alt="" />
+                  <img src={company5} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
 
@@ -536,7 +536,7 @@ const Investment = () => {
             <div className={styles.top}>
               <div className={styles.top_left}>
                 <div className={styles.logo}>
-                  <img src={company1} alt="" />
+                  <img src={company6} alt="" />
                 </div>
                 <div className={styles.blue_underline}></div>
                 <div className={styles.left_description}>
@@ -549,24 +549,24 @@ const Investment = () => {
 
               <div className={styles.top_right}>
                 <div className={styles.logo}>
-                  <img src={company1} alt="" />
+                  <img src={company6} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
 
@@ -593,7 +593,7 @@ const Investment = () => {
             <div className={styles.top}>
               <div className={styles.top_left}>
                 <div className={styles.logo}>
-                  <img src={company1} alt="" />
+                  <img src={company7} alt="" />
                 </div>
                 <div className={styles.blue_underline}></div>
                 <div className={styles.left_description}>
@@ -606,24 +606,24 @@ const Investment = () => {
 
               <div className={styles.top_right}>
                 <div className={styles.logo}>
-                  <img src={company1} alt="" />
+                  <img src={company7} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
 
@@ -650,7 +650,7 @@ const Investment = () => {
             <div className={styles.top}>
               <div className={styles.top_left}>
                 <div className={styles.logo}>
-                  <img src={company1} alt="" />
+                  <img src={company8} alt="" />
                 </div>
                 <div className={styles.blue_underline}></div>
                 <div className={styles.left_description}>
@@ -663,24 +663,24 @@ const Investment = () => {
 
               <div className={styles.top_right}>
                 <div className={styles.logo}>
-                  <img src={company1} alt="" />
+                  <img src={company8} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  date 1
+                  2000
                   <div className={styles.numbers_description}>
-                    date desc
+                    Advanced
                   </div>
                 </div>
 
