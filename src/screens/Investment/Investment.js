@@ -19,6 +19,7 @@ import company8 from '../../images/investment/company8.svg'
 const Investment = () => {
   const arr = [
     {
+      id: "section1",
       company_logo: company1,
       mainimage: building,
       description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
@@ -32,6 +33,7 @@ const Investment = () => {
       link: "https://comaco.sa"
     },
     {
+      id: "section2",
       company_logo: company2,
       mainimage: building,
       description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
@@ -45,6 +47,7 @@ const Investment = () => {
       link: "https://comaco.sa"
     },
     {
+      id: "section3",
       company_logo: company3,
       mainimage: building,
       description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
@@ -58,6 +61,7 @@ const Investment = () => {
       link: "https://comaco.sa"
     },
     {
+      id: "section4",
       company_logo: company4,
       mainimage: building,
       description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
@@ -71,6 +75,7 @@ const Investment = () => {
       link: "https://comaco.sa"
     },
     {
+      id: "section5",
       company_logo: company5,
       mainimage: building,
       description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
@@ -84,6 +89,7 @@ const Investment = () => {
       link: "https://comaco.sa"
     },
     {
+      id: "section6",
       company_logo: company6,
       mainimage: building,
       description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
@@ -97,6 +103,7 @@ const Investment = () => {
       link: "https://comaco.sa"
     },
     {
+      id: "section7",
       company_logo: company7,
       mainimage: building,
       description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
@@ -110,6 +117,7 @@ const Investment = () => {
       link: "https://comaco.sa"
     },
     {
+      id: "section8",
       company_logo: company8,
       mainimage: building,
       description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
@@ -143,15 +151,32 @@ const Investment = () => {
 
         <div className={styles.left_container}>
           <div className={styles.sticky_container}>
-            <div className={styles.builder_names}> Omrania Crusher</div>
-            <div className={styles.builder_names}> OMRANIA FOR CONCRETE</div>
-            <div className={styles.builder_names}> OMRANIA MATERIALS</div>
-            <div className={styles.builder_names}> OMRANIA METAL POWER</div>
-            <div className={styles.builder_names}> OMRANIA WOOD PRODUCTS</div>
-            <div className={styles.builder_names}> saudi player for polishing materials</div>
-            <div className={styles.builder_names}> OMRANIA MATERIALS FOR ROAD TRANSPORT</div>
-            <div className={styles.builder_names}> OMRANIA LOGISTICS SUPPORT</div>
+            <a href="#section1">
+              <div className={styles.builder_names}> Omrania Crusher</div>
+            </a>
+            <a href="#section2">
+              <div className={styles.builder_names}> OMRANIA FOR CONCRETE</div>
+            </a>
+            <a href="#section3">
+              <div className={styles.builder_names}> OMRANIA MATERIALS</div>
+            </a>
+            <a href="#section4">
+              <div className={styles.builder_names}> OMRANIA METAL POWER</div>
+            </a>
+            <a href="#section5">
+              <div className={styles.builder_names}> OMRANIA WOOD PRODUCTS</div>
+            </a>
+            <a href="#section6">
+              <div className={styles.builder_names}> saudi player for polishing materials</div>
+            </a>
+            <a href="#section7">
+              <div className={styles.builder_names}> OMRANIA MATERIALS FOR ROAD TRANSPORT</div>
+            </a>
+            <a href="#section8">
+              <div className={styles.builder_names}> OMRANIA LOGISTICS SUPPORT</div>
+            </a>
           </div>
+          
         </div>
         <div className={styles.right_container}>
           {arr && arr.length > 0 ? (
@@ -195,7 +220,7 @@ const Investment = () => {
                       </div>
                     </div>
                     <div className={styles.right_button}>
-                      {item.link}
+                      <a href={item.link}>Link</a>
                     </div>
                   </div>
                 </div>
