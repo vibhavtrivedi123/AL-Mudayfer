@@ -267,27 +267,27 @@ const Investment = () => {
                   <img src={company1} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  1979
+                  <div className={styles.numbers_description}>
+                    Date Of Establishment
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  1979
                   <div className={styles.numbers_description}>
                     Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  20M
                   <div className={styles.numbers_description}>
-                    Advanced
-                  </div>
-                </div>
-                <div className={styles.numbers}>
-                  2000
-                  <div className={styles.numbers_description}>
-                    Advanced
+                    Branches
                   </div>
                 </div>
 
                 <div className={styles.right_button}>
-                  <a href="">
-                    Link
+                  <a href="https://comaco.sa">
+                    https://comaco.sa
                   </a>
                 </div>
               </div>
@@ -321,30 +321,30 @@ const Investment = () => {
 
               <div className={styles.top_right}>
                 <div className={styles.logo}>
-                  <img src={company2} alt="" />
+                  <img src={company1} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  1979
+                  <div className={styles.numbers_description}>
+                    Date Of Establishment
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  1979
                   <div className={styles.numbers_description}>
                     Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  20M
                   <div className={styles.numbers_description}>
-                    Advanced
-                  </div>
-                </div>
-                <div className={styles.numbers}>
-                  2000
-                  <div className={styles.numbers_description}>
-                    Advanced
+                    Branches
                   </div>
                 </div>
 
                 <div className={styles.right_button}>
-                  <a href="">
-                    Link
+                  <a href="https://comaco.sa">
+                    https://comaco.sa
                   </a>
                 </div>
               </div>
@@ -381,27 +381,27 @@ const Investment = () => {
                   <img src={company3} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  1979
+                  <div className={styles.numbers_description}>
+                    Date Of Establishment
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  1979
                   <div className={styles.numbers_description}>
                     Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  20M
                   <div className={styles.numbers_description}>
-                    Advanced
-                  </div>
-                </div>
-                <div className={styles.numbers}>
-                  2000
-                  <div className={styles.numbers_description}>
-                    Advanced
+                    Branches
                   </div>
                 </div>
 
                 <div className={styles.right_button}>
-                  <a href="">
-                    Link
+                  <a href="https://comaco.sa">
+                    https://comaco.sa
                   </a>
                 </div>
               </div>
@@ -438,27 +438,27 @@ const Investment = () => {
                   <img src={company4} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  1979
+                  <div className={styles.numbers_description}>
+                    Date Of Establishment
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  1979
                   <div className={styles.numbers_description}>
                     Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  20M
                   <div className={styles.numbers_description}>
-                    Advanced
-                  </div>
-                </div>
-                <div className={styles.numbers}>
-                  2000
-                  <div className={styles.numbers_description}>
-                    Advanced
+                    Branches
                   </div>
                 </div>
 
                 <div className={styles.right_button}>
-                  <a href="">
-                    Link
+                  <a href="https://comaco.sa">
+                    https://comaco.sa
                   </a>
                 </div>
               </div>
@@ -495,27 +495,27 @@ const Investment = () => {
                   <img src={company5} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  1979
+                  <div className={styles.numbers_description}>
+                    Date Of Establishment
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  1979
                   <div className={styles.numbers_description}>
                     Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  20M
                   <div className={styles.numbers_description}>
-                    Advanced
-                  </div>
-                </div>
-                <div className={styles.numbers}>
-                  2000
-                  <div className={styles.numbers_description}>
-                    Advanced
+                    Branches
                   </div>
                 </div>
 
                 <div className={styles.right_button}>
-                  <a href="">
-                    Link
+                  <a href="https://comaco.sa">
+                    https://comaco.sa
                   </a>
                 </div>
               </div>
@@ -552,27 +552,27 @@ const Investment = () => {
                   <img src={company6} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  1979
+                  <div className={styles.numbers_description}>
+                    Date Of Establishment
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  1979
                   <div className={styles.numbers_description}>
                     Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  20M
                   <div className={styles.numbers_description}>
-                    Advanced
-                  </div>
-                </div>
-                <div className={styles.numbers}>
-                  2000
-                  <div className={styles.numbers_description}>
-                    Advanced
+                    Branches
                   </div>
                 </div>
 
                 <div className={styles.right_button}>
-                  <a href="">
-                    Link
+                  <a href="https://comaco.sa">
+                    https://comaco.sa
                   </a>
                 </div>
               </div>
@@ -609,27 +609,27 @@ const Investment = () => {
                   <img src={company7} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  1979
+                  <div className={styles.numbers_description}>
+                    Date Of Establishment
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  1979
                   <div className={styles.numbers_description}>
                     Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  20M
                   <div className={styles.numbers_description}>
-                    Advanced
-                  </div>
-                </div>
-                <div className={styles.numbers}>
-                  2000
-                  <div className={styles.numbers_description}>
-                    Advanced
+                    Branches
                   </div>
                 </div>
 
                 <div className={styles.right_button}>
-                  <a href="">
-                    Link
+                  <a href="https://comaco.sa">
+                    https://comaco.sa
                   </a>
                 </div>
               </div>
@@ -666,27 +666,27 @@ const Investment = () => {
                   <img src={company8} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  1979
+                  <div className={styles.numbers_description}>
+                    Date Of Establishment
+                  </div>
+                </div>
+                <div className={styles.numbers}>
+                  1979
                   <div className={styles.numbers_description}>
                     Advanced
                   </div>
                 </div>
                 <div className={styles.numbers}>
-                  2000
+                  20M
                   <div className={styles.numbers_description}>
-                    Advanced
-                  </div>
-                </div>
-                <div className={styles.numbers}>
-                  2000
-                  <div className={styles.numbers_description}>
-                    Advanced
+                    Branches
                   </div>
                 </div>
 
                 <div className={styles.right_button}>
-                  <a href="">
-                    Link
+                  <a href="https://comaco.sa">
+                    https://comaco.sa
                   </a>
                 </div>
               </div>
