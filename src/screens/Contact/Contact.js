@@ -34,16 +34,17 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      axios.post("", formData, {
-      // axios.post("http://localhost:9000/api/v1/user/create", formData, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      // axios.post("", formData, {
+      // // axios.post("http://localhost:9000/api/v1/user/create", formData, {
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      // });
       toast.success('Form submitted successfully!', {
         position: 'top-right',
         autoClose: 3000,
       });
+
       setFormData({
         firstName: '',
         lastName: '',

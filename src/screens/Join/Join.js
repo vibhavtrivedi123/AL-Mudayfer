@@ -36,22 +36,22 @@ const Join = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      axios.post("http://localhost:9001/api/v1/user/create", formData, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      // axios.post("http://localhost:9001/api/v1/user/create", formData, {
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      // });
       toast.success('Form submitted successfully!', {
         position: 'top-right',
         autoClose: 3000,
       });
-      // setFormData({
-      //   firstName: '',
-      //   lastName: '',
-      //   email: '',
-      //   phone: '',
-      //   message: '',
-      // });
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: '',
+      });
 
     } catch (error) {
       toast.error('Please Check Fields!', {
