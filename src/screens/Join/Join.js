@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -10,24 +10,57 @@ import Company from '../../components/Company/Company'
 import value from '../../images/home/ourvalue.jpg'
 import { AiOutlineLine } from 'react-icons/ai'
 import Slider from '../../resuable/slider/Slider';
+import axios from 'axios';
+
+
 
 const Join = () => {
-  const handleSubmit = (e) => {
+
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      axios.post("http://localhost:9001/api/v1/user/create", formData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
       toast.success('Form submitted successfully!', {
         position: 'top-right',
         autoClose: 3000,
-
       });
+      // setFormData({
+      //   firstName: '',
+      //   lastName: '',
+      //   email: '',
+      //   phone: '',
+      //   message: '',
+      // });
+
     } catch (error) {
       toast.error('Please Check Fields!', {
         position: 'top-right',
         autoClose: 3000,
       });
     }
-
   };
+
   return (
     <>
       <Investment
@@ -68,60 +101,58 @@ const Join = () => {
 
             <form onSubmit={handleSubmit}>
               <div className={styles.main_form_container}>
-
                 <div className={styles.left_form_container}>
                   <div className={styles.label_name}>First name</div>
                   <input
                     type="text"
                     placeholder='Ex. Aamir'
+                    onChange={handleChange}
+                    name="firstName"
                     required
                   />
-                  <div className={styles.label_name}>Email</div>
+                  <div className={styles.label_name}>email</div>
                   <input
                     type="email"
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$"
                     placeholder='Email'
+                    onChange={handleChange}
+                    name="email"
                     required
                   />
-                  {/* <div className={styles.label_name}>Choose Industry</div>
-                  <input
-                    type="text"
-                    placeholder='Enter Your Industry Name'
-                    required
-                  /> */}
                 </div>
                 <div className={styles.left_form_container}>
                   <div className={styles.label_name}>Last name</div>
                   <input
                     type="text"
                     placeholder='Ex. Doe'
+                    name="lastName"
+                    onChange={handleChange}
                     required
                   />
                   <div className={styles.label_name}>Telephone</div>
                   <input
-                    type="number"
+                    type="text"
+                    pattern="^\d{7}$|^\d{10}$"
                     placeholder='Telephone'
+                    title="Please Enter The Mobile Number"
+                    onChange={handleChange}
+                    name="phone"
                     required
                   />
-                  {/* <div className={styles.label_name}>Choose Package</div>
-                  <input
-                    type="text"
-                    placeholder='Enter Your Package Name'
-                    required
-                  /> */}
                 </div>
-
               </div>
               <div className={styles.button_and_textarea}>
                 <div className={styles.label_name}>Message</div>
                 <input
                   type="textarea"
                   placeholder='Write Message'
+                  onChange={handleChange}
+                  name="message"
                   required
                 />
-
                 <div className={styles.send_button}>
                   <button>
-                    submit now
+                    SEND MESSAGE
                   </button>
                 </div>
               </div>
@@ -145,60 +176,58 @@ const Join = () => {
 
             <form onSubmit={handleSubmit}>
               <div className={styles.main_form_container}>
-
                 <div className={styles.left_form_container}>
                   <div className={styles.label_name}>First name</div>
                   <input
                     type="text"
                     placeholder='Ex. Aamir'
+                    onChange={handleChange}
+                    name="firstName"
                     required
                   />
-                  <div className={styles.label_name}>Email</div>
+                  <div className={styles.label_name}>email</div>
                   <input
                     type="email"
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$"
                     placeholder='Email'
+                    onChange={handleChange}
+                    name="email"
                     required
                   />
-                  {/* <div className={styles.label_name}>Choose Industry</div>
-                  <input
-                    type="text"
-                    placeholder='Enter Your Industry Name'
-                    required
-                  /> */}
                 </div>
                 <div className={styles.left_form_container}>
                   <div className={styles.label_name}>Last name</div>
                   <input
                     type="text"
                     placeholder='Ex. Doe'
+                    name="lastName"
+                    onChange={handleChange}
                     required
                   />
                   <div className={styles.label_name}>Telephone</div>
                   <input
-                    type="number"
+                    type="text"
+                    pattern="^\d{7}$|^\d{10}$"
                     placeholder='Telephone'
+                    title="Please Enter The Mobile Number"
+                    onChange={handleChange}
+                    name="phone"
                     required
                   />
-                  {/* <div className={styles.label_name}>Choose Package</div>
-                  <input
-                    type="text"
-                    placeholder='Enter Your Package Name'
-                    required
-                  /> */}
                 </div>
-
               </div>
               <div className={styles.button_and_textarea}>
                 <div className={styles.label_name}>Message</div>
                 <input
                   type="textarea"
                   placeholder='Write Message'
+                  onChange={handleChange}
+                  name="message"
                   required
                 />
-
                 <div className={styles.send_button}>
                   <button>
-                    submit now
+                    SEND MESSAGE
                   </button>
                 </div>
               </div>

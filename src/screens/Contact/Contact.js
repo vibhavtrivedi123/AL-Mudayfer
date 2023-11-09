@@ -19,7 +19,7 @@ const Contact = () => {
     firstName: '',
     lastName: '',
     email: '',
-    telephone: '',
+    phone: '',
     message: '',
   });
 
@@ -34,7 +34,12 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      axios.post('url_come_here', formData);
+      axios.post("", formData, {
+      // axios.post("http://localhost:9000/api/v1/user/create", formData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
       toast.success('Form submitted successfully!', {
         position: 'top-right',
         autoClose: 3000,
@@ -43,7 +48,7 @@ const Contact = () => {
         firstName: '',
         lastName: '',
         email: '',
-        telephone: '',
+        phone: '',
         message: '',
       });
 
@@ -146,6 +151,8 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder='Ex. Aamir'
+                  onChange={handleChange}
+                  name="firstName"
                   required
                 />
                 <div className={styles.label_name}>email</div>
@@ -153,6 +160,8 @@ const Contact = () => {
                   type="email"
                   pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$"
                   placeholder='Email'
+                  onChange={handleChange}
+                  name="email"
                   required
                 />
               </div>
@@ -161,6 +170,8 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder='Ex. Doe'
+                  name="lastName"
+                  onChange={handleChange}
                   required
                 />
                 <div className={styles.label_name}>Telephone</div>
@@ -169,6 +180,8 @@ const Contact = () => {
                   pattern="^\d{7}$|^\d{10}$"
                   placeholder='Telephone'
                   title="Please Enter The Mobile Number"
+                  onChange={handleChange}
+                  name="phone"
                   required
                 />
               </div>
@@ -178,6 +191,8 @@ const Contact = () => {
               <input
                 type="textarea"
                 placeholder='Write Message'
+                onChange={handleChange}
+                name="message"
                 required
               />
               <div className={styles.send_button}>
