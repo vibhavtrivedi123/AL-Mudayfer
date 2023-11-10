@@ -35,6 +35,14 @@
     padding: 10px 20px;
 }
 
+.link:hover {
+    font-weight: 750;
+    /* Make visited links bold */
+    /* Add other styles as needed */
+    /* text-shadow: 1px 1px 10px white; */
+    /* box-shadow: 2px 2px 10px white; */
+}
+
 .button {
     width: max-content;
     /* width: 15%; */

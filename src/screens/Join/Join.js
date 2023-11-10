@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import styles from './Join.module.css';
 import Investment from '../../components/InvestmentOpp/Investment'
 import Heading from '../../components/Heading/Heading'
-import aboutscreen from '../../images/about/aboutscreen.jpg'
+import aboutscreen from '../../images/join/aboutscreen.jpg'
 import Company from '../../components/Company/Company'
 import value from '../../images/home/ourvalue.jpg'
 import { AiOutlineLine } from 'react-icons/ai'
@@ -72,6 +72,7 @@ const Join = () => {
       <Heading
         heading1="Partner with AL-MUDAYFER"
         heading2="explore jobs"
+        description1="Building bridges of communication with others is part of our ambitious vision to keep pace with the national economic movement and towards greater effectiveness for society and for us as an important economic component in the Kingdom of Saudi Arabia."
       />
 
       <Slider />
@@ -84,11 +85,17 @@ const Join = () => {
             Discover the benefits of collaborating with us as a supplier.
           </div>
           <div className={styles.sub_heading1}>
-            Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur.
+            Integration in the commercial market is an important requirement, especially between
+            the producer and the investor who wants to benefit from his experience and work in
+            marketing products by obtaining an important role as a wholesale and retail trader.
+            20
+            We at Saleh Al-Mudaifer Sons Holding Group seek to maximize the benefits of our
+            commercial activity to include different segments of society and we welcome
+            partnerships of this kind with all companies affiliated with the group.
           </div>
-          <div className={styles.sub_heading2}>
+          {/* <div className={styles.sub_heading2}>
             Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur.
-          </div>
+          </div> */}
         </div>
         <div className={styles.right}>
           <div className={styles.form}>

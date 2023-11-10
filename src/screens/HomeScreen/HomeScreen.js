@@ -62,7 +62,11 @@ const HomeScreen = () => {
             <ImageBoxLeft
                 imageSrc={employment}
                 heading="Employment Portal"
-                text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
+                text="Joining the work community of Saleh Al-Mudaifer Sons Holding Group companies is
+an opportunity that we are proud to offer to Saudi youth of all abilities and
+backgrounds, as the group’s work is diverse. We consider those working with us as
+our extended family in an ideal work environment that guarantees obtaining many job
+benefits and practical experiences."
                 buttonText="know more"
             />
             <Timeline />

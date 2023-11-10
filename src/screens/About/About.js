@@ -28,7 +28,18 @@ const About = () => {
       <Heading
         heading1="Partner with AL-MUDAYFER"
         heading2="The BUILDING & CONSTRUCTION EXPERT"
-        description1="Al-Omraniah for Trade, Industry and Contracting Company was established at the beginning of the seventh decade of the last century. Since it’s establishment in 1972, it has been a pioneer in the manufacture of terrazzo tiles, blocks, cement tiles, interlocks and balconies in the middle east. "
+        description1="Al-Omraniah for Trade, Industry and Contracting Company was established at the beginning of the seventh decade of the last century. Since it’s establishment in 1972, it has been a pioneer in the manufacture of terrazzo tiles, blocks, cement tiles, interlocks and balconies in the middle east. 
+        "
+        description2="The vision of the Kingdom of Saudi Arabia for the year 2030 is a general revolution of
+        change in all fields. It has made a clear difference in the Kingdom’s economy by
+        creating demand and encouraging and enhancing supply of national products. The
+        Saleh Al-Mudaifer Sons Holding Group was one of the most prominent beneficiaries
+        of these ambitious national plans that facilitated the deliberate expansion of
+        investment activity. Industrial and strengthened the integration of the group’s
+        business through its subsidiaries, so that the dreams of the group’s founder, may
+        God have mercy on him, became a tangible reality with effective economic feasibility
+        with regard to investing in the supply chain of building and construction materials and
+        supporting contractors with high-quality Saudi products."
       />
       <Card />
       <Trusted />

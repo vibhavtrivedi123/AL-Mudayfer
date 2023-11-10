@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Media.module.css'
 import Investment from '../../components/InvestmentOpp/Investment'
-import aboutscreen from '../../images/about/aboutscreen.jpg'
+import mediascreen from '../../images/media/mediascreen.jpg'
 import Heading from '../../components/Heading/Heading'
 import Testimonial from '../../resuable/testimonials/Testimonial'
 import ImageBoxRight from '../../components/ImageBoxRight/ImageBoxRight'
@@ -12,7 +12,7 @@ const Media = () => {
     return (
         <>
             <Investment
-                backgroundImage={aboutscreen}
+                backgroundImage={mediascreen}
                 heading1="media center"
                 // heading2="contact us"
                 sub_heading="Always be close to us and part of our journey and get what you want from it’s source."

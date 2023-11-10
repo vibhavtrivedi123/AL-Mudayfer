@@ -13,7 +13,7 @@ import company5 from '../../images/investment/company5.svg'
 import company6 from '../../images/investment/company6.svg'
 import company7 from '../../images/investment/company7.svg'
 import company8 from '../../images/investment/company8.svg'
-// import company1 from '../../images/investment/materialcompany.png'
+import investscreen from '../../images/investment/investmentscreen.jpg'
 
 
 const Investment = () => {
@@ -136,7 +136,7 @@ const Investment = () => {
   return (
     <>
       <Investment1
-        backgroundImage={aboutscreen}
+        backgroundImage={investscreen}
         heading1="our investments"
         sub_heading="Always be close to us and part of our journey and get what you want from it’s source."
         button="get started"
@@ -144,7 +144,21 @@ const Investment = () => {
       <Heading
         heading1="Partner with AL-MUDAYFER"
         heading2="our companies"
-        description1="Al-MUDAYFER is an award-winning company that understands what it means to provide solutions on time and within budget to bring your vision to fruition. With our team of experts all under one roof, Premier handles the project from Design to Completion. As owner operators ourselves, we think and act just like you, from concept to completion. So, it’s no wonder that Premier has been a leading full-service company for design, architecture, procurement, project management and capital management for more than 25 years. "
+        description1="
+        As an investor or entrepreneur with creative and distinct ideas, we integrate with you
+in the Al-Mudaifer Group, and we are happy to exchange opinions about ideas and
+are open to everyone, until we implement projects on reality."
+        description2="Today, Al-Mudaifer Holding Group finds itself accelerating the pace of expanding its
+business to keep pace with all the giant projects created by Vision 2030 and
+intersecting with the group’s work, especially with the group’s known products of high
+reliability and the long-standing experience of a national company.
+Al-Mudaifer Holding Group aspires to work diligently to enhance its national presence
+and write new chapters of its success story through its distinctive interaction with the
+comprehensive national vision and enter into more projects and investments that
+enhance its effective presence at all levels, including localization of the industry,
+enhancing local content, industrial growth, creating job opportunities and bridging the
+gap in the market. Locally and looking to expand externally.
+"
       />
 
       <div className={styles.container}>

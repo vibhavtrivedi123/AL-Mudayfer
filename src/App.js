@@ -11,6 +11,7 @@ import Investment from './screens/Investment/Investment';
 import Join from './screens/Join/Join';
 import Contact from './screens/Contact/Contact';
 import PageNotFound from './screens/PageNotFound/PageNotFound';
+import Sample from './sample/Sample';
 
 const App = () => {
   return (
@@ -28,6 +29,9 @@ const App = () => {
 
       <Footer />
       <ToastContainer />
+
+      {/* test */}
+      {/* <Sample /> */}
     </>
   )
 }
