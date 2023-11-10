@@ -8,41 +8,49 @@ import styles from './Header.module.css'
 
 const Header = () => {
 
-    const [open, setOpen] = useState(false);
-    const toggleMobileMenu = () => {
-        setOpen(!open); // Toggle the state when the hamburger icon is clicked
+    const scrollToTop = () => {
+        window.scrollTo(0, 0); // Scroll to the top of the page
     };
+    const LinkWithScrollToTop = ({ to, children }) => (
+        <Link to={to} onClick={scrollToTop}>
+            {children}
+        </Link>
+    );
+
 
     return (
         <>
             <div className={styles.container}>
 
                 <div className={styles.logo}>
-                    <Link to="/">
+                    <LinkWithScrollToTop to="/">
                         <img src={logo} alt="" />
-                    </Link>
+                    </LinkWithScrollToTop>
                 </div>
 
                 <div className={styles.links}>
-                    <Link to="/about">
+                    <LinkWithScrollToTop to="/about">
                         <div className={styles.link}>About</div>
-                    </Link>
-                    <Link to="/investment">
+                    </LinkWithScrollToTop>
+
+                    <LinkWithScrollToTop to="/investment">
                         <div className={styles.link}>our investments</div>
-                    </Link>
-                    <Link to="/join">
+                    </LinkWithScrollToTop>
+
+                    <LinkWithScrollToTop to="/join" >
                         <div className={styles.link}>Join us</div>
-                    </Link>
-                    <Link to="/media">
+                    </LinkWithScrollToTop>
+
+                    <LinkWithScrollToTop to="/media" >
                         <div className={styles.link}>media</div>
-                    </Link>
+                    </LinkWithScrollToTop>
                 </div>
 
-                <Link to="/contact">
+                <LinkWithScrollToTop to="/contact">
                     <div className={styles.button}>
                         contact us
                     </div>
-                </Link>
+                </LinkWithScrollToTop>
             </div>
 
 
