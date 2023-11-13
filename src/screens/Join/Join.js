@@ -41,9 +41,18 @@ const Join = () => {
     try {
       await axios.post(url, formData, {
       });
+
       toast.success('Form submitted successfully!', {
         position: 'top-right',
         autoClose: 3000,
+      });
+
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: '',
       });
     } catch (error) {
       toast.error('Please Check Fields!', {
@@ -99,64 +108,69 @@ const Join = () => {
             </div>
 
             <form onSubmit={handleSubmit}>
-              <div className={styles.main_form_container}>
-                <div className={styles.left_form_container}>
-                  <div className={styles.label_name}>First name</div>
-                  <input
-                    type="text"
-                    placeholder='Ex. Aamir'
-                    onChange={handleChange}
-                    name="firstName"
-                    required
-                  />
-                  <div className={styles.label_name}>email</div>
-                  <input
-                    type="email"
-                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$"
-                    placeholder='Email'
-                    onChange={handleChange}
-                    name="email"
-                    required
-                  />
-                </div>
-                <div className={styles.left_form_container}>
-                  <div className={styles.label_name}>Last name</div>
-                  <input
-                    type="text"
-                    placeholder='Ex. Doe'
-                    name="lastName"
-                    onChange={handleChange}
-                    required
-                  />
-                  <div className={styles.label_name}>Telephone</div>
-                  <input
-                    type="text"
-                    pattern="^\d{7}$|^\d{10}$"
-                    placeholder='Telephone'
-                    title="Please Enter The Mobile Number"
-                    onChange={handleChange}
-                    name="phone"
-                    required
-                  />
-                </div>
-              </div>
-              <div className={styles.button_and_textarea}>
-                <div className={styles.label_name}>Message</div>
+            <div className={styles.main_form_container}>
+              <div className={styles.left_form_container}>
+                <div className={styles.label_name}>First name</div>
                 <input
-                  type="textarea"
-                  placeholder='Write Message'
+                  type="text"
+                  placeholder='Ex. Aamir'
                   onChange={handleChange}
-                  name="message"
+                  value={formData.firstName}
+                  name="firstName"
                   required
                 />
-                <div className={styles.send_button}>
-                  <button>
-                    SEND MESSAGE
-                  </button>
-                </div>
+                <div className={styles.label_name}>email</div>
+                <input
+                  type="email"
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$"
+                  placeholder='Email'
+                  onChange={handleChange}
+                  value={formData.email}
+                  name="email"
+                  required
+                />
               </div>
-              {/* <div className={styles.right_form_container}></div> */}
-            </form>
+              <div className={styles.left_form_container}>
+                <div className={styles.label_name}>Last name</div>
+                <input
+                  type="text"
+                  placeholder='Ex. Doe'
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  required
+                />
+                <div className={styles.label_name}>Telephone</div>
+                <input
+                  type="text"
+                  pattern="^\d{7}$|^\d{10}$"
+                  placeholder='Telephone'
+                  title="Please Enter The Mobile Number"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  name="phone"
+                  required
+                />
+              </div>
+            </div>
+            <div className={styles.button_and_textarea}>
+              <div className={styles.label_name}>Message</div>
+              <input
+                type="textarea"
+                placeholder='Write Message'
+                onChange={handleChange}
+                value={formData.message}
+                name="message"
+                required
+              />
+              <div className={styles.send_button}>
+                <button>
+                  SEND MESSAGE
+                </button>
+              </div>
+            </div>
+            {/* <div className={styles.right_form_container}></div> */}
+          </form>
           </div>
         </div>
       </div>
@@ -174,64 +188,69 @@ const Join = () => {
             </div>
 
             <form onSubmit={handleSubmit}>
-              <div className={styles.main_form_container}>
-                <div className={styles.left_form_container}>
-                  <div className={styles.label_name}>First name</div>
-                  <input
-                    type="text"
-                    placeholder='Ex. Aamir'
-                    onChange={handleChange}
-                    name="firstName"
-                    required
-                  />
-                  <div className={styles.label_name}>email</div>
-                  <input
-                    type="email"
-                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$"
-                    placeholder='Email'
-                    onChange={handleChange}
-                    name="email"
-                    required
-                  />
-                </div>
-                <div className={styles.left_form_container}>
-                  <div className={styles.label_name}>Last name</div>
-                  <input
-                    type="text"
-                    placeholder='Ex. Doe'
-                    name="lastName"
-                    onChange={handleChange}
-                    required
-                  />
-                  <div className={styles.label_name}>Telephone</div>
-                  <input
-                    type="text"
-                    pattern="^\d{7}$|^\d{10}$"
-                    placeholder='Telephone'
-                    title="Please Enter The Mobile Number"
-                    onChange={handleChange}
-                    name="phone"
-                    required
-                  />
-                </div>
-              </div>
-              <div className={styles.button_and_textarea}>
-                <div className={styles.label_name}>Message</div>
+            <div className={styles.main_form_container}>
+              <div className={styles.left_form_container}>
+                <div className={styles.label_name}>First name</div>
                 <input
-                  type="textarea"
-                  placeholder='Write Message'
+                  type="text"
+                  placeholder='Ex. Aamir'
                   onChange={handleChange}
-                  name="message"
+                  value={formData.firstName}
+                  name="firstName"
                   required
                 />
-                <div className={styles.send_button}>
-                  <button>
-                    SEND MESSAGE
-                  </button>
-                </div>
+                <div className={styles.label_name}>email</div>
+                <input
+                  type="email"
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$"
+                  placeholder='Email'
+                  onChange={handleChange}
+                  value={formData.email}
+                  name="email"
+                  required
+                />
               </div>
-              {/* <div className={styles.right_form_container}></div> */}
-            </form>
+              <div className={styles.left_form_container}>
+                <div className={styles.label_name}>Last name</div>
+                <input
+                  type="text"
+                  placeholder='Ex. Doe'
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  required
+                />
+                <div className={styles.label_name}>Telephone</div>
+                <input
+                  type="text"
+                  pattern="^\d{7}$|^\d{10}$"
+                  placeholder='Telephone'
+                  title="Please Enter The Mobile Number"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  name="phone"
+                  required
+                />
+              </div>
+            </div>
+            <div className={styles.button_and_textarea}>
+              <div className={styles.label_name}>Message</div>
+              <input
+                type="textarea"
+                placeholder='Write Message'
+                onChange={handleChange}
+                value={formData.message}
+                name="message"
+                required
+              />
+              <div className={styles.send_button}>
+                <button>
+                  SEND MESSAGE
+                </button>
+              </div>
+            </div>
+            {/* <div className={styles.right_form_container}></div> */}
+          </form>
           </div>
         </div>
         <div className={styles.left}>

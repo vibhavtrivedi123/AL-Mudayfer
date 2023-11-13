@@ -176,7 +176,7 @@ const Contact = () => {
                   type="text"
                   placeholder='Ex. Doe'
                   name="lastName"
-                  // value={formData.lastName}
+                  value={formData.lastName}
                   onChange={handleChange}
                   required
                 />
