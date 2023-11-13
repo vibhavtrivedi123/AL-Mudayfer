@@ -7,7 +7,6 @@ import styles from './Contact.module.css';
 import Heading from '../../components/Heading/Heading';
 import location from '../../images/contact/location.svg'
 import Investment from '../../components/InvestmentOpp/Investment';
-
 import contact from '../../images/contact/contactscreen.jpg'
 import phone from '../../images/contact/phone.svg'
 import email from '../../images/contact/message.svg'
@@ -37,15 +36,21 @@ const Contact = () => {
     e.preventDefault();
     try {
       axios.post(url, formData, {
-        headers: {
-          "Content-Type": "application/json",
-        },
+
       });
       toast.success('Form submitted successfully!', {
         position: 'top-right',
         autoClose: 3000,
-      }
-      );
+      });
+
+      // Clear the form fields after a successful submission
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: '',
+      });
 
     } catch (error) {
       toast.error('Please Check Fields!', {
@@ -121,12 +126,12 @@ const Contact = () => {
       </div>
 
 
-      <div className={styles.container}>
+      <div className={styles.container}>  
         <div className={styles.map}>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1844233.2919646518!2d44.08772330291176!3d25.471069451748104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2fa19c19b9dc2f%3A0x7a97f6b0e808a934!2sAl%20Mudayfer%20Investment%20Group!5e0!3m2!1sen!2sin!4v1699300668702!5m2!1sen!2sin"
             width="600"
-            height="650"
+            height="800"
             styles={{ border: "none" }}
             className={styles.mapborder}
             allowfullscreen=""
@@ -150,6 +155,7 @@ const Contact = () => {
                   type="text"
                   placeholder='Ex. Aamir'
                   onChange={handleChange}
+                  value={formData.firstName}
                   name="firstName"
                   required
                 />
@@ -159,6 +165,7 @@ const Contact = () => {
                   pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$"
                   placeholder='Email'
                   onChange={handleChange}
+                  value={formData.email}
                   name="email"
                   required
                 />
@@ -169,6 +176,7 @@ const Contact = () => {
                   type="text"
                   placeholder='Ex. Doe'
                   name="lastName"
+                  // value={formData.lastName}
                   onChange={handleChange}
                   required
                 />
@@ -178,6 +186,7 @@ const Contact = () => {
                   pattern="^\d{7}$|^\d{10}$"
                   placeholder='Telephone'
                   title="Please Enter The Mobile Number"
+                  value={formData.phone}
                   onChange={handleChange}
                   name="phone"
                   required
@@ -190,6 +199,7 @@ const Contact = () => {
                 type="textarea"
                 placeholder='Write Message'
                 onChange={handleChange}
+                value={formData.message}
                 name="message"
                 required
               />
