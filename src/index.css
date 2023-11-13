@@ -7,8 +7,9 @@
   text-decoration: none;
   color: inherit;
   font-family: 'Montserrat', sans-serif;
-  scroll-behavior: smooth;
-  user-select: none;    
+  scroll-behavior: smooth !important;
+  user-select: none;
+  transition: 100ms ease-in-out;
 }
 
 :root {
@@ -16,5 +17,4 @@
   --skyblue: #72CDF4;
   --grey: #63666A;
   --darkgrey: #291A13;
-
 }

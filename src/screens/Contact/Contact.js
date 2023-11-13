@@ -15,6 +15,8 @@ import whatsapp from '../../images/contact/whatsapp.svg'
 
 
 const Contact = () => {
+  const url = process.env.REACT_APP_BACKEND_URL + "/create"
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -34,24 +36,16 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // axios.post("", formData, {
-      // // axios.post("http://localhost:9000/api/v1/user/create", formData, {
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      // });
+      axios.post(url, formData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
       toast.success('Form submitted successfully!', {
         position: 'top-right',
         autoClose: 3000,
-      });
-
-      setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        message: '',
-      });
+      }
+      );
 
     } catch (error) {
       toast.error('Please Check Fields!', {

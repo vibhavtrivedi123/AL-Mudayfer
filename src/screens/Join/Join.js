@@ -1,6 +1,11 @@
+
+
+
 import React, { useState } from 'react'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
+
 
 import styles from './Join.module.css';
 import Investment from '../../components/InvestmentOpp/Investment'
@@ -10,11 +15,10 @@ import Company from '../../components/Company/Company'
 import value from '../../images/home/ourvalue.jpg'
 import { AiOutlineLine } from 'react-icons/ai'
 import Slider from '../../resuable/slider/Slider';
-import axios from 'axios';
-
 
 
 const Join = () => {
+  const url = process.env.REACT_APP_BACKEND_URL + "/create"
 
   const [formData, setFormData] = useState({
     firstName: '',
@@ -32,27 +36,15 @@ const Join = () => {
     });
   };
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // axios.post("http://localhost:9001/api/v1/user/create", formData, {
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      // });
+      await axios.post(url, formData, {
+      });
       toast.success('Form submitted successfully!', {
         position: 'top-right',
         autoClose: 3000,
       });
-      setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        message: '',
-      });
-
     } catch (error) {
       toast.error('Please Check Fields!', {
         position: 'top-right',
