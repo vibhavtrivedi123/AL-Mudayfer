@@ -7,6 +7,7 @@ import logo from '../../images/logo0.svg'
 import styles from './Header.module.css'
 
 const Header = () => {
+    const [open, setOpen] = useState(false);
 
     const scrollToTop = () => {
         window.scrollTo(0, 0); // Scroll to the top of the page
@@ -16,6 +17,9 @@ const Header = () => {
             {children}
         </Link>
     );
+    const toggleMobileMenu = () => {
+        setOpen(!open);
+    }
 
 
     return (
@@ -55,34 +59,43 @@ const Header = () => {
 
 
             {/* mobile view */}
-            {/* <div className={styles.mobile_container}>
+            <div className={styles.mobile_container}>
 
-                    <div className={styles.top}>
-                        <div className={styles.left_mobile}>
-                            <a href="/">
-                                <img src="./images/logo.svg" alt="" />
+                <div className={styles.top}>
+                    <div className={styles.left_mobile}>
+                        <a href="/">
+                            <img src={logo} alt="" />
+                        </a>
+                    </div>
+                    <button onClick={toggleMobileMenu}>
+                        <div className={styles.right_mobile}>
+                            <Hamburger toggled={open} toggle={setOpen} />
+                        </div>
+                    </button>
+                </div>
+                {
+                    open &&
+                    <>
+                        <div div className={styles.bottom} onClick={toggleMobileMenu}>
+                            <a href="/about">
+                                <div className={styles.mobile_link}>About</div>
+                            </a>
+                            <a href="/investment">
+                                <div className={styles.mobile_link}>our investment</div>
+                            </a>
+                            <a href="/join">
+                                <div className={styles.mobile_link}>join us</div>
+                            </a>
+                            <a href="/media">
+                                <div className={styles.mobile_link}>media</div>
+                            </a>
+                            <a href="/contact">
+                                <div className={styles.mobile_link}>Contact Us</div>
                             </a>
                         </div>
-                        <button onClick={toggleMobileMenu}>
-                            <div className={styles.right_mobile}>
-                                <Hamburger toggled={open} toggle={setOpen} />
-                            </div>
-                        </button>
-                    </div>
-                    {
-                        open &&
-                        <>
-                            <div div className={styles.bottom} onClick={toggleMobileMenu}>
-                                <a href="#aboutmobile"><div className={styles.mobile_link}>About us</div></a>
-                                <a href="#vision"><div className={styles.mobile_link}>our vision</div></a>
-                                <a href="#service"><div className={styles.mobile_link}>services</div></a>
-                                <a href="#value"><div className={styles.mobile_link}>our values</div></a>
-                                <a href="#newsletter"><div className={styles.mobile_link}>Contact Us</div></a>
-                            </div>
-                        </>
-
-                    }
-                </div> */}
+                    </>
+                }
+            </div>
         </>
     )
 }

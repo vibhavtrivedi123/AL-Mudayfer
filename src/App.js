@@ -12,6 +12,9 @@ import Join from './screens/Join/Join';
 import Contact from './screens/Contact/Contact';
 import PageNotFound from './screens/PageNotFound/PageNotFound';
 import Sample from './sample/Sample';
+import Social_Responsibility from './screens/Social/Social_Responsibility';
+import National from './screens/National/National';
+import Environmental from './screens/Environmental/Environmental';
 
 const App = () => {
   return (
@@ -24,6 +27,9 @@ const App = () => {
         <Route path='/investment' element={<Investment />} />
         <Route path='/join' element={<Join />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/national' element={<National />} />
+        <Route path='/environmental' element={<Environmental />} />
+        <Route path='/social_responsibility' element={<Social_Responsibility />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
 

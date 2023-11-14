@@ -1,9 +1,17 @@
-.container{
-    font-size: 10rem;
+.container {
+    font-size:6rem;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-content: center !important;
     height: 100vh;
-    /* white-space: nowrap; */
     width: 100%;
+}
+
+.container span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    align-content: center !important;
 }
