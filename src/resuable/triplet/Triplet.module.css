@@ -34,8 +34,7 @@
     font-size: 34px;
     font-weight: 500;
     color: white;
-    border-bottom: 2px solid #ffffff;
-    padding: 20px 0;
+    padding: 40px 0;
     text-transform: uppercase;
 }
 
@@ -68,6 +67,7 @@
 .right .top,
 .right .bottom {
     width: 100%;
+    position: relative;
 }
 
 .right .top img,
@@ -77,4 +77,9 @@
     height: 420px;
     z-index: -1;
     position: relative !important;
+}
+
+.under__line {
+    width: 50%;
+    border: 0.5px solid white;
 }

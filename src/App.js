@@ -15,21 +15,35 @@ import Sample from './sample/Sample';
 import Social_Responsibility from './screens/Social/Social_Responsibility';
 import National from './screens/National/National';
 import Environmental from './screens/Environmental/Environmental';
+import Omrania_crushers from './company_pages/Omrania_crushers/Omrania_crushers';
+import Omrania_concrete from './company_pages/Omrania_concrete/Omrania_concrete';
+import Omrania_material from './company_pages/Omrania_materials/Omrania_material';
 
 const App = () => {
   return (
     <>
       <Header />
       <Routes>
+
+        {/* HEADER PAGES */}
         <Route path='/' element={<HomeScreen />} />
         <Route path='/about' element={<About />} />
         <Route path='/media' element={<Media />} />
         <Route path='/investment' element={<Investment />} />
         <Route path='/join' element={<Join />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/national' element={<National />} />
-        <Route path='/environmental' element={<Environmental />} />
+
+        {/* LINKS PAGES */}
+        <Route path='/national_responsibility' element={<National />} />
+        <Route path='/environmental_responsibility' element={<Environmental />} />
         <Route path='/social_responsibility' element={<Social_Responsibility />} />
+
+        {/* COMPANY PAGES */}
+        <Route path='/omrania_crusher' element={<Omrania_crushers />} />
+        <Route path='/omrania_concrete' element={<Omrania_concrete />} />
+        <Route path='/omrania_material' element={<Omrania_material />} />
+
+        {/* PAGE NOT FOUND */}
         <Route path='*' element={<PageNotFound />} />
       </Routes>
 

@@ -17,6 +17,12 @@ import skirting from '../../images/about/skirting.jpg'
 import Testimonial from '../../resuable/testimonials/Testimonial'
 import Triplet from '../../resuable/triplet/Triplet'
 
+import vision from '../../images/about/vision.svg'
+import vision_big from '../../images/about/vision.jpg'
+import message from '../../images/about/message.svg'
+import message_big from '../../images/about/message.jpg'
+import value_big from '../../images/about/value.jpg'
+
 const About = () => {
   return (
     <>
@@ -43,7 +49,26 @@ const About = () => {
         with regard to investing in the supply chain of building and construction materials and
         supporting contractors with high-quality Saudi products."
       />
-      <Card />
+      
+      <Card
+        image1={vision_big}
+        icon1={vision}
+        heading1="Our Vision"
+        subHeading1="Continuous development to maintain a prominent brand in the field of construction in order to continue to lead and provide a national product with high efficiency."
+
+        image2={message_big}
+        icon2={message}
+        heading2="Our Message"
+        subHeading2="Together towards the future - our slogan that we believe in and always strive to achieve by becoming the future for the industrial sector in the field of construction."
+
+        image3={value_big}
+        icon3={vision}
+        heading3="Our Values"
+        subHeading3="Leadership and Development.
+        Honest and Integrity.
+        Community Service."
+      />
+
       <Trusted />
       <ImageBoxLeft
         imageSrc={block}

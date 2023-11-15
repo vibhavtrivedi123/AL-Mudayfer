@@ -6,6 +6,7 @@ import { BsInstagram } from 'react-icons/bs'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 import logo from '../../images/logo0.svg'
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -51,41 +52,63 @@ const Footer = () => {
                             <div className={styles.right_company}>
                                 <div className={styles.right_company_heading}>Company</div>
                                 <div className={styles.right_company_content}>
-                                    About AL-MUDAYFER
+                                    <Link to='/about'>
+                                        About AL-MUDAYFER
+                                    </Link>
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    Vision and Mission
+                                    <Link to='/about'>
+                                        Vision and Mission
+                                    </Link>
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    Our History
+                                    <Link to='/about'>
+                                        Our History
+                                    </Link>
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    Social Responsibility
+                                    <Link to="/social_responsibility">
+                                        Social Responsibility
+                                    </Link>
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    Environmental Responsibility
+                                    <Link to="/environmental_responsibility">
+                                        Environmental Responsibility
+                                    </Link>
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    National Responsibility
+                                    <Link to="/national_responsibility">
+                                        National Responsibility
+                                    </Link>
                                 </div>
                             </div>
 
                             <div className={styles.right_company}>
                                 <div className={styles.right_company_heading}>Company</div>
                                 <div className={styles.right_company_content}>
-                                    Our Investments
+                                    <Link to="/investment">
+                                        Our Investments
+                                    </Link>
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    Invest with us
+                                    <Link to="/investment">
+                                        Invest with us
+                                    </Link>
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    Join as a Supplier
+                                    <Link to="/join">
+                                        Join as a Supplier
+                                    </Link>
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    Join as a Client
+                                    <Link to="/join">
+                                        Join as a Client
+                                    </Link>
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    Join as an Employee
+                                    <Link to='/contact'>
+                                        Join as an Employee
+                                    </Link>
                                 </div>
                             </div>
                         </div>

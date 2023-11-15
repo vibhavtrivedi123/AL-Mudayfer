@@ -1,0 +1,35 @@
+.helper__container {
+    width: 80%;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative !important;
+    color: #FFFFFFD4;
+
+    padding: 90px 0;
+    margin:20px auto;
+}
+
+.helper__heading {
+    font-size: 40px;
+    padding: 40px 0;
+    line-height: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.tab {
+    background-color: rgba(255, 255, 255, 0.398);
+    border: 1px solid #ffffff57;
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    width: 450px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

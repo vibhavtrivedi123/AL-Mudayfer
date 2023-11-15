@@ -21,11 +21,14 @@ const Triplet = ({
                 <div className={styles.left}>
                     <img src={social} alt="" />
                     <div className={styles.content}>
-                        <div className={styles.content_heading}>SOCIAL RESPONSIBILITY</div>
+                        <div className={styles.content_heading}>
+                            SOCIAL RESPONSIBILITY
+                        </div>
+                        <div className={styles.under__line}></div>
                         <div className={styles.content_sub_heading}>
                             Saleh Al-Mudaifer Sons Holding Group carries in its genes the love of doing good for others, working for everyone, and the culture of social responsibility, believing that it is from this country and to it and part of its interconnected society.
                         </div>
-                        <Link to='/social'>
+                        <Link to='/social_responsibility'>
                             <div className={styles.content_button}>Learn More</div>
                         </Link>
                     </div>
@@ -35,9 +38,29 @@ const Triplet = ({
                 <div className={styles.right}>
                     <div className={styles.top}>
                         <img src={national} alt="" />
+                        <div className={styles.content}>
+                            <div className={styles.content_heading}>
+                                national RESPONSIBILITY
+                                
+                        <div className={styles.under__line}></div>
+                                </div>
+                                
+                            <Link to='/national_responsibility'>
+                                <div className={styles.content_button}>Learn More</div>
+                            </Link>
+                        </div>
                     </div>
                     <div className={styles.bottom}>
                         <img src={environmental} alt="" />
+                        <div className={styles.content}>
+                            <div className={styles.content_heading}>
+                                environmental
+                                <br />
+                                RESPONSIBILITY</div>
+                            <Link to='/environmental_responsibility'>
+                                <div className={styles.content_button}>Learn More</div>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

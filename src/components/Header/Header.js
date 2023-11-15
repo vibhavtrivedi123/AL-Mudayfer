@@ -33,6 +33,9 @@ const Header = () => {
                 </div>
 
                 <div className={styles.links}>
+                    <LinkWithScrollToTop to="/">
+                        <div className={styles.link}>Home</div>
+                    </LinkWithScrollToTop>
                     <LinkWithScrollToTop to="/about">
                         <div className={styles.link}>About</div>
                     </LinkWithScrollToTop>
@@ -77,6 +80,9 @@ const Header = () => {
                     open &&
                     <>
                         <div div className={styles.bottom} onClick={toggleMobileMenu}>
+                            <a href="/">
+                                <div className={styles.mobile_link}>Home</div>
+                            </a>
                             <a href="/about">
                                 <div className={styles.mobile_link}>About</div>
                             </a>

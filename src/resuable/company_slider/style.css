@@ -1,0 +1,33 @@
+.rec.rec-arrow {
+    background-color: #050038 !important;
+    /* default background color */
+    color: rgb(249, 249, 249);
+    /* default text color */
+}
+
+.rec.rec-arrow:hover {
+    background-color: #050038 !important;
+    color: white;
+}
+
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+
+.rec-carousel-dots {
+    outline: none;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 1px 1px rgb(255, 255, 255);
+}
+
+.rec.rec-dots.active,
+.rec-carousel-dots.rec-dots.active {
+    background-color: rgb(255, 255, 255);
+    box-shadow: black;
+}
+
+.rec-carousel-dots.rec-dots:active {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 rgb(158, 158, 158);
+}

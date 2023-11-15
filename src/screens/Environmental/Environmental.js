@@ -4,7 +4,7 @@ import Heading from '../../components/Heading/Heading'
 
 import Experience62 from '../../components/Experience62/Experience62'
 
-import social__screen from '../../images/social/social_screen.jpg'
+import social__screen from '../../images/about/environmental.jpg'
 import exp from '../../images/home/exp.jpg'
 import Experience62Left from '../../components/Experience62Left/Experience62Left'
 
@@ -13,16 +13,16 @@ const Environmental = () => {
         <>
             <Investment
                 backgroundImage={social__screen}
-                heading1="social"
+                heading1="environmental"
                 heading2="responsibility"
                 sub_heading="Leader in the manufacture of terrazza tiles, blocks, cement tiles, interlocks and balustrades for more than 50 years in the middle east."
                 button="get started"
             />
             <Heading
                 heading1="About AL-MUDAYFER"
-                heading2="social responsibility"
-                description1="Saleh Al-Mudaifer Sons Holding Group carries in its genes the love of doing good for others, working for everyone, and the culture of social responsibility, believing that it is from this country and to it and part of its interconnected society. For this reason, Al-Mudaifer Holding has presented many community initiatives with different ideas that included direct support with materials and products from its factories, Training programs for university students and graduates have supported many charitable associations and institutions in their work."
-                description2="The participation of Al-Mudaifer Holding Group at the group level or its subsidiaries in national events and activities is part of its firm belief in contributing to community interaction and the prosperity of society through its work. In general, Al-Mudaifer Holding finds that its extended work and contribution to the localization of industry, securing supply chains in the field of construction and building, and creating more jobs for the people of the country are an integral part of its social responsibility in national and human development."
+                heading2="environmental responsibility"
+                description1="Despite the close connection and clear connection between the activities of the companies of the Saleh Al-Mudaifer Sons Holding Group and the impacts on the environment from geological or industrial works and carbon emissions to industrial waste, the group was keen to put this matter in the highest consideration, so it developed a comprehensive and systematic plan to include all the work of the Saleh Al-Mudaifer Sons Holding Group and its factories. It applies strict national standards towards the environment and carbon emissions, and the group is environmentally friendly. For this reason, it has been partnered with the most prominent specialized companies to supervise and control with regard to the potential environmental impact resulting from the business, and to assist the group in obtaining the necessary national certificates in this field to confirm the solidity of the business."
+                description2="On this side. Al-Mudaifer Holding has achieved tangible results as a result of this environmental concern, starting from preserving the health of its employees to preserving the general environment or surrounding the work and activities of companies and factories and reducing carbon emissions. Environmental commitment is one of the most prominent pillars on which the group’s work is based, which has reflected its excellence over time."
             />
             <Experience62
                 imageSrc={exp}

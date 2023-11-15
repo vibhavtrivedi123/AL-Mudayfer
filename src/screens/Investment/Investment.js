@@ -14,125 +14,10 @@ import company6 from '../../images/investment/company6.svg'
 import company7 from '../../images/investment/company7.svg'
 import company8 from '../../images/investment/company8.svg'
 import investscreen from '../../images/investment/investmentscreen.jpg'
+import { Link } from 'react-router-dom';
 
 
 const Investment = () => {
-  const arr = [
-    {
-      id: "section1",
-      company_logo: company1,
-      mainimage: building,
-      description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      description2: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      date: 1976,
-      date_desc: "Date Of Establishment",
-      date2: 1976,
-      date_desc2: "Advanced",
-      date3: "20M",
-      date3: "Branches",
-      link: "https://comaco.sa"
-    },
-    {
-      id: "section2",
-      company_logo: company2,
-      mainimage: building,
-      description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      description2: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      date: 1976,
-      date_desc: "Date Of Establishment",
-      date2: 1976,
-      date_desc2: "Advanced",
-      date3: "20M",
-      date3: "Branches",
-      link: "https://comaco.sa"
-    },
-    {
-      id: "section3",
-      company_logo: company3,
-      mainimage: building,
-      description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      description2: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      date: 1976,
-      date_desc: "Date Of Establishment",
-      date2: 1976,
-      date_desc2: "Advanced",
-      date3: "20M",
-      date3: "Branches",
-      link: "https://comaco.sa"
-    },
-    {
-      id: "section4",
-      company_logo: company4,
-      mainimage: building,
-      description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      description2: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      date: 1976,
-      date_desc: "Date Of Establishment",
-      date2: 1976,
-      date_desc2: "Advanced",
-      date3: "20M",
-      date3: "Branches",
-      link: "https://comaco.sa"
-    },
-    {
-      id: "section5",
-      company_logo: company5,
-      mainimage: building,
-      description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      description2: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      date: 1976,
-      date_desc: "Date Of Establishment",
-      date2: 1976,
-      date_desc2: "Advanced",
-      date3: "20M",
-      date3: "Branches",
-      link: "https://comaco.sa"
-    },
-    {
-      id: "section6",
-      company_logo: company6,
-      mainimage: building,
-      description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      description2: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      date: 1976,
-      date_desc: "Date Of Establishment",
-      date2: 1976,
-      date_desc2: "Advanced",
-      date3: "20M",
-      date3: "Branches",
-      link: "https://comaco.sa"
-    },
-    {
-      id: "section7",
-      company_logo: company7,
-      mainimage: building,
-      description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      description2: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      date: 1976,
-      date_desc: "Date Of Establishment",
-      date2: 1976,
-      date_desc2: "Advanced",
-      date3: "20M",
-      date3: "Branches",
-      link: "https://comaco.sa"
-    },
-    {
-      id: "section8",
-      company_logo: company8,
-      mainimage: building,
-      description1: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      description2: "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
-      date: 1976,
-      date_desc: "Date Of Establishment",
-      date2: 1976,
-      date_desc2: "Advanced",
-      date3: "20M",
-      date_desc3: "Branches",
-      link: "https://comaco.sa"
-    },
-  ]
-
-
   return (
     <>
       <Investment1
@@ -146,19 +31,19 @@ const Investment = () => {
         heading2="our companies"
         description1="
         As an investor or entrepreneur with creative and distinct ideas, we integrate with you
-in the Al-Mudaifer Group, and we are happy to exchange opinions about ideas and
-are open to everyone, until we implement projects on reality."
+        in the Al-Mudaifer Group, and we are happy to exchange opinions about ideas and
+        are open to everyone, until we implement projects on reality."
         description2="Today, Al-Mudaifer Holding Group finds itself accelerating the pace of expanding its
-business to keep pace with all the giant projects created by Vision 2030 and
-intersecting with the group’s work, especially with the group’s known products of high
-reliability and the long-standing experience of a national company.
-Al-Mudaifer Holding Group aspires to work diligently to enhance its national presence
-and write new chapters of its success story through its distinctive interaction with the
-comprehensive national vision and enter into more projects and investments that
-enhance its effective presence at all levels, including localization of the industry,
-enhancing local content, industrial growth, creating job opportunities and bridging the
-gap in the market. Locally and looking to expand externally.
-"
+          business to keep pace with all the giant projects created by Vision 2030 and
+          intersecting with the group’s work, especially with the group’s known products of high
+          reliability and the long-standing experience of a national company.
+          Al-Mudaifer Holding Group aspires to work diligently to enhance its national presence
+          and write new chapters of its success story through its distinctive interaction with the
+          comprehensive national vision and enter into more projects and investments that
+          enhance its effective presence at all levels, including localization of the industry,
+          enhancing local content, industrial growth, creating job opportunities and bridging the
+          gap in the market. Locally and looking to expand externally.
+          "
       />
 
       <div className={styles.container}>
@@ -193,74 +78,10 @@ gap in the market. Locally and looking to expand externally.
 
         </div>
 
-        {/* PROPERLY WORKING */}
-        {/* <div className={styles.right_container}>
-          {arr && arr.length > 0 ? (
-            arr.map((item, idx) => (
-              <div className={styles.company}>
-                {item.id}
-                <div className={styles.top}>
-                  <div className={styles.top_left}>
-                    <div className={styles.logo}>
-                      <img src={item.company_logo} alt="" />
-                    </div>
-                    <div className={styles.blue_underline}></div>
-                    <div className={styles.left_description}>
-                      {item.description1}
-                    </div>
-                    <div className={styles.left_description}>
-                      {item.description2}
-                    </div>
-                  </div>
-
-                  <div className={styles.top_right}>
-                    <div className={styles.logo}>
-                      <img src={item.company_logo} alt="" />
-                    </div>
-                    <div className={styles.numbers}>
-                      {item.date}
-                      <div className={styles.numbers_description}>
-                        {item.date_desc}
-                      </div>
-                    </div>
-                    <div className={styles.numbers}>
-                      {item.date2}
-                      <div className={styles.numbers_description}>
-                        {item.date_desc2}
-                      </div>
-                    </div>
-                    <div className={styles.numbers}>
-                      {item.date3}
-                      <div className={styles.numbers_description}>
-                        {item.date_desc3}
-                      </div>
-                    </div>
-                    <div className={styles.right_button}>
-                      <a href={item.link}>Link</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div className={styles.bottom}>
-                  <div className={styles.bottom_heading}>
-                    Gallery
-                  </div>
-                  <div className={styles.bottom_image}>
-                    <img src={item.mainimage} alt="" />
-                  </div>
-                </div>
-              </div>
-            ))
-          ) : null
-          }
-
-        </div> */}
-
-
         {/* TESTING */}
         <div className={styles.right_container}>
 
-          {/* COM2000 */}
+          {/* COMPANY 1 */}
           <div className={styles.company} id='section1'>
             <div className={styles.top}>
               <div className={styles.top_left}>
@@ -273,6 +94,11 @@ gap in the market. Locally and looking to expand externally.
                 </div>
                 <div className={styles.left_description}>
                   We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+                <div className={styles.link__button}>
+                  <Link to='/omrania_crusher'>
+                    Learn more
+                  </Link>
                 </div>
               </div>
 
@@ -331,6 +157,11 @@ gap in the market. Locally and looking to expand externally.
                 <div className={styles.left_description}>
                   We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
                 </div>
+                <div className={styles.link__button}>
+                  <Link to='/omrania_concrete'>
+                    Learn more
+                  </Link>
+                </div>
               </div>
 
               <div className={styles.top_right}>
@@ -387,6 +218,11 @@ gap in the market. Locally and looking to expand externally.
                 </div>
                 <div className={styles.left_description}>
                   We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.
+                </div>
+                <div className={styles.link__button}>
+                  <Link to='/omrania_material'>
+                    Learn more
+                  </Link>
                 </div>
               </div>
 

@@ -1,0 +1,32 @@
+.slider_container {
+    width: 80%;
+    margin: auto;
+    /* padding: 20px 0; */
+    /* border: 1px solid lime; */
+    /* background-color: peachpuff; */
+}
+
+.image_container {
+    /* border: 1px solid lime; */
+    padding: 20px;
+}
+
+.image_container img {
+    width: 100%;
+    display: block;
+}
+
+.heading {
+    color: var(--skyblue);
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 20px 0;
+}
+
+.sub_heading {
+    font-weight: 400;
+    font-size: 28px;
+    padding: 10px 0;
+}
