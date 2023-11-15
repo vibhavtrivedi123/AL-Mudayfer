@@ -1,76 +1,29 @@
 import styles from './Company.module.css';
-import img1 from '../../images/const1.jpg'
-import img2 from '../../images/const2.jpg'
-
 import Carousel from 'react-elastic-carousel'
 import './style.css'
-import Heading from '../../components/Heading/Heading';
 
-const CompanySlider = () => {
+
+const CompanyCard = ({ image, heading, subHeading }) => {
     return (
-        <>
-            <div className={styles.slider_container}>
+        <div className={styles.image_container}>
+            <img src={image} alt="" />
+            <div className={styles.heading}>{heading}</div>
+            <div className={styles.sub_heading}>{subHeading}</div>
+        </div>
+    );
+};
 
-                <Carousel itemsToShow={2}>
-                    <div className={styles.image_container}>
-                        <img src={img1} alt="" />
-                        <div className={styles.heading}>
-                            contruction
-                        </div>
-                        <div className={styles.sub_heading}>
-                            Origins of Expertise Contracting Est
-                        </div>
-                    </div>
-                    <div className={styles.image_container}>
-                        <img src={img2} alt="" />
-                        <div className={styles.heading}>
-                            contruction
-                        </div>
-                        <div className={styles.sub_heading}>
-                        Badr Al Dosari Contracting Est
-                        </div>
-                    </div>
-                    <div className={styles.image_container}>
-                        <img src={img1} alt="" />
-                        <div className={styles.heading}>
-                            contruction
-                        </div>
-                        <div className={styles.sub_heading}>
-                            Origins of Expertise Contracting Est
-                        </div>
-                    </div>
-                    <div className={styles.image_container}>
-                        <img src={img2} alt="" />
-                        <div className={styles.heading}>
-                            contruction
-                        </div>
-                        <div className={styles.sub_heading}>
-                            Origins of Expertise Contracting Est
-                        </div>
-                    </div>
-                    <div className={styles.image_container}>
-                        <img src={img1} alt="" />
-                        <div className={styles.heading}>
-                            contruction
-                        </div>
-                        <div className={styles.sub_heading}>
-                            Origins of Expertise Contracting Est
-                        </div>
-                    </div>
-                    <div className={styles.image_container}>
-                        <img src={img2} alt="" />
-                        <div className={styles.heading}>
-                            contruction
-                        </div>
-                        <div className={styles.sub_heading}>
-                            Origins of Expertise Contracting Est
-                        </div>
-                    </div>
-                </Carousel>
-            </div>
+const CompanySlider = ({ items }) => {
+    return (
+        <div className={styles.slider_container}>
+            <Carousel itemsToShow={2}>
+                {items.map((item, index) => (
+                    <CompanyCard key={index} {...item} />
+                ))}
+            </Carousel>
+        </div>
+    );
+};
 
-        </>
-    )
-}
 
 export default CompanySlider

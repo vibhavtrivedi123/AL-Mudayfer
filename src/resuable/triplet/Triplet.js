@@ -23,8 +23,8 @@ const Triplet = ({
                     <div className={styles.content}>
                         <div className={styles.content_heading}>
                             SOCIAL RESPONSIBILITY
-                        </div>
                         <div className={styles.under__line}></div>
+                        </div>
                         <div className={styles.content_sub_heading}>
                             Saleh Al-Mudaifer Sons Holding Group carries in its genes the love of doing good for others, working for everyone, and the culture of social responsibility, believing that it is from this country and to it and part of its interconnected society.
                         </div>
@@ -41,10 +41,9 @@ const Triplet = ({
                         <div className={styles.content}>
                             <div className={styles.content_heading}>
                                 national RESPONSIBILITY
-                                
-                        <div className={styles.under__line}></div>
-                                </div>
-                                
+                                <div className={styles.under__line}></div>
+                            </div>
+
                             <Link to='/national_responsibility'>
                                 <div className={styles.content_button}>Learn More</div>
                             </Link>
@@ -56,7 +55,9 @@ const Triplet = ({
                             <div className={styles.content_heading}>
                                 environmental
                                 <br />
-                                RESPONSIBILITY</div>
+                                RESPONSIBILITY
+                                <div className={styles.under__line}></div>
+                            </div>
                             <Link to='/environmental_responsibility'>
                                 <div className={styles.content_button}>Learn More</div>
                             </Link>

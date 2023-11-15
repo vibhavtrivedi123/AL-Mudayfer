@@ -4,7 +4,7 @@ import Heading from '../../components/Heading/Heading'
 
 import Experience62 from '../../components/Experience62/Experience62'
 
-import social__screen from '../../images/about/social.jpg'
+import social__screen from '../../images/social/social_screen1.jpg'
 import exp from '../../images/home/exp.jpg'
 import Experience62Left from '../../components/Experience62Left/Experience62Left'
 

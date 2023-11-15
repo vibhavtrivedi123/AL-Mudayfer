@@ -1,96 +1,53 @@
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
 import styles from './Slider.module.css';
+import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
 
-import worker from '../../images/join/worker.jpg'
-import { AiOutlineLeftCircle, AiOutlineRightCircle } from 'react-icons/ai';
 
-const Slider = () => {
+
+
+const Card = ({ image, badge, heading, subHeading, buttonText }) => (
+
+    <div className={styles.card_container}>
+        <div className={styles.image}>
+            <div className={styles.badge}>{badge}</div>
+            <img src={image} alt="" />
+        </div>
+        <div className={styles.content}>
+            <div className={styles.heading}>{heading}</div>
+            <div className={styles.sub_heading}>{subHeading}</div>
+            <div className={styles.read_more_button}>{buttonText}</div>
+        </div>
+    </div>
+);
+
+const Slider = ({ cards }) => {
     const sliderRef = useRef(null);
 
-    const left = () => {
+    const scroll = (direction) => {
         const slides = sliderRef.current;
         if (slides) {
             const width = slides.clientWidth;
-            slides.scrollLeft = slides.scrollLeft - width;
-            console.log(width);
-        }
-    };
-    const right = () => {
-        const slides = sliderRef.current;
-        if (slides) {
-            const width = slides.clientWidth;
-            slides.scrollLeft = slides.scrollLeft + width;
+            slides.scrollLeft = direction === 'left' ? slides.scrollLeft - width : slides.scrollLeft + width;
         }
     };
 
     return (
-        <>
-            <div className={styles.slider_container}>
-                <div className={styles.container} ref={sliderRef}>
-
-                    <div className={styles.card_container} >
-                        <div className={styles.image}>
-                            <div className={styles.badge}>dealer</div>
-                            <img src={worker} alt="" />
-                        </div>
-                        <div className={styles.content}>
-                            <div className={styles.heading}>MATERIAL DEALER</div>
-                            <div className={styles.sub_heading}>Lorem ipsum dolor sit amet </div>
-                            <div className={styles.button}>read more</div>
-                        </div>
-                    </div>
-
-                    <div className={styles.card_container} >
-                        <div className={styles.image}>
-                            <div className={styles.badge}>dealer</div>
-                            <img src={worker} alt="" />
-                        </div>
-                        <div className={styles.content}>
-                            <div className={styles.heading}>MATERIAL DEALER</div>
-                            <div className={styles.sub_heading}>Lorem ipsum dolor sit amet </div>
-                            <div className={styles.button}>read more</div>
-                        </div>
-                    </div>
-
-                    <div className={styles.card_container} >
-                        <div className={styles.image}>
-                            <div className={styles.badge}>dealer</div>
-                            <img src={worker} alt="" />
-                        </div>
-                        <div className={styles.content}>
-                            <div className={styles.heading}>MATERIAL DEALER</div>
-                            <div className={styles.sub_heading}>Lorem ipsum dolor sit amet </div>
-                            <div className={styles.button}>read more</div>
-                        </div>
-                    </div>
-
-                    <div className={styles.card_container} >
-                        <div className={styles.image}>
-                            <div className={styles.badge}>dealer</div>
-                            <img src={worker} alt="" />
-                        </div>
-                        <div className={styles.content}>
-                            <div className={styles.heading}>MATERIAL DEALER</div>
-                            <div className={styles.sub_heading}>Lorem ipsum dolor sit amet </div>
-                            <div className={styles.button}>read more</div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div className={styles.buttons}>
-                    <button className={styles.button} onClick={left}>
-                        <AiOutlineLeftCircle />
-                    </button>
-                    <button className={styles.button} onClick={right}>
-                        <AiOutlineRightCircle />
-                    </button>
-                </div>
-
+        <div className={styles.slider_container}>
+            <div className={styles.container} ref={sliderRef}>
+                {cards.map((card, index) => (
+                    <Card key={index} {...card} />
+                ))}
             </div>
-        </>
-    )
-}
+            <div className={styles.buttons}>
+                <button className={styles.button} onClick={() => scroll('left')}>
+                    <CiCircleChevLeft />
+                </button>
+                <button className={styles.button} onClick={() => scroll('right')}>
+                    <CiCircleChevRight />
+                </button>
+            </div>
+        </div>
+    );
+};
 
-export default Slider
+export default Slider;

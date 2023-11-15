@@ -7,6 +7,7 @@ import Trusted from '../../components/TrustedByCompany/Trusted'
 import ImageBoxRight from '../../components/ImageBoxRight/ImageBoxRight'
 import ImageBoxLeft from '../../components/ImageBoxLeft/ImageBoxLeft'
 import Card from '../../resuable/cards/Card'
+import Triplet from '../../resuable/triplet/Triplet'
 
 
 import block from '../../images/about/block.jpg'
@@ -15,8 +16,6 @@ import aboutscreen from '../../images/about/aboutscreen.jpg'
 import tiles from '../../images/about/tiles.jpg'
 import skirting from '../../images/about/skirting.jpg'
 import Testimonial from '../../resuable/testimonials/Testimonial'
-import Triplet from '../../resuable/triplet/Triplet'
-
 import vision from '../../images/about/vision.svg'
 import vision_big from '../../images/about/vision.jpg'
 import message from '../../images/about/message.svg'

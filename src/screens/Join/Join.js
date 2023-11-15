@@ -1,6 +1,3 @@
-
-
-
 import React, { useState } from 'react'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -15,6 +12,9 @@ import Company from '../../components/Company/Company'
 import value from '../../images/home/ourvalue.jpg'
 import { AiOutlineLine } from 'react-icons/ai'
 import Slider from '../../resuable/slider/Slider';
+
+import worker from '../../images/join/worker.jpg'
+
 
 
 const Join = () => {
@@ -62,6 +62,53 @@ const Join = () => {
     }
   };
 
+
+  // SLIDER IMAGES
+  const sliderCards = [
+    {
+      image: worker,
+      badge: 'dealer',
+      heading: 'MATERIAL DEALER',
+      subHeading: 'Lorem ipsum dolor sit amet',
+      buttonText: 'read more',
+    },
+    {
+      image: worker,
+      badge: 'dealer',
+      heading: 'MATERIAL DEALER',
+      subHeading: 'Lorem ipsum dolor sit amet',
+      buttonText: 'read more',
+    },
+    {
+      image: worker,
+      badge: 'dealer',
+      heading: 'MATERIAL DEALER',
+      subHeading: 'Lorem ipsum dolor sit amet',
+      buttonText: 'read more',
+    },
+    {
+      image: worker,
+      badge: 'dealer',
+      heading: 'MATERIAL DEALER',
+      subHeading: 'Lorem ipsum dolor sit amet',
+      buttonText: 'read more',
+    },
+    {
+      image: worker,
+      badge: 'dealer',
+      heading: 'MATERIAL DEALER',
+      subHeading: 'Lorem ipsum dolor sit amet',
+      buttonText: 'read more',
+    },
+    {
+      image: worker,
+      badge: 'dealer',
+      heading: 'MATERIAL DEALER',
+      subHeading: 'Lorem ipsum dolor sit amet',
+      buttonText: 'read more',
+    },
+  ];
+
   return (
     <>
       <Investment
@@ -76,7 +123,7 @@ const Join = () => {
         description1="Building bridges of communication with others is part of our ambitious vision to keep pace with the national economic movement and towards greater effectiveness for society and for us as an important economic component in the Kingdom of Saudi Arabia."
       />
 
-      <Slider />
+      <Slider cards={sliderCards} />
 
       {/* supplier */}
       <div className={styles.container}>
@@ -108,69 +155,69 @@ const Join = () => {
             </div>
 
             <form onSubmit={handleSubmit}>
-            <div className={styles.main_form_container}>
-              <div className={styles.left_form_container}>
-                <div className={styles.label_name}>First name</div>
-                <input
-                  type="text"
-                  placeholder='Ex. Aamir'
-                  onChange={handleChange}
-                  value={formData.firstName}
-                  name="firstName"
-                  required
-                />
-                <div className={styles.label_name}>email</div>
-                <input
-                  type="email"
-                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$"
-                  placeholder='Email'
-                  onChange={handleChange}
-                  value={formData.email}
-                  name="email"
-                  required
-                />
+              <div className={styles.main_form_container}>
+                <div className={styles.left_form_container}>
+                  <div className={styles.label_name}>First name</div>
+                  <input
+                    type="text"
+                    placeholder='Ex. Aamir'
+                    onChange={handleChange}
+                    value={formData.firstName}
+                    name="firstName"
+                    required
+                  />
+                  <div className={styles.label_name}>email</div>
+                  <input
+                    type="email"
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$"
+                    placeholder='Email'
+                    onChange={handleChange}
+                    value={formData.email}
+                    name="email"
+                    required
+                  />
+                </div>
+                <div className={styles.left_form_container}>
+                  <div className={styles.label_name}>Last name</div>
+                  <input
+                    type="text"
+                    placeholder='Ex. Doe'
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required
+                  />
+                  <div className={styles.label_name}>Telephone</div>
+                  <input
+                    type="text"
+                    pattern="^\d{7}$|^\d{10}$"
+                    placeholder='Telephone'
+                    title="Please Enter The Mobile Number"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    name="phone"
+                    required
+                  />
+                </div>
               </div>
-              <div className={styles.left_form_container}>
-                <div className={styles.label_name}>Last name</div>
+              <div className={styles.button_and_textarea}>
+                <div className={styles.label_name}>Message</div>
                 <input
-                  type="text"
-                  placeholder='Ex. Doe'
-                  name="lastName"
-                  value={formData.lastName}
+                  type="textarea"
+                  placeholder='Write Message'
                   onChange={handleChange}
+                  value={formData.message}
+                  name="message"
                   required
                 />
-                <div className={styles.label_name}>Telephone</div>
-                <input
-                  type="text"
-                  pattern="^\d{7}$|^\d{10}$"
-                  placeholder='Telephone'
-                  title="Please Enter The Mobile Number"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  name="phone"
-                  required
-                />
+                <div className={styles.send_button}>
+                  <button>
+                    SEND MESSAGE
+                  </button>
+                </div>
               </div>
-            </div>
-            <div className={styles.button_and_textarea}>
-              <div className={styles.label_name}>Message</div>
-              <input
-                type="textarea"
-                placeholder='Write Message'
-                onChange={handleChange}
-                value={formData.message}
-                name="message"
-                required
-              />
-              <div className={styles.send_button}>
-                <button>
-                  SEND MESSAGE
-                </button>
-              </div>
-            </div>
-            {/* <div className={styles.right_form_container}></div> */}
-          </form>
+              {/* <div className={styles.right_form_container}></div> */}
+            </form>
           </div>
         </div>
       </div>
@@ -188,69 +235,69 @@ const Join = () => {
             </div>
 
             <form onSubmit={handleSubmit}>
-            <div className={styles.main_form_container}>
-              <div className={styles.left_form_container}>
-                <div className={styles.label_name}>First name</div>
-                <input
-                  type="text"
-                  placeholder='Ex. Aamir'
-                  onChange={handleChange}
-                  value={formData.firstName}
-                  name="firstName"
-                  required
-                />
-                <div className={styles.label_name}>email</div>
-                <input
-                  type="email"
-                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$"
-                  placeholder='Email'
-                  onChange={handleChange}
-                  value={formData.email}
-                  name="email"
-                  required
-                />
+              <div className={styles.main_form_container}>
+                <div className={styles.left_form_container}>
+                  <div className={styles.label_name}>First name</div>
+                  <input
+                    type="text"
+                    placeholder='Ex. Aamir'
+                    onChange={handleChange}
+                    value={formData.firstName}
+                    name="firstName"
+                    required
+                  />
+                  <div className={styles.label_name}>email</div>
+                  <input
+                    type="email"
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$"
+                    placeholder='Email'
+                    onChange={handleChange}
+                    value={formData.email}
+                    name="email"
+                    required
+                  />
+                </div>
+                <div className={styles.left_form_container}>
+                  <div className={styles.label_name}>Last name</div>
+                  <input
+                    type="text"
+                    placeholder='Ex. Doe'
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required
+                  />
+                  <div className={styles.label_name}>Telephone</div>
+                  <input
+                    type="text"
+                    pattern="^\d{7}$|^\d{10}$"
+                    placeholder='Telephone'
+                    title="Please Enter The Mobile Number"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    name="phone"
+                    required
+                  />
+                </div>
               </div>
-              <div className={styles.left_form_container}>
-                <div className={styles.label_name}>Last name</div>
+              <div className={styles.button_and_textarea}>
+                <div className={styles.label_name}>Message</div>
                 <input
-                  type="text"
-                  placeholder='Ex. Doe'
-                  name="lastName"
-                  value={formData.lastName}
+                  type="textarea"
+                  placeholder='Write Message'
                   onChange={handleChange}
+                  value={formData.message}
+                  name="message"
                   required
                 />
-                <div className={styles.label_name}>Telephone</div>
-                <input
-                  type="text"
-                  pattern="^\d{7}$|^\d{10}$"
-                  placeholder='Telephone'
-                  title="Please Enter The Mobile Number"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  name="phone"
-                  required
-                />
+                <div className={styles.send_button}>
+                  <button>
+                    SEND MESSAGE
+                  </button>
+                </div>
               </div>
-            </div>
-            <div className={styles.button_and_textarea}>
-              <div className={styles.label_name}>Message</div>
-              <input
-                type="textarea"
-                placeholder='Write Message'
-                onChange={handleChange}
-                value={formData.message}
-                name="message"
-                required
-              />
-              <div className={styles.send_button}>
-                <button>
-                  SEND MESSAGE
-                </button>
-              </div>
-            </div>
-            {/* <div className={styles.right_form_container}></div> */}
-          </form>
+              {/* <div className={styles.right_form_container}></div> */}
+            </form>
           </div>
         </div>
         <div className={styles.left}>

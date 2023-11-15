@@ -1,16 +1,29 @@
 
 import Hamburger from 'hamburger-react'
 import { Link, NavLink } from 'react-router-dom'
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
+import { FaGlobe } from "react-icons/fa";
+
+
 
 import logo from '../../images/logo0.svg'
 import styles from './Header.module.css'
 
 const Header = () => {
     const [open, setOpen] = useState(false);
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+    const handleMouseEnter = () => {
+        setDropdownOpen(true);
+    };
+
+    const handleMouseLeave = () => {
+        setDropdownOpen(false);
+    };
 
     const scrollToTop = () => {
-        window.scrollTo(0, 0); // Scroll to the top of the page
+        window.scrollTo(0, 0);
     };
     const LinkWithScrollToTop = ({ to, children }) => (
         <Link to={to} onClick={scrollToTop}>
@@ -51,6 +64,24 @@ const Header = () => {
                     <LinkWithScrollToTop to="/media" >
                         <div className={styles.link}>media</div>
                     </LinkWithScrollToTop>
+
+                    <div
+                        className={styles.dropdownContainer}
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        <div className={styles.link}>
+                            <FaGlobe /> {" "}
+                            {isDropdownOpen ? <AiFillCaretUp /> : <AiFillCaretDown />}
+                        </div>
+                        {isDropdownOpen && (
+                            <div className={styles.dropdownContent}>
+                                {/* <div className={styles.dropdown_link}>español</div> */}
+                                <div className={styles.dropdown_link}>اردو</div>
+                                <div className={styles.dropdown_link}>English</div>
+                            </div>
+                        )}
+                    </div>
                 </div>
 
                 <LinkWithScrollToTop to="/contact">

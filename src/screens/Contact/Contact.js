@@ -126,12 +126,12 @@ const Contact = () => {
       </div>
 
 
-      <div className={styles.container}>  
-        <div className={styles.map}>
+      <div className={styles.container}>
+        <div className={styles.map} style={{ backgroundColor: '' }}>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1844233.2919646518!2d44.08772330291176!3d25.471069451748104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2fa19c19b9dc2f%3A0x7a97f6b0e808a934!2sAl%20Mudayfer%20Investment%20Group!5e0!3m2!1sen!2sin!4v1699300668702!5m2!1sen!2sin"
             width="600"
-            height="800"
+            height="810"
             styles={{ border: "none" }}
             className={styles.mapborder}
             allowfullscreen=""

@@ -21,7 +21,33 @@ import value_big from '../../images/about/value.jpg'
 import Helper_numbers from '../../resuable/helper_numbers/Helper_numbers'
 import CompanySlider from '../../resuable/company_slider/CompanySlider'
 
+import img1 from '../../images/const1.jpg'
+import img2 from '../../images/const2.jpg'
+
 const Omrania_crushers = () => {
+    const sliderItems = [
+        {
+            image: img1,
+            heading: 'Construction',
+            subHeading: 'Origins of Expertise Contracting Est',
+        },
+        {
+            image: img2,
+            heading: 'Construction',
+            subHeading: 'Badr Al Dosari Contracting Est',
+        },
+        {
+            image: img1,
+            heading: 'Construction',
+            subHeading: 'Origins of Expertise Contracting Est',
+        },
+        {
+            image: img2,
+            heading: 'Construction',
+            subHeading: 'Badr Al Dosari Contracting Est',
+        },
+    ];
+
     return (
         <>
             <Investment
@@ -88,7 +114,8 @@ const Omrania_crushers = () => {
                 heading1="Partner with OMRANIA CRUSHER"
                 heading2="our products pulse to"
             />
-            <CompanySlider />
+            
+            <CompanySlider items={sliderItems} />
 
             <Heading
                 heading1="Partner with OMRANIA CRUSHER"
