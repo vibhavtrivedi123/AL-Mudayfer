@@ -62,11 +62,7 @@ const HomeScreen = () => {
             <ImageBoxLeft
                 imageSrc={employment}
                 heading="Employment Portal"
-                text="Joining the work community of Saleh Al-Mudaifer Sons Holding Group companies is
-an opportunity that we are proud to offer to Saudi youth of all abilities and
-backgrounds, as the group’s work is diverse. We consider those working with us as
-our extended family in an ideal work environment that guarantees obtaining many job
-benefits and practical experiences."
+                text="Joining the work community of Saleh Al-Mudaifer Sons Holding Group companies is an opportunity that we are proud to offer to Saudi youth of all abilities and backgrounds, as the group’s work is diverse. We consider those working with us as our extended family in an ideal work environment that guarantees obtaining many job benefits and practical experiences."
                 buttonText="know more"
             />
             <Timeline />

@@ -15,68 +15,6 @@ const Card = ({
     heading3, subHeading3,
 }) => {
     return (
-        // <>
-        //     <div className={styles.container}>
-
-        //         <div className={styles.card}>
-        //             <div className={styles.image}>
-        //                 <img src={vision_big} alt="" />
-        //             </div>
-        //             <div className={styles.content}>
-        //                 <div className={styles.icon}>
-        //                     <img src={vision} alt="" />
-        //                 </div>
-        //                 <div className={styles.heading}>
-        //                     our vision
-        //                 </div>
-        //                 <div className={styles.sub_heading}>
-        //                     Continuous development to maintain a prominent brand in the field of construction in order to continue to lead and provide a national product with high efficiency.
-        //                 </div>
-        //             </div>
-        //         </div>
-
-
-        //         <div className={styles.card_down}>
-        //             <div className={styles.image}>
-        //                 <img src={message_big} alt="" />
-        //             </div>
-        //             <div className={styles.content}>
-        //                 <div className={styles.icon}>
-        //                     <img src={message} alt="" />
-        //                 </div>
-        //                 <div className={styles.heading}>
-        //                     our message
-        //                 </div>
-        //                 <div className={styles.sub_heading}>
-        //                     Together towards the future - our slogan that we believe in and always strive to achieve by becoming the future for the industrial sector in the field of construction.
-        //                 </div>
-        //             </div>
-        //         </div>
-
-
-
-        //         <div className={styles.card}>
-        //             <div className={styles.image}>
-        //                 <img src={value_big} alt="" />
-        //             </div>
-        //             <div className={styles.content}>
-        //                 <div className={styles.icon}>
-        //                     <img src={vision} alt="" />
-        //                 </div>
-        //                 <div className={styles.heading}>
-        //                     our values
-        //                 </div>
-        //                 <div className={styles.sub_heading}>
-        //                     Leadership and Development.
-        //                     Honest and Integrity.
-        //                     Community Service.
-        //                 </div>
-        //             </div>
-        //         </div>
-
-
-        //     </div>
-        // </>
         <div className={styles.container}>
             <div className={styles.card}>
                 <div className={styles.image}>

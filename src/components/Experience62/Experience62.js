@@ -10,7 +10,10 @@ const Experience62 = ({ imageSrc, heading, text, buttonText }) => {
                     <img src={imageSrc} alt="" />
                 </div>
                 <div className={styles.right}>
-                    <div className={styles.right_heading}>{heading}</div>
+                    <div className={styles.right_heading}>
+                        {heading}
+                        <div className={styles.right_line}></div>
+                    </div>
                     <div className={styles.right_text}>{text}</div>
                     <Link to='/contact'>
                         <div className={styles.right_button}>{buttonText}</div>

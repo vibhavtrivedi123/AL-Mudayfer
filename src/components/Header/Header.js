@@ -10,6 +10,7 @@ import { FaGlobe } from "react-icons/fa";
 import logo from '../../images/logo0.svg'
 import styles from './Header.module.css'
 
+
 const Header = () => {
     const [open, setOpen] = useState(false);
     const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -101,11 +102,16 @@ const Header = () => {
                             <img src={logo} alt="" />
                         </a>
                     </div>
-                    <button onClick={toggleMobileMenu}>
-                        <div className={styles.right_mobile}>
-                            <Hamburger toggled={open} toggle={setOpen} />
-                        </div>
-                    </button>
+                    {/* <button onClick={toggleMobileMenu}> */}
+                    <div className={styles.right_mobile}>
+                        <Hamburger
+                            rounded
+                            toggled={open}
+                            toggle={setOpen}
+                            hideOutline={false}
+                        />
+                    </div>
+                    {/* </button> */}
                 </div>
                 {
                     open &&

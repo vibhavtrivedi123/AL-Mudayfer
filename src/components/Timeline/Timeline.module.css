@@ -8,3 +8,17 @@
 .image img {
     width: 100%;
 }
+
+@media (max-width: 600px) {
+    .image {
+        /* border: 1px solid lime;  */
+        width: 100%;
+        padding: 50px 0px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .image img {
+        width: 100%;
+    }
+}

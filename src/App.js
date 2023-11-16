@@ -24,8 +24,6 @@ const App = () => {
     <>
       <Header />
       <Routes>
-
-        {/* HEADER PAGES */}
         <Route path='/' element={<HomeScreen />} />
         <Route path='/about' element={<About />} />
         <Route path='/media' element={<Media />} />
@@ -33,17 +31,17 @@ const App = () => {
         <Route path='/join' element={<Join />} />
         <Route path='/contact' element={<Contact />} />
 
-        {/* LINKS PAGES */}
+
         <Route path='/national_responsibility' element={<National />} />
         <Route path='/environmental_responsibility' element={<Environmental />} />
         <Route path='/social_responsibility' element={<Social_Responsibility />} />
 
-        {/* COMPANY PAGES */}
+
         <Route path='/omrania_crusher' element={<Omrania_crushers />} />
         <Route path='/omrania_concrete' element={<Omrania_concrete />} />
         <Route path='/omrania_material' element={<Omrania_material />} />
 
-        {/* PAGE NOT FOUND */}
+
         <Route path='*' element={<PageNotFound />} />
       </Routes>
 

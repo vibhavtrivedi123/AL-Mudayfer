@@ -9,7 +9,7 @@
     color: #FFFFFFD4;
 
     padding: 90px 0;
-    margin:20px auto;
+    margin: 20px auto;
 }
 
 .helper__heading {
@@ -32,4 +32,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 600px) {
+    .helper__container {
+        width: 100%;
+    }
+
+    .helper__heading {
+        font-size: 24px;
+    }
+
+    .tab {
+        margin: 10px 0;
+        font-size: 16px;
+        width: 300px;
+        padding: 10px 0;
+    }
 }

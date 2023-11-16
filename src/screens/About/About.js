@@ -48,7 +48,7 @@ const About = () => {
         with regard to investing in the supply chain of building and construction materials and
         supporting contractors with high-quality Saudi products."
       />
-      
+
       <Card
         image1={vision_big}
         icon1={vision}

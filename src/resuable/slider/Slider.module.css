@@ -64,7 +64,7 @@
     font-weight: 400;
 }
 
-.read_more_button{
+.read_more_button {
     background-color: white;
     width: max-content;
     text-transform: uppercase;
@@ -100,4 +100,34 @@ button:hover {
     transform: scale(1.1)
         /* box-shadow: outset 2px 20px 10px grey; */
         /* background-color: rgba(232, 232, 232, 0.889); */
+}
+
+
+
+@media(max-width: 600px) {
+    .slider_container {
+        position: relative;
+        padding: 0 0px 0 0px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        overflow-x: hidden;
+        padding-left: 10px;
+        width: 100%;
+    }
+
+    .card_container {
+        position: relative;
+        min-width: 300px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        color: white;
+        background-color: var(--blue);
+    }
 }
