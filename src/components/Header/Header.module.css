@@ -104,11 +104,14 @@
 
     .mobile_container {
         display: block;
-        background-color: rgba(0, 0, 0, 0.498);
+        background-color: #2A4074;
         width: 100%;
         padding: 0;
+        color: white !important;
         position: fixed;
         z-index: 9999;
+
+        backdrop-filter: blur(10px);
     }
 
     .top {
@@ -140,6 +143,12 @@
         border: none;
         outline: none !important;
     }
+    
+    /* button .right_mobile{
+        color: white;
+        background-color: #2A4074;
+        font-size: 20px;
+    } */
 
     button {
         border: none;
@@ -162,7 +171,7 @@
         white-space: nowrap;
         font-weight: 600;
         text-transform: uppercase;
-        color: #CFCA4C;
+        /* color: #CFCA4C; */
         font-size: 24px;
         border-radius: 2px;
         padding: 10px 0;

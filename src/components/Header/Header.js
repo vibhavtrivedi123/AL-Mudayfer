@@ -4,6 +4,8 @@ import { Link, NavLink } from 'react-router-dom'
 import React, { useState } from 'react';
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 import { FaGlobe } from "react-icons/fa";
+import { FaBars } from "react-icons/fa6";
+import { IoMdClose } from "react-icons/io";
 
 
 
@@ -71,7 +73,7 @@ const Header = () => {
                         <div className={styles.link}>media</div>
                     </LinkWithScrollToTop>
 
-                    <div
+                    {/* <div
                         className={styles.dropdownContainer}
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
@@ -82,12 +84,11 @@ const Header = () => {
                         </div>
                         {isDropdownOpen && (
                             <div className={styles.dropdownContent}>
-                                {/* <div className={styles.dropdown_link}>español</div> */}
                                 <div className={styles.dropdown_link}>اردو</div>
                                 <div className={styles.dropdown_link}>English</div>
                             </div>
                         )}
-                    </div>
+                    </div> */}
                 </div>
 
                 <LinkWithScrollToTop to="/contact">
@@ -109,6 +110,7 @@ const Header = () => {
                     </div>
                     {/* <button onClick={toggleMobileMenu}> */}
                     <div className={styles.right_mobile}>
+                        {/* {open ? <IoMdClose /> : <FaBars />} */}
                         <Hamburger
                             rounded
                             toggled={open}
