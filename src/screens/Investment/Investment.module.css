@@ -149,3 +149,41 @@ a .builder_names {
     font-weight: 400;
     cursor: pointer;
 }
+
+
+@media (max-width: 600px) {
+    .left_container {
+        display: none;
+    }
+    .right_container{
+        width: 100%;
+    }
+
+    .company,
+    .top,
+    .top_left,
+    .top_right,
+    .bottom{
+        width: 95%;
+        margin: auto;
+        text-align: justify;
+        flex-direction: column;
+    }
+    .company{
+        /* border: 1px solid tomato;/ */
+        padding: 0;
+    }
+    .left_description,
+    .top{
+        width: 100%;
+    }
+    .logo{
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .link__button {
+        margin: 20px 0;
+    }
+    
+}

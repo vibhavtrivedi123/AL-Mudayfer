@@ -15,6 +15,9 @@ const Header = () => {
     const [open, setOpen] = useState(false);
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
+    console.log(window.location.pathname);
+    let path = window.location.pathname
+
     const handleMouseEnter = () => {
         setDropdownOpen(true);
     };
@@ -51,7 +54,9 @@ const Header = () => {
                         <div className={styles.link}>Home</div>
                     </LinkWithScrollToTop>
                     <LinkWithScrollToTop to="/about">
-                        <div className={styles.link}>About</div>
+                        <div className={styles.link}>
+                            About
+                        </div>
                     </LinkWithScrollToTop>
 
                     <LinkWithScrollToTop to="/investment">
