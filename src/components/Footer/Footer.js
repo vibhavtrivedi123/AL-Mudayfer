@@ -17,6 +17,9 @@ const Footer = () => {
                     <div className={styles.main_line}>
                         Saleh AL-MUDAYFER Sons Holding Company (investment in building the nation),  a Saudi Company
                     </div>
+                    <div className={styles.main_line_mobile}>
+                        Saleh AL-MUDAYFER Sons Holding Company (investment in building the nation),  a Saudi Company
+                    </div>
                     <div className={styles.footer_container}>
                         <div className={styles.left}>
                             <div className={styles.logo}>
