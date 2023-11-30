@@ -7,11 +7,11 @@ import Trusted from '../../components/TrustedByCompany/Trusted'
 import Card from '../../resuable/cards/Card'
 import Investment from '../../components/InvestmentOpp/Investment'
 
-import block from '../../images/about/block.jpg'
-import interlock from '../../images/about/interlock.jpg'
+import block from '../../images/about/blo.jpg'
+import terrazzoTiles from '../../images/about/terrazzoTiles.jpg'
 import aboutscreen from '../../images/about/aboutscreen.jpg'
-import tiles from '../../images/about/tiles.jpg'
-import skirting from '../../images/about/skirting.jpg'
+import interlocks from '../../images/about/interlocks.jpg'
+import pavers from '../../images/about/pavers.png'
 
 import message from '../../images/about/message.svg'
 import vision from '../../images/about/vision.svg'
@@ -52,63 +52,68 @@ const Omrania_material = () => {
         <>
             <Investment
                 backgroundImage={aboutscreen}
-                heading1="Omrania materials"
-                sub_heading="Leader in the manufacture of terrazza tiles, blocks, cement tiles, interlocks and balustrades for more than 50 years in the middle east."
+                heading1="Al-Omrania Materials Company"
+                sub_heading="Al-Omrania Building Materials Company is a pioneer in the production and manufacturing of essential construction materials in the Kingdom of Saudi Arabia."
                 button="Get started "
             />
             <Heading
                 heading1="about omrania materials"
-                heading2="from the land of the saudi arabia"
-                description1="The company was established in 1972 and since its launch, it has strived to keep pace with continuous development to provide the best construction materials products and services with the highest quality and efficiency. During these years, the company was able to achieve many successes to become the main pillar in all private and government projects in the Kingdom of Saudi Arabia and is classified as one of the best construction materials companies in the Saudi market. We always strive to serve our customers and provide support in all cases, taking into account the values of integrity, credibility, honesty, quality, security and safety, with promises that we will always provide innovative solutions that save a lot of time, money and effort, while continuing development and construction efforts to provide the best urban products and services that are compatible with... With the highest standards of quality and safety the quality"
+                heading2="Saudi Building Icon: Al-Omrania Materials Company"
+                description1="Established in 1972, Omrania Materials Company has since secured a leading position in the production of essential building materials in the Kingdom of Saudi Arabia. Our vision is to continuously meet the market's needs by delivering high-quality and efficient products for various construction projects. With a distinguished history spanning over half a century, we commit to providing reliable solutions in the construction sector, including tiles, blocks, interlock pavers, and pavements. Our company has become a preferred choice for both government and private projects within the Kingdom. We adhere to the highest standards of quality and safety, leveraging modern technology and a spirit of innovation to offer products distinguished by efficiency and durability. Our factories showcase a strong commitment to quality through the establishment of advanced laboratories for monitoring and confirming quality, based on both international and local technical specifications."
+                description2="
+                We take pride in our commitment to high standards, including:
+                
+                - American Society for Quality Testing Specifications.
+                - British Standard Tests.
+                - Saudi Standards, Metrology, and Quality Organization.
+                
+                We continue to strive for continuous improvement and innovation to achieve the highest levels of customer satisfaction in the Kingdom of Saudi Arabia, maintaining our position at the forefront of the construction materials sector."
             />
 
             <Card
                 image1={vision_big}
                 icon1={vision}
                 heading1="Our Vision"
-                subHeading1="Continuous development to maintain a prominent brand in the field of construction in order to continue to lead and provide a highly efficient national product"
+                subHeading1="We aim for sustainable leadership in the construction materials industry through continuous development. We exceed expectations by delivering distinguished products and consistently seek innovation."
 
                 image2={message_big}
                 icon2={message}
                 heading2="Our Message"
-                subHeading2="Together towards the future - our slogan that we believe in and always strive to achieve by becoming the future of the industrial sector in the field of construction Value 
-                Leadership and development 
-                Honesty and integrity
-                Community Service"
+                subHeading2="At Al-Omrania , we go beyond expectations through uniqueness and innovation in the construction materials industry. Our mission propels us towards the future, where we commit to achieving excellence and supremacy in the construction sector."
 
                 image3={value_big}
                 icon3={vision}
                 heading3="QUALITY & SAFETY"
-                subHeading3="A leader in the manufacture of terrazzo and cement tiles, soffits, blocks, interlocks and ballasts in the Middle East region with the highest standards, specifications and standards. It also possesses international and local accreditation certificates."
+                subHeading3="The Omraniya factory was established on clear foundations and a comprehensive vision, so it adopted quality as a cornerstone. The management devoted its efforts and focused on quality to ensure obtaining an international Saudi product."
             />
 
             <Heading
                 heading2="omrania materials company"
-                description1="The Omraniya factory was established on clear foundations and a comprehensive vision, so it adopted quality as a cornerstone. The management devoted its efforts and focused on quality to ensure obtaining an international Saudi product. Therefore, it established quality 5 control laboratories that adopt international and local technical specifications."
+                description1="A pioneer in the production of terrazzo, cement tiles, and soles, as well as blocks, interlocks, and pavers in the Middle East region, adhering to the highest international and local standards, specifications, and certifications."
             />
 
             {/* <Trusted /> */}
             <ImageBoxLeft
-                imageSrc={block}
-                heading="BLOCK"
-                text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
+                imageSrc={terrazzoTiles}
+                heading="Terrazzo Tiles"
+                text="A pioneer in the production of terrazzo, cement tiles, and soles, as well as blocks, interlocks, and pavers in the Middle East region, adhering to the highest international and local standards, specifications, and certifications."
                 buttonText="read more"
             />
             <ImageBoxRight
-                imageSrc={interlock}
-                heading="interlock"
+                imageSrc={block}
+                heading="Block"
                 text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
                 buttonText="read more"
             />
             <ImageBoxLeft
-                imageSrc={skirting}
-                heading="SKIRTING"
+                imageSrc={interlocks}
+                heading="interlock"
                 text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
                 buttonText="read more"
             />
             <ImageBoxRight
-                imageSrc={tiles}
-                heading="tiles"
+                imageSrc={pavers}
+                heading="pavers"
                 text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
                 buttonText="read more"
             />
@@ -116,7 +121,7 @@ const Omrania_material = () => {
 
             <Heading
                 heading1="Partner with OMRANIA CRUSHER"
-                heading2="PRODUCTS WE WERE PART OF "
+                heading2="PRODUCTS WE WERE PART OF"
             />
 
             <CompanySlider items={sliderItems} />
