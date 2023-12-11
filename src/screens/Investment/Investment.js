@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Heading from "../../components/Heading/Heading";
 import Investment1 from "../../components/InvestmentOpp/Investment";
 import aboutscreen from "../../images/about/aboutscreen.jpg";
@@ -17,6 +17,8 @@ import investscreen from "../../images/investment/investmentscreen.jpg";
 import { Link } from "react-router-dom";
 
 const Investment = () => {
+  const [selected, setSelected] = useState(1);
+
   return (
     <>
       <Investment1
@@ -48,44 +50,43 @@ const Investment = () => {
       <div className={styles.container}>
         <div className={styles.left_container}>
           <div className={styles.sticky_container}>
-            <a href="#section1">
-              <div className={styles.builder_names}>Al-Omrania Crusher</div>
+            <a href="#section1" className={`${selected===1? styles.active:""}`} onClick={() => setSelected(1)}>
+              <div className={styles.builder_names  }> Omrania Crusher</div>
             </a>
-            <a href="#section2">
+            <a href="#section2" className={`${selected===2? styles.active:""}`} onClick={() => setSelected(2)} >
               <div className={styles.builder_names}>
-                Al-OMRANIA FOR CONCRETE
+                {" "}
+                Al-OMRANIA Company for ready mix concrete
               </div>
             </a>
-            <a href="#section3">
+            <a href="#section3" className={`${selected===3? styles.active:""}`} onClick={() => setSelected(3)} >
               <div className={styles.builder_names}> Al-OMRANIA MATERIALS</div>
             </a>
-            <a href="#section4">
+            <a href="#section4" className={`${selected===4? styles.active:""}`} onClick={() => setSelected(4)} >
+              <div className={styles.builder_names}> OMRANIA METAL POWER</div>
+            </a>
+            <a href="#section5" className={`${selected===5? styles.active:""}`} onClick={() => setSelected(5)}  >
               <div className={styles.builder_names}>
                 {" "}
-                Al-OMRANIA METAL POWER
+                Al-OMRANIA company for WOODEN PRODUCTS
               </div>
             </a>
-            <a href="#section5">
-              <div className={styles.builder_names}>
-                {" "}
-                Al-OMRANIA WOOD PRODUCTS
-              </div>
-            </a>
-            <a href="#section6">
+            <a href="#section6" className={`${selected===6? styles.active:""}`} onClick={() => setSelected(6)} >
               <div className={styles.builder_names}>
                 {" "}
                 saudi player for polishing materials
               </div>
             </a>
-            <a href="#section7">
+            <a href="#section7" className={`${selected===7? styles.active:""}`} onClick={() => setSelected(7)} >
               <div className={styles.builder_names}>
                 {" "}
-                Al-OMRANIA MATERIALS FOR LAND TRANSPORT
+                OMRANIA MATERIALS FOR LAND TRANSPORT
               </div>
             </a>
-            <a href="#section8">
+            <a href="#section8" className={`${selected===8? styles.active:""}`} onClick={() => setSelected(8)} >
               <div className={styles.builder_names}>
-                Al-OMRANIA LOGISTICS SUPPORT
+                {" "}
+                OMRANIA LOGISTICS SUPPORT
               </div>
             </a>
           </div>
