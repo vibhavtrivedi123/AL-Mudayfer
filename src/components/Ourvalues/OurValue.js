@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useTransition } from "react";
 import styles from "./Ourvalue.module.css";
+import { useTranslation } from "react-i18next";
 
 // import value from ''
 
-const OurValues = () => {
+const OurValues = ({selectheading ,selectdescription ,otherheading ,otherdescription}) => {
   const [selected, setSelected] = useState(1);
   console.log(selected);
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -27,12 +30,13 @@ const OurValues = () => {
         <div className={styles.right}>
           <div className={styles.right_line}></div>
           <div className={styles.right_heading}>
-            {selected === 1 ? " Quality, Reliability, Leadership" : "Vision"}
+            {selected === 1 ?   t('home.ourValues.selectHeading') : t('home.ourValues.otherHeading')}
           </div>
           <div className={styles.right_sub_heading}>
             {selected === 1
-              ? " We invested in building a nation, and in developing a human being,so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
-              : "Striving for excellence in the world of investment and developing a global model for success, with a focus on continuous evolution and the enhancement of innovative values."}
+              ? t('home.ourValues.selectDescription')
+              : t('home.ourValues.otherDescription') 
+              }
           </div>
         </div>
       </div>

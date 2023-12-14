@@ -24,7 +24,11 @@ import Omrania_woodProducts from './company_pages/Omrania_woodProducts/Omrania_w
 import SaudiPlayer_polishingMaterials from './company_pages/SaudiPlayer_polishingMaterials/SaudiPlayer_polishingMaterials';
 import Omrania_logisticSupport from './company_pages/Omrania_logisticSupport/Omrania_logisticSupport';
 
+
 const App = () => {
+
+
+  
   return (
     <>
       <Header />
@@ -36,12 +40,10 @@ const App = () => {
         <Route path='/join' element={<Join />} />
         <Route path='/contact' element={<Contact />} />
 
-
+    
         <Route path='/national_responsibility' element={<National />} />
         <Route path='/environmental_responsibility' element={<Environmental />} />
         <Route path='/social_responsibility' element={<Social_Responsibility />} />
-
-
         <Route path='/omrania_crusher' element={<Omrania_crushers />} /> {/*company 1 */}
         <Route path='/omrania_concrete' element={<Omrania_concrete />} /> {/*company 2 */}
         <Route path='/omrania_material' element={<Omrania_material />} /> {/*company 3 */}
