@@ -1,4 +1,4 @@
-import React, { useState, useTransition } from "react";
+import React, { useEffect, useState, useTransition } from "react";
 import styles from "./Ourvalue.module.css";
 import { useTranslation } from "react-i18next";
 
@@ -6,7 +6,15 @@ import { useTranslation } from "react-i18next";
 
 const OurValues = ({selectheading ,selectdescription ,otherheading ,otherdescription}) => {
   const [selected, setSelected] = useState(1);
+  const [language, setLanguage] = useState(localStorage.getItem('i18nextLng') || 'en');
+
+  const [ov,setOV]=useState(null)
   console.log(selected);
+
+  
+  useEffect(()=>{
+    setOV(localStorage.getItem('i18nextLng') == "ar"? styles.Arabicright : styles.right)
+   },[localStorage.getItem('i18nextLng')])
 
   const { t } = useTranslation();
 
@@ -18,16 +26,16 @@ const OurValues = ({selectheading ,selectdescription ,otherheading ,otherdescrip
             className={selected === 1 ? styles.heading : styles.sub_heading}
             onClick={() => setSelected(1)}
           >
-            our values
+           {t('home.ourValues.OurVal')}
           </div>
           <div
             className={selected === 2 ? styles.heading : styles.sub_heading}
             onClick={() => setSelected(2)}
           >
-            our vision
+          {t('home.ourValues.ourVision')}
           </div>
         </div>
-        <div className={styles.right}>
+        <div className={ov}>
           <div className={styles.right_line}></div>
           <div className={styles.right_heading}>
             {selected === 1 ?   t('home.ourValues.selectHeading') : t('home.ourValues.otherHeading')}

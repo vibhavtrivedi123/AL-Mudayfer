@@ -8,6 +8,7 @@ import ImageBoxRight from '../../components/ImageBoxRight/ImageBoxRight'
 import board from '../../images/home/board.jpg'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import NewsCards from '../../components/News/News'
 
 const Media = () => {
     const { t } = useTranslation();
@@ -23,12 +24,14 @@ const Media = () => {
                 
             />
             <Heading
-                heading1="Partner with AL-MUDAYFER"
+                heading1="Partner with "
                 heading2="News"
                 description1="The most important developments about and about the group."
                 page="media"
             />
-            <Testimonial page="media" />
+            <NewsCards page="media" />
+            
+
             <Link to='/'>
                 <div className={styles.read_more}>
               {t('media.readMoreLink')}

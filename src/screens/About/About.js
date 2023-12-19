@@ -21,6 +21,7 @@ import message from "../../images/about/message.svg";
 import message_big from "../../images/about/message.jpg";
 import value_big from "../../images/about/value.jpg";
 import Responsibility from "../../components/About/Responsibility";
+import Timeline from "../../components/Timeline/Timeline";
 
 const About = () => {
 
@@ -99,6 +100,7 @@ const About = () => {
       page="about_testi"
       />
       <Testimonial page="about" />
+      <Timeline />
     </>
   );
 };

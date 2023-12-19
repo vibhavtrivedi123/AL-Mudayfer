@@ -38,6 +38,7 @@
       "description2": "Trust our project management experts at Al-Mudafir Holdings from Design to Completion!"
     },
     "milestone": {},
+    "trust":"Trusted by 45M+ users",
     "experience62": {
       "heading": "Experience 62+ Years",
       "text": "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
@@ -46,6 +47,8 @@
     },
     "trusted": {},
     "ourValues": {
+      "OurVal":"our values",
+      "ourVision":"our vision",
       "selectHeading": "Quality, Reliability, Leadership",
       "selectDescription": "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
       "otherHeading": "Vision",
@@ -101,7 +104,7 @@
       "description2": "Today, the group is recognized as a leading force in the investment sector, characterized by innovation and excellence. Its ambitious investment vision is distinguished by the ability to make smart decisions and foster innovation, making it a key player in a pioneering alliance of the region's foremost investment companies. The group's investments span across various sectors, including building materials, concrete, and wooden products. These investments reflect a diverse and creative investment journey, contributing effectively to sustainable development. With pride in its long and inspiring history, the Sons of Saleh Al-Mudayfer Holding Group continues to elevate its vision and excel in all areas of its business."
     },
     "card": {
-      "vision": {
+      "vision": { 
         "image": "/path/to/vision_big",
         "icon": "/path/to/vision",
         "heading": "Our Vision",
@@ -445,14 +448,14 @@
   "environmental": {
     "investment": {
       "backgroundImage": "/path/to/aboutscreen",
-      "heading1": "National",
+      "heading1": "environmental",
       "heading2": "responsibility",
       "sub_heading": "Leader in the manufacture of terrazza tiles, blocks, cement tiles, interlocks and balustrades for more than 50 years in the middle east.",
       "button": "Get started"
     },
     "partner": {
       "heading1": "About AL-MUDAYFER",
-      "heading2": "national responsibility",
+      "heading2": "environmental responsibility",
       "description1": "Despite the close connection and clear connection between the activities of the companies of the Saleh Al-Mudaifer Sons Holding Group and the impacts on the environment from geological or industrial works and carbon emissions to industrial waste, the group was keen to put this matter in the highest consideration, so it developed a comprehensive and systematic plan to include all the work of the Saleh Al-Mudaifer Sons Holding Group and its factories. It applies strict national standards towards the environment and carbon emissions, and the group is environmentally friendly. For this reason, it has been partnered with the most prominent specialized companies to supervise and control with regard to the potential environmental impact resulting from the business, and to assist the group in obtaining the necessary national certificates in this field to confirm the solidity of the business.",
       "description2": "On this side. Al-Mudaifer Holding has achieved tangible results as a result of this environmental concern, starting from preserving the health of its employees to preserving the general environment or surrounding the work and activities of companies and factories and reducing carbon emissions. Environmental commitment is one of the most prominent pillars on which the group’s work is based, which has reflected its excellence over time."
     },
@@ -461,19 +464,21 @@
       "heading": "Experience 62+ Years",
       "text": "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
       "buttonText": "Learn More"
+    },
+    "buttonText": "Learn More"
     }
-  },
+  ,
   "socialResponsibility": {
     "investment": {
       "backgroundImage": "/path/to/aboutscreen",
-      "heading1": "National",
+      "heading1": "social",
       "heading2": "responsibility",
       "sub_heading": "Leader in the manufacture of terrazza tiles, blocks, cement tiles, interlocks and balustrades for more than 50 years in the middle east.",
       "button": "Get started"
     },
     "partner": {
       "heading1": "About AL-MUDAYFER",
-      "heading2": "national responsibility",
+      "heading2": "social responsibility",
       "description1": "Despite the close connection and clear connection between the activities of the companies of the Saleh Al-Mudaifer Sons Holding Group and the impacts on the environment from geological or industrial works and carbon emissions to industrial waste, the group was keen to put this matter in the highest consideration, so it developed a comprehensive and systematic plan to include all the work of the Saleh Al-Mudaifer Sons Holding Group and its factories. It applies strict national standards towards the environment and carbon emissions, and the group is environmentally friendly. For this reason, it has been partnered with the most prominent specialized companies to supervise and control with regard to the potential environmental impact resulting from the business, and to assist the group in obtaining the necessary national certificates in this field to confirm the solidity of the business.",
       "description2": "On this side. Al-Mudaifer Holding has achieved tangible results as a result of this environmental concern, starting from preserving the health of its employees to preserving the general environment or surrounding the work and activities of companies and factories and reducing carbon emissions. Environmental commitment is one of the most prominent pillars on which the group’s work is based, which has reflected its excellence over time."
     },
@@ -484,19 +489,20 @@
       "buttonText": "Learn More"
     }
   },
+
   "omraniaCrusher": {
     "investment": {
       "backgroundImage": "/path/to/aboutscreen",
-      "heading1": "National",
-      "heading2": "responsibility",
+      "heading1": "Omrania Crusher",
       "sub_heading": "Leader in the manufacture of terrazza tiles, blocks, cement tiles, interlocks and balustrades for more than 50 years in the middle east.",
       "button": "Get started"
     },
     "partner": {
-      "heading1": "About AL-MUDAYFER",
-      "heading2": "national responsibility",
+      "heading1": "about omrania crusher",
+      "heading2": "from the land of saudi arabia",
       "description1": "Despite the close connection and clear connection between the activities of the companies of the Saleh Al-Mudaifer Sons Holding Group and the impacts on the environment from geological or industrial works and carbon emissions to industrial waste, the group was keen to put this matter in the highest consideration, so it developed a comprehensive and systematic plan to include all the work of the Saleh Al-Mudaifer Sons Holding Group and its factories. It applies strict national standards towards the environment and carbon emissions, and the group is environmentally friendly. For this reason, it has been partnered with the most prominent specialized companies to supervise and control with regard to the potential environmental impact resulting from the business, and to assist the group in obtaining the necessary national certificates in this field to confirm the solidity of the business.",
-      "description2": "On this side. Al-Mudaifer Holding has achieved tangible results as a result of this environmental concern, starting from preserving the health of its employees to preserving the general environment or surrounding the work and activities of companies and factories and reducing carbon emissions. Environmental commitment is one of the most prominent pillars on which the group’s work is based, which has reflected its excellence over time."
+      "description2": "From the land of Saudi Arabia... Omrania Crusher. Because raw materials are a priority for the success of the industry, we invested in establishing Omrania Crusher in 2004. This investment marks our journey in producing construction materials with high reliability, meeting the highest specifications, and ensuring sustainability. We supply the local market with the finest types of gravel in various sizes, which are used in many different cement industries. These materials play a crucial role in development and progress. Omrania Crusher has contributed to the execution of numerous distinguished projects within the Kingdom. Our product quality sets the foundation for the overall quality of the factories, starting with the quality of the crusher materials."
+  
     },
     "experience62": {
       "imageSrc": "exp",
@@ -509,19 +515,19 @@
         "image": "/path/to/vision_big",
         "icon": "/path/to/vision",
         "heading": "Our Vision",
-        "subHeading": "Striving for excellence in the world of investment and developing a global model for success, with a focus on continuous evolution and the enhancement of innovative values."
+        "subHeading": "We aim to provide highly reliable raw materials with extensive distribution in the Saudi market."
       },
       "mission": {
         "image": "/path/to/message_big",
         "icon": "/path/to/message",
         "heading": "Our Mission",
-        "subHeading": "To empower individuals and businesses by providing cutting-edge solutions and unparalleled services, fostering sustainable growth and prosperity. We are dedicated to pioneering innovative approaches, maintaining the highest standards of integrity, and making a positive impact on the global landscape."
+        "subHeading": "Our mission is to meet the supply chain needs for cement products according to the highest standardsOur mission is to meet the supply chain needs for cement products according to the highest standards"
       },
       "values": {
         "image": "/path/to/value_big",
         "icon": "/path/to/vision",
         "heading": "Our Values",
-        "subHeading": "Excellence, innovation, integrity, and sustainability are the core values that drive our business. We are committed to achieving the highest standards of quality and excellence in all our endeavors. We are dedicated to fostering innovation and creativity, and we are committed to the highest standards of integrity and transparency. We are committed to sustainable development and making a positive impact on the global landscape."
+        "subHeading": "Implemented a Quality Control department with advanced testing for customized products meeting global standards. A Safety and Security department, managed by a skilled team, ensures meticulous and safe task execution, minimizing risks to property, the environment, and personnel."
       }
     },
     "imageBoxLeft": {
@@ -584,6 +590,8 @@
       "description1": "Al-Mudafir is an award-winning company that understands what it means to provide solutions on time and within budget to bring your vision to fruition. With our team of experts all under one roof, Premier handles the project from Design to Completion. As owner operators ourselves, we think and act just like you, from concept to completion. So, it’s no wonder that Premier has been a leading full-service company for design, architecture, procurement, project management and capital management for more than 25 years."
     }
   },
+
+
   "Omrania_concrete": {
     "investment": {
       "backgroundImage": "/path/to/aboutscreen",
@@ -623,6 +631,11 @@
       "text": "We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains.",
       "buttonText": "read more",
       "imageSrc": "/path/to/image"
+    },
+    "testimonial": {
+      "date": "October 28, 2003",
+      "headline": "The Construction Experts",
+      "read_more": "Read More"
     }
   },
   "Omraniaheading2": {
@@ -731,6 +744,12 @@
       "description1": "Al-Mudafir is an award-winning company that understands what it means to provide solutions on time and within budget to bring your vision to fruition. With our team of experts all under one roof, Premier handles the project from Design to Completion. As owner operators ourselves, we think and act just like you, from concept to completion. So, it’s no wonder that Premier has been a leading full-service company for design, architecture, procurement, project management and capital management for more than 25 years. "
     }
   },
+   "Omrania_material_heading5": {
+    "partner": {
+      "heading1": "Partner with OMRANIA CRUSHER",
+      "heading2": "PROJECT WE WERE PART OF"
+    }
+  },
 
 
 
@@ -833,8 +852,8 @@
       "button": "Get started"
     },
     "partner": {
-      "heading1": "about omrania materials",
-      "heading2": "Al-Omrania Company for Wooden Products",
+      "heading1": "about Wooden Products",
+      "heading2": "Our Products",
       "description1": "It is a leading Saudi company in the manufacturing of high-quality furniture, producing custom-made furniture such as reception units, cabinets, kitchens, wall panels, doors, ceilings, and bespoke solutions. They utilize the latest technologies to manufacture furniture that meets the highest international standards. Al-Omrania for Wood Products is one of the investments of the Sons of Saleh Al-Mudayfer Holding Company, established in 1996. They have significant commercial interests in a wide range of activities across the Kingdom. Al-Mudayfer Company aims to form an integrated industrial group serving urban areas, corporate affairs, and individuals. From this vision, the idea of establishing Al-Umrania for Wood Products emerged. The wood products factory is an integral service component, in addition to other services provided by the holding group."
     },
     "card": {
@@ -1139,6 +1158,75 @@
       "text": "With the trust we've built as a logistics services partner and strategically located warehouses, you can expect easy entry into local markets in the shortest time by working with us. Our extensive network of operations allows us to tailor our fleet to your transportation and logistics service requirements. We can accurately assess the local goods distribution network in terms of size and area, then customize a package that meets all your essential needs",
       "buttonText": "read more",
       "imageSrc": "/path/to/image"
+    }
+  },
+  "contact":{
+    "investment": {
+      "backgroundImage": "contact",
+      "heading1": "still curious?",
+      "heading2": "contact us",
+      "sub_heading": "New Industrial City - Al-Musafa District - Street 194 Riyadh - Kingdom of Saudi Arabia",
+      "button": "Know More"
+    },
+    "partner": {
+      "heading2": "LET’S GET IN TOUCH WITH OUR PROFESSIONALS TEAM WORKING",
+      "description1": "Integration in the commercial market is an important requirement, especially between the producer and the investor who wants to benefit from his experience and work in marketing products by obtaining an important role as a wholesale and retail trader.20 We at Saleh Al-Mudaifer Sons Holding Group seek to maximize the benefits of our commercial activity to include different segments of society and we welcome partnerships of this kind with all companies affiliated with the group."
+    },
+    "touch":"stay in touch",
+    "contactInfo": {
+      "officeLocation": {
+        "heading": "Office Location",
+        "subHeading": "New Industrial City - Al-Musafa"
+      },
+      "email": {
+        "heading": "Email",
+        "subHeading": "info@smsh.com.sa"
+      },
+      "phone": {
+        "heading": "Phone",
+        "subHeading": "920000116"
+      },
+      "whatsapp": {
+        "heading": "Whatsapp",
+        "subHeading": "966501906677"
+      }
+    },
+    "form": {
+      "formHeading": "Keep in touch",
+      "formSubHeading": "Please let us know how can we help you",
+      "label": {
+        "firstName": "First name",
+        "email": "Email",
+        "lastName": "Last name",
+        "phone": "Telephone",
+        "message": "Message"
+      },
+      "placeholders": {
+        "firstName": "Ex. Aamir",
+        "email": "Email",
+        "lastName": "Ex. Doe",
+        "phone": "Telephone",
+        "message": "Write Message"
+      },
+      "button": "SEND MESSAGE"
+    }
+  },
+  "Milestone": {
+    "yr": {
+      "heading": "29+",
+      "subHeading": "Years in business"
+    },
+    "projectsValue": {
+      "heading": "$3B",
+      "subHeading": "in projects"
+    },
+    "annualSpend": {
+      "heading": "$300M+",
+      "subHeading": "spend per year"
+    },
+    "completedProjects": {
+      "heading": "275+",
+      "subHeading": "completed projects"
     }
   },
 

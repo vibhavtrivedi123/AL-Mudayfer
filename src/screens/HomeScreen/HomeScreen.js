@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import NewsHealdine from "../../components/NewsHeadline/NewsHeadline";
 import ImageBoxLeft from "../../components/ImageBoxLeft/ImageBoxLeft";
 import Company from "../../components/Company/Company";
@@ -17,9 +17,11 @@ import exp from "../../images/home/exp.jpg";
 import board from "../../images/home/board.jpg";
 import invest from "../../images/home/ourvalue.jpg";
 import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 
 const HomeScreen = () => {
- 
+
+const {t} = useTranslation()
  
 
   return (
@@ -47,7 +49,7 @@ const HomeScreen = () => {
         page="home"
       />
 
-      <Trusted trust="Trusted by 45M+ users" />
+      <Trusted trust={t('home.trust')}/>
       <OurValues 
       selectheading=" Quality, Reliability, Leadership"
       selectdescription ="We invested in building a nation, and in developing a human being,so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
@@ -78,7 +80,7 @@ const HomeScreen = () => {
         buttonText="know more"
         page="home"
       />
-      <Timeline />
+   
       <NewsHealdine />
     </>
   );

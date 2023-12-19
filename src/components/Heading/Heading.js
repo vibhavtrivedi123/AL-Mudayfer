@@ -41,7 +41,7 @@ const Heading = ({
             :
             <div className={styles.container}>
                 {
-                    page !== "omraniaCrusher_products" && page !== "Omraniaheading2" && page !== "Omrania_material_heading2" && page !=="Omrania_metalPower_heading2" && page !== "SaudiPlayer_polishingMaterials_heading2"  && page !=="Omrania_landTransport_heading2" && page !=="Omrania_logisticSupport_heading2" ? <div className={styles.heading1}> {t(`${page}.partner.heading1`)}</div> : null
+                    page !== "omraniaCrusher_products" && page !== "Omraniaheading2" && page !== "Omrania_material_heading2" && page !=="Omrania_metalPower_heading2" && page !== "SaudiPlayer_polishingMaterials_heading2"  && page !=="Omrania_landTransport_heading2" && page !=="Omrania_logisticSupport_heading2"  && page != "contact" ? <div className={styles.heading1}> {t(`${page}.partner.heading1`)}</div> : null
                 }
             
             <div className={styles.heading2}>{t(`${page}.partner.heading2`)}</div>

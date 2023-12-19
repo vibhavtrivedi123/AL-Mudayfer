@@ -4,6 +4,7 @@ import React, { useState,useEffect } from "react";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 import { FaGlobe } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
+import { IoGlobeOutline } from 'react-icons/io5';
 import { IoMdClose } from "react-icons/io";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
@@ -15,6 +16,8 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isjoinDropdownOpen, setjoinDropdownOpen] = useState(true);
+
 
   const {t} = useTranslation()
 
@@ -27,6 +30,14 @@ const Header = () => {
 
   const handleMouseLeave = () => {
     setDropdownOpen(false);
+  };
+
+  const handlejoinMouseEnter = () => {
+    setjoinDropdownOpen(true);
+  };
+
+  const handlejoinMouseLeave = () => {
+    setjoinDropdownOpen(false);
   };
 
   useEffect(()=>{
@@ -81,9 +92,45 @@ const Header = () => {
             <div className={styles.link}>{t('header.links.ourInvestments')}</div>
           </LinkWithScrollToTop>
 
-          <LinkWithScrollToTop to="/join">
-            <div className={styles.link}>{t('header.links.joinUs')}</div>
-          </LinkWithScrollToTop>
+          <div
+            className={styles.dropdownContainer}
+            onMouseEnter={handlejoinMouseEnter}
+            onMouseLeave={handlejoinMouseLeave}
+          >
+            <div className={styles.link}>
+             
+              {isjoinDropdownOpen ? "JOIN AS" : "JOIN AS"}
+            </div>
+            {isjoinDropdownOpen && (
+              <div className={styles.dropdownContent}>
+                <LinkWithScrollToTop to="/join">
+                {/* <div className={styles.dropdown_link} >JOIN US </div> */}
+                <div className={styles.dropdown_link} >SUPPLIER</div>
+                <div className={styles.dropdown_link} >INVESTER</div>
+                <div className={styles.dropdown_link} >EMPLOYEE</div>
+                </LinkWithScrollToTop>
+                
+
+
+              </div>
+            )}
+          </div>
+
+          {/* <LinkWithScrollToTop to="/join"
+            >
+            <div className={styles.link}
+            onMouseEnter={handlejoinMouseEnter}
+            onMouseLeave={handlejoinMouseLeave}
+            >{t('header.links.joinUs')}</div>
+            {isjoinDropdownOpen && (
+              <div className={styles.dropdownContent}>
+                <div className={styles.dropdown_link} onClick={()=>handleLanguageChange("ar")}>اردو</div>
+                <div className={styles.dropdown_link} onClick={()=>handleLanguageChange("en")}>English</div>
+              </div>
+            )}
+           
+            
+          </LinkWithScrollToTop> */}
 
           <LinkWithScrollToTop to="/media">
             <div className={styles.link}>{t('header.links.media')}</div>
@@ -122,7 +169,22 @@ const Header = () => {
           </div>
           {/* <button onClick={toggleMobileMenu}> */}
           <div className={styles.right_mobile}>
-            {/* {open ? <IoMdClose /> : <FaBars />} */}
+          <div
+            className={styles.dropdownContainer}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <div className={styles.link}>
+              <FaGlobe />{" "}
+              {isDropdownOpen ? <AiFillCaretUp /> : <AiFillCaretDown />}
+            </div>
+            {isDropdownOpen && (
+              <div className={styles.dropdownContent}>
+                <div className={styles.dropdown_link} onClick={()=>handleLanguageChange("ar")}>اردو</div>
+                <div className={styles.dropdown_link} onClick={()=>handleLanguageChange("en")}>English</div>
+              </div>
+            )}
+          </div>
             <Hamburger
               rounded
               toggled={open}

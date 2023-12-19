@@ -81,7 +81,7 @@ const Omrania_woodProducts = () => {
             setArr( localStorage.getItem('i18nextLng') === "ar"? sliderItemsAr : sliderItemsEn)
            },[arr])
 
-      
+    
 
     return (
         <>
