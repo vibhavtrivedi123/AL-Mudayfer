@@ -15,19 +15,13 @@ const Heading = ({
 
     const { t } = useTranslation();
 
-
-
-
-
-   
-
     
     return (
         <>
         {
             page === "timeline" ? 
-            <div className={styles.container}>
-            <div className={styles.heading1}> {t(`home.${page}.heading1`)}</div>
+            <div className={styles.container} >
+            <div className={styles.heading1} style={{textTransform:'capitalize'}}> {t(`home.${page}.heading1`)}</div>
             <div className={styles.heading2}>{t(`home.${page}.heading2`)}</div>
             {
                 description1 && 
@@ -39,7 +33,7 @@ const Heading = ({
             }
         </div>
             :
-            <div className={styles.container}>
+            <div className={styles.container} id='homePartner'>
                 {
                     page !== "omraniaCrusher_products" && page !== "Omraniaheading2" && page !== "Omrania_material_heading2" && page !=="Omrania_metalPower_heading2" && page !== "SaudiPlayer_polishingMaterials_heading2"  && page !=="Omrania_landTransport_heading2" && page !=="Omrania_logisticSupport_heading2"  && page != "contact" ? <div className={styles.heading1}> {t(`${page}.partner.heading1`)}</div> : null
                 }

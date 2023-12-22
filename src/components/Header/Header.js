@@ -103,15 +103,17 @@ const Header = () => {
             </div>
             {isjoinDropdownOpen && (
               <div className={styles.dropdownContent}>
-                <LinkWithScrollToTop to="/join">
-                {/* <div className={styles.dropdown_link} >JOIN US </div> */}
+                <LinkWithScrollToTop to="/join/supplier">
                 <div className={styles.dropdown_link} >SUPPLIER</div>
-                <div className={styles.dropdown_link} >INVESTER</div>
-                <div className={styles.dropdown_link} >EMPLOYEE</div>
+                </LinkWithScrollToTop>
+
+                <LinkWithScrollToTop to="/join/investor">
+                <div className={styles.dropdown_link} >INVESTOR</div>
                 </LinkWithScrollToTop>
                 
-
-
+                <LinkWithScrollToTop to="/join/employee">
+                <div className={styles.dropdown_link} >EMPLOYEE</div>
+                </LinkWithScrollToTop>
               </div>
             )}
           </div>

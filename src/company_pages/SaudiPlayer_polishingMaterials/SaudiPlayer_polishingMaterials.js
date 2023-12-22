@@ -28,6 +28,36 @@ const SaudiPlayer_polishingMaterials = () => {
 
     const [arr,setArr] = useState([])
 
+
+    const SaudiPlayer_polishingMaterials_projetArr = [
+        {
+            image: img1,
+            heading: 'Construction',
+            subHeading: 'Supply to Olayan Descon Company',
+        },
+        {
+            image: img2,
+            heading: 'Construction',
+            subHeading: 'Supply to Manar Al Omran Company',
+        },
+        {
+            image: img1,
+            heading: 'Construction',
+            subHeading: 'Supply to Riyadh Foundry Company',
+        },
+        {
+            image: img2,
+            heading: 'Construction',
+            subHeading: 'Al-Rajhi Industry And Trade Endowment Company',
+        },
+        {
+            image: img2,
+            heading: 'Construction',
+            subHeading: 'Othman Abdul Rahman Al-Osaimi and Partners Trading Company',
+        },
+    ]
+
+
     const sliderItemsEn = [
         {
             image: img1,
@@ -151,14 +181,22 @@ const SaudiPlayer_polishingMaterials = () => {
                 buttonText="read more"
             />
 
-
+{/* 
             <Heading
                  page="SaudiPlayer_polishingMaterials_heading3"
                 heading1="Partner with OMRANIA CRUSHER"
                 heading2="PRODUCTS WE WERE PART OF"
             />
 
-            <CompanySlider items={arr} />
+            <CompanySlider items={arr} /> */}
+
+            <Heading
+                 page="SaudiPlayer_polishingMaterials_heading5"
+                heading1="Partner with OMRANIA CRUSHER"
+                heading2="PRODUCTS WE WERE PART OF"
+            />
+
+            <CompanySlider items={SaudiPlayer_polishingMaterials_projetArr} />
 
             <Heading
                 page="SaudiPlayer_polishingMaterials_heading4"

@@ -15,12 +15,15 @@ import Slider from '../../resuable/slider/Slider';
 
 import worker from '../../images/join/worker.jpg'
 import { useTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
 
 
 
 
 const Join = () => {
   const { t } = useTranslation();
+  const {id} = useParams()
+ 
 
   const url = process.env.REACT_APP_BACKEND_URL + "/create"
 
@@ -165,7 +168,6 @@ const Join = () => {
   ];
 
 
-
   return (
     <>
       <Investment
@@ -175,21 +177,21 @@ const Join = () => {
         button="get started"
         page="join"
       />
-      <Heading
+      {/* <Heading
         heading1="Partner with AL-MUDAYFER"
         heading2="explore jobs"
         description1="Building bridges of communication with others is part of our ambitious vision to keep pace with the national economic movement and towards greater effectiveness for society and for us as an important economic component in the Kingdom of Saudi Arabia."
         page="join"
       />
 
-      <Slider cards={  localStorage.getItem('i18nextLng') === "ar" ?sliderCardsAr :  sliderCardsEn}/>
+      <Slider cards={  localStorage.getItem('i18nextLng') === "ar" ?sliderCardsAr :  sliderCardsEn}/> */}
 
       {/* supplier */}
-      <div className={styles.container}>
+      <div className={styles.container} id='formSection'>
         <div className={styles.left}>
-          <div className={styles.heading}> <div className={styles.mid_line}></div>{t('join.supplier.heading')}</div>
+          <div className={styles.heading}> <div className={styles.mid_line}></div>{`Join As a ${id}`}</div>
           <div className={styles.main_heading}>
-          {t('join.supplier.mainHeading')}
+          {t('join.supplier.mainHeading') +' '+id +'.'}
           </div>
           <div className={styles.sub_heading1}>
           {t('join.supplier.subHeading1')}
@@ -263,7 +265,7 @@ const Join = () => {
                   required
                 />
                 <div className={styles.send_button}>
-                  <button>
+                  <button onClick={console.log("formData",formData)}>
                   {t('join.supplier.form.button')}
                   </button>
                 </div>
@@ -275,7 +277,7 @@ const Join = () => {
       </div>
 
       {/* client */}
-      <div className={styles.container}>
+      {/* <div className={styles.container}>
 
         <div className={styles.right}>
           <div className={styles.form}>
@@ -347,7 +349,7 @@ const Join = () => {
                   </button>
                 </div>
               </div>
-              {/* <div className={styles.right_form_container}></div> */}
+        
             </form>
           </div>
         </div>
@@ -361,7 +363,7 @@ const Join = () => {
           <div className={styles.sub_heading2}>
           {t('join.client.subHeading2')} </div>
         </div>
-      </div>
+      </div> */}
 
       <Company
         backgroundImage={value}

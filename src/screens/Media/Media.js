@@ -31,12 +31,12 @@ const Media = () => {
             />
             <NewsCards page="media" />
             
-
+{/* 
             <Link to='/'>
                 <div className={styles.read_more}>
               {t('media.readMoreLink')}
                 </div>
-            </Link>
+            </Link> */}
 
             <div className={styles.media_kit}>
                 <div className={styles.left}>

@@ -5,7 +5,7 @@
     z-index: 999;
     display: flex;
     justify-content: space-evenly;
-    text-transform: uppercase;
+    text-transform: capitalize;
     align-items: center;
     padding:10px;
     font-family: 'monteserrat';

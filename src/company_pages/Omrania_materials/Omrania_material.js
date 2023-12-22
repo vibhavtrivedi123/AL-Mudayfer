@@ -29,6 +29,32 @@ const Omrania_material = () => {
 
 
     const [arr,setArr] = useState([])
+
+
+
+    const Omrania_material_ProjectArr = [
+        {
+            image: img1,
+            heading: 'Construction',
+            subHeading: 'King Khaled International Airport',
+        },
+        {
+            image: img2,
+            heading: 'Construction',
+            subHeading: 'Medical City Project at the Ministry of Interior',
+        },
+        {
+            image: img1,
+            heading: 'Construction',
+            subHeading: 'King Salman Park',
+        },
+        {
+            image: img2,
+            heading: 'Construction',
+            subHeading: 'Government departments complex in Riyadh',
+        }
+
+    ]
     const sliderItemsEN = [
         {
             image: img1,
@@ -162,13 +188,13 @@ const Omrania_material = () => {
                 buttonText="read more"
             />
 
-            <Heading
+            {/* <Heading
                 page="Omrania_material_heading3"
                 heading1="Partner with OMRANIA CRUSHER"
                 heading2="PRODUCTS WE WERE PART OF"
             />
 
-            <CompanySlider items={arr} />
+            <CompanySlider items={arr} /> */}
 
             <Heading
                 page="Omrania_material_heading5"
@@ -176,7 +202,7 @@ const Omrania_material = () => {
                 heading2="PROJECT WE WERE PART OF"
             />
 
-            <CompanySlider items={arr} />
+            <CompanySlider items={Omrania_material_ProjectArr} />
 
             <Heading
             page="Omrania_material_heading4"

@@ -29,17 +29,19 @@ const {t} = useTranslation()
       <Investment
         backgroundImage={homescreen}
         heading1="AL-MUDAYFER"
-        heading2="HOLDING"
+        heading2="Holding"
         sub_heading="The name that has been associated with building and construction works for development monuments over generations from the Kingdom of Saudi Arabia and to the Middle East."
         button="Know More "
         page="home"
       />
-      <Heading
+  
+    <Heading
         heading1="Partner with AL-MUDAYFER"
         heading2="The BUILDING & CONSTRUCTION EXPERT"
         description1="The Sons of Saleh Almudayfer Sons Holding  Group is characterized by leadership and sustainability in the business and investment world. As a successful investor, the group seeks diversification and sustainable expansion, with a focus on innovation and the development of new investment models. With its distinguished history, the group remains committed to excellence and leadership, achieving excellence in various aspects of its business and participating as a key member in a leading alliance of prominent investment companies in the region."
         page="home"
       />
+   
       <Milestone />
       <Experience62
         imageSrc={exp}

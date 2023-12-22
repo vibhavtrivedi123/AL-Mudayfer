@@ -10,10 +10,10 @@ const Experience62Left = ({ imageSrc, heading, text, buttonText ,page }) => {
         <>
             <div className={styles.container}>
                 <div className={styles.right}>
-                    <div className={styles.right_heading}>{t('environmental.experience62.heading')}</div>
-                    <div className={styles.right_text}>{t('environmental.experience62.text')}</div>
+                    <div className={styles.right_heading}>{t(`${page}.experience62.heading`)}</div>
+                    <div className={styles.right_text}>{t(`${page}.experience62.text`)}</div>
                     <Link to='/contact'>
-                        <div className={styles.right_button}>{t('environmental.experience62.buttonText')}</div>
+                        <div className={styles.right_button}>{t(`${page}.experience62.buttonText`)}</div>
                     </Link>
                 </div>
                 <div className={styles.left}>

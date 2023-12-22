@@ -206,13 +206,14 @@ const Investment = ({gallery}) => {
                   </Link>
                 </div>
               </div>
+              
 
               <div className={styles.top_right}>
                 <div className={styles.logo}>
                   <img src={company2} alt="" />
                 </div>
                 <div className={styles.numbers}>
-                {t('invest.companyDetails.1.establishmentYear')}
+                {t('invest.companyDetails.2.establishmentYear')}
                   <div className={styles.numbers_description}>
                   {t('invest.companyDetails.doe')}
                   </div>

@@ -27,26 +27,42 @@ import img2 from '../../images/const2.jpg'
 const Omrania_crushers = () => {
 
     const [arr,setArr] = useState([])
+    
     const sliderItemsEn = [
         {
             image: img1,
             heading: 'Construction',
-            subHeading: 'Origins of Expertise Contracting Est',
+            subHeading: 'Supplying raw materials to Badr Al-Dosari Contracting Est',
         },
         {
             image: img2,
             heading: 'Construction',
-            subHeading: 'Badr Al Dosari Contracting Est',
+            subHeading: 'Supply of raw materials, Origins of Expertise Contracting Est',
         },
         {
             image: img1,
             heading: 'Construction',
-            subHeading: 'Origins of Expertise Contracting Est',
+            subHeading: 'Sakhrat Al-Summan Contracting Est ',
         },
         {
             image: img2,
             heading: 'Construction',
-            subHeading: 'Badr Al Dosari Contracting Est',
+            subHeading: 'Shaghaf Altanmiah Contracting Est',
+        },
+        {
+            image: img1,
+            heading: 'Construction',
+            subHeading: 'Ghayoum Dammam Cement Products Company',
+        },
+        {
+            image: img2,
+            heading: 'Construction',
+            subHeading: 'Konoz Alshra Contracting Est ',
+        },
+        {
+            image: img2,
+            heading: 'Construction',
+            subHeading: 'Gebal Althahab Contracting Est ',
         },
     ];
 
@@ -159,6 +175,8 @@ const Omrania_crushers = () => {
             />
             
             <CompanySlider items={arr} />
+
+            
 
             <Heading
                page="omraniaCrusher_heading3"

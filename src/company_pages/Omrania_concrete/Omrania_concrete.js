@@ -23,33 +23,50 @@ import CompanySlider from '../../resuable/company_slider/CompanySlider'
 
 import img1 from '../../images/const1.jpg'
 import img2 from '../../images/const2.jpg'
+import imgProduct1 from '../../images/Omrania_concrete_imgProduct1.png'
+import imgschoolImg from '../../images/Omrania_concrete_imgschool.png'
+
 
 const Omrania_concrete = () => {
 
 
     const [arr,setArr] = useState([])
+    
+
+    const productslider = [
+        {
+            image: imgProduct1,
+            heading: 'Product',
+            subHeading: 'Ready Mixed Concrete',
+        },  
+    ]
 
     // SLIDER DATA
     const sliderItemsEn = [
         {
             image: img1,
             heading: 'Construction',
-            subHeading: 'Origins of Expertise Contracting Est',
+            subHeading: 'Establishment of Dr. Sulaiman Al-Habib Hospital',
         },
         {
             image: img2,
             heading: 'Construction',
-            subHeading: 'Badr Al Dosari Contracting Est',
+            subHeading: 'Construction of 500 residential villas',
         },
         {
             image: img1,
             heading: 'Construction',
-            subHeading: 'Origins of Expertise Contracting Est',
+            subHeading: 'Asas Makin residential projects',
         },
         {
             image: img2,
             heading: 'Construction',
-            subHeading: 'Badr Al Dosari Contracting Est',
+            subHeading: 'Increasing the efficiency of water plants',
+        },
+        {
+            image: imgschoolImg,
+            heading: 'Construction',
+            subHeading: ' Establishing educational schools and international schools - Science Oasis Schools',
         },
     ];
     const sliderItemsAr = [
@@ -69,7 +86,7 @@ const Omrania_concrete = () => {
           subHeading: 'أصول خبرة المقاولات'
         },
         {
-          image: img2,
+          image: imgschoolImg,
           heading: 'البناء',
           subHeading: 'بدر الدوسري للمقاولات'
         }
@@ -158,6 +175,14 @@ const Omrania_concrete = () => {
              page="Omraniaheading3"
                 heading1="Partner with OMRANIA CRUSHER"
                 heading2="PRODUCTS WE WERE PART OF "
+            />
+
+            <CompanySlider items={productslider} />
+
+            <Heading
+                page="Omraniaheading5"
+                heading1="Partner with OMRANIA CRUSHER"
+                heading2="PROJECT WE WERE PART OF"
             />
 
             <CompanySlider items={arr} />

@@ -30,10 +30,11 @@ const Footer = () => {
                             <div className={styles.left_box}>
                                 <div className={styles.tag_line}> {t('footer.alwaysBeWithUs')} </div>
                                 <div className={styles.phone}>
-                                    <BsFillTelephoneFill /> {t('footer.phone')}
+                                    <BsFillTelephoneFill /> <a href={`skype:${'footer.phone'}?call`}>{t('footer.phone')}</a>
                                 </div>
+                                
                                 <div className={styles.phone}>
-                                    <MdEmail /> {t('footer.email')}
+                                    <MdEmail /> <a href={`mailto:${t('footer.email')}`}>{t('footer.email')}</a>
                                 </div>
                             </div>
 
@@ -55,7 +56,7 @@ const Footer = () => {
 
                         <div className={styles.right}>
                             <div className={styles.right_company}>
-                                <div className={styles.right_company_heading}> {t('footer.company.heading1')}</div>
+                                {/* <div className={styles.right_company_heading}> {t('footer.company.heading1')}</div> */}
                                 <div className={styles.right_company_content}>
                                     <Link to='/about'>
                                     {t('footer.company.about')}
@@ -89,7 +90,7 @@ const Footer = () => {
                             </div>
 
                             <div className={styles.right_company}>
-                                <div className={styles.right_company_heading}> {t('footer.investment.heading2')}</div>
+                                {/* <div className={styles.right_company_heading}> {t('footer.investment.heading2')}</div> */}
                                 <div className={styles.right_company_content}>
                                     <Link to="/investment">
                                     {t('footer.investment.ourInvestments')}
@@ -101,17 +102,17 @@ const Footer = () => {
                                     </Link>
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    <Link to="/join">
+                                    <Link to="/join/supplier">
                                     {t('footer.investment.joinAsSupplier')}
                                     </Link>
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    <Link to="/join">
+                                    <Link to="/join/investor">
                                     {t('footer.investment.joinAsClient')}
                                     </Link>
                                 </div>
                                 <div className={styles.right_company_content}>
-                                    <Link to='/contact'>
+                                    <Link to='/join/employee'>
                                     {t('footer.investment.joinAsEmployee')}
                                     </Link>
                                 </div>

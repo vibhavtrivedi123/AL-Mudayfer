@@ -14,9 +14,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    text-transform: uppercase;
+    text-transform: capitalize;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 327px 251px;
     border: 1px solid var(--blue);
 }
 
@@ -81,7 +81,7 @@
     margin: 2px 18px;
 }
 .readmore{
-   margin-top: 80px ;
+   /* margin-top: 80px ; */
    margin-left: 20px;
 }
 
@@ -102,7 +102,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        text-transform: uppercase;
+        text-transform: capitalize;
         background-repeat: no-repeat;
         background-size: contain;
         border: 1px solid var(--blue);
