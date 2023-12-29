@@ -24,6 +24,7 @@ import CompanySlider from '../../resuable/company_slider/CompanySlider'
 import img1 from '../../images/const1.jpg'
 import img2 from '../../images/const2.jpg'
 import { use } from 'i18next'
+import CompanyTesti from '../../components/companyTesti/companyTesti'
 
 const Omrania_material = () => {
 
@@ -119,6 +120,7 @@ const Omrania_material = () => {
                 sub_heading="Al-Omrania Building Materials Company is a pioneer in the production and manufacturing of essential construction materials in the Kingdom of Saudi Arabia."
                 button="Get started "
             />
+             <CompanyTesti />
             <Heading
             page="Omrania_material"
                 heading1="about omrania materials"

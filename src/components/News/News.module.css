@@ -8,8 +8,8 @@
 
 .const_container {
     background-image: url('../../images/about/const1.jpg');
-    width: 27%;
-    height: 500px;
+    width: 23%;
+    height: 480px;
     display: flex;
     justify-content: center;
     align-items: center;

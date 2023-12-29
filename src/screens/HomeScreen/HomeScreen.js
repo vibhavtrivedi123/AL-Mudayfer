@@ -18,6 +18,7 @@ import board from "../../images/home/board.jpg";
 import invest from "../../images/home/ourvalue.jpg";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
+import Experience62New from "../../components/Experience62new/Experience62new";
 
 const HomeScreen = () => {
 
@@ -43,15 +44,23 @@ const {t} = useTranslation()
       />
    
       <Milestone />
-      <Experience62
+
+     <Experience62New
+     imageSrc={exp}
+     page="home"
+     />
+  
+
+      {/* <Experience62
         imageSrc={exp}
         heading="Experience 62+ Years"
         text="We invested in building a nation, and in developing a human being, so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."
         buttonText="Learn More"
         page="home"
-      />
+      /> */}
 
       <Trusted trust={t('home.trust')}/>
+      
       <OurValues 
       selectheading=" Quality, Reliability, Leadership"
       selectdescription ="We invested in building a nation, and in developing a human being,so the products of Saleh Al-MUDAYFER Sons Holding Company became an essential pillar in the construction and finishing work of various development projects in the Kingdom of Saudi Arabia, as the company’s investments were built on the legacy of the founding father and specialization in its supply chains."

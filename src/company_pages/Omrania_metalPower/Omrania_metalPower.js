@@ -23,6 +23,7 @@ import CompanySlider from '../../resuable/company_slider/CompanySlider'
 
 import img1 from '../../images/const1.jpg'
 import img2 from '../../images/const2.jpg'
+import CompanyTesti from '../../components/companyTesti/companyTesti'
 
 const Omrania_metalPower = () => {
 
@@ -90,6 +91,7 @@ const Omrania_metalPower = () => {
                 sub_heading="Al-Omrania Materials Metal Forming Company is a leader in the field of metal forming, providing modern and contemporary engineering solutions that meet the needs of various metal forming domains."
                 button="Get started "
             />
+           
             <Heading
               page="Omrania_metalPower"
                 heading1="about AL-Omrania materials"

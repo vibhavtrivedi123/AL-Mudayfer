@@ -3,30 +3,27 @@ import styles from './News.module.css'
 import girls from '../../images/girls.jpg'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import Accordion from '../Accordian/Accordian';
+
 
 const NewsCards = ({page}) => {
 
   const { t } = useTranslation();
 
+  const headlines = [
+    "All news" , "Latest news"
+  ];
+
   return (
     <>
       <div className={styles.container}>
 
-        {/* <div className={styles.const_container}>
-          <div className={styles.bottom}>
-          <div className={styles.date}>{t(`${page}.testimonial.date`)}</div>
-          <div className={styles.headline}> {t(`${page}.testimonial.headline`)} </div>
-          <div className={styles.details}> {t(`${page}.testimonial.headline`)} </div>
-          <div className={styles.readmore}>
-          <Link to='/contact'>
-            {t(`${page}.testimonial.read_more`)}
-            </Link>
-          </div>
-            
-            <div className={styles.line}></div>
-          </div>
-        </div> */}
+    
 
+
+<div  >
+<Accordion headlines={headlines}/>
+</div>
 
         
 

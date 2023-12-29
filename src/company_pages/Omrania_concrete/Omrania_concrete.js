@@ -25,6 +25,7 @@ import img1 from '../../images/const1.jpg'
 import img2 from '../../images/const2.jpg'
 import imgProduct1 from '../../images/Omrania_concrete_imgProduct1.png'
 import imgschoolImg from '../../images/Omrania_concrete_imgschool.png'
+import CompanyTesti from '../../components/companyTesti/companyTesti'
 
 
 const Omrania_concrete = () => {
@@ -110,6 +111,7 @@ const Omrania_concrete = () => {
                 button="Get started "
                 page="Omrania_concrete"
             />
+          <CompanyTesti/>
             <Heading
             page="Omrania_concrete"
                 heading1="about omrania for concrete"

@@ -3,6 +3,7 @@ import Testimonial from '../../resuable/testimonials/Testimonial'
 import Heading from '../../components/Heading/Heading'
 import ImageBoxRight from '../../components/ImageBoxRight/ImageBoxRight'
 import ImageBoxLeft from '../../components/ImageBoxLeft/ImageBoxLeft'
+import CompanyTesti from "../../components/companyTesti/companyTesti"
 import Trusted from '../../components/TrustedByCompany/Trusted'
 import Card from '../../resuable/cards/Card'
 import Investment from '../../components/InvestmentOpp/Investment'
@@ -106,6 +107,7 @@ const Omrania_crushers = () => {
                 button="Get started "
                 page="omraniaCrusher"
             />
+              <CompanyTesti />
             <Heading
                 heading1="about omrania crusher"
                 heading2="from the land of saudi arabia"

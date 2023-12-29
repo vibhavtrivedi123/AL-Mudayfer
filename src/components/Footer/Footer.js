@@ -56,7 +56,7 @@ const Footer = () => {
 
                         <div className={styles.right}>
                             <div className={styles.right_company}>
-                                {/* <div className={styles.right_company_heading}> {t('footer.company.heading1')}</div> */}
+                                <div className={styles.right_company_heading}> {t('footer.company.heading1')}</div>
                                 <div className={styles.right_company_content}>
                                     <Link to='/about'>
                                     {t('footer.company.about')}
@@ -90,7 +90,7 @@ const Footer = () => {
                             </div>
 
                             <div className={styles.right_company}>
-                                {/* <div className={styles.right_company_heading}> {t('footer.investment.heading2')}</div> */}
+                                <div className={styles.right_company_heading}> {t('footer.investment.heading2')}</div>
                                 <div className={styles.right_company_content}>
                                     <Link to="/investment">
                                     {t('footer.investment.ourInvestments')}
