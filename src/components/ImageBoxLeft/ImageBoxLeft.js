@@ -1,29 +1,44 @@
-import React from 'react'
-import styles from './ImageBox.module.css';
+import React from "react";
+import styles from "./ImageBox.module.css";
+import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-import { Link } from 'react-router-dom'
+const ImageBoxLeft = ({
+  imageSrc,
+  heading,
+  description1,
+  description2,
+  button,page
+}) => {
 
-const ImageBoxLeft = ({ imageSrc, heading, text, buttonText }) => {
-    return (
-        <>
-            <div className={styles.container}>
-                <div className={styles.left}>
-                    <img src={imageSrc} alt="" />
-                </div>
-                <div className={styles.right}>
-                    <div className={styles.right_heading}>
-                        {heading}
-                        <div className={styles.right_line}></div>
-                    </div>
-
-                    <div className={styles.right_text}>{text}</div>
-                    <Link to='/contact'>
-                        <div className={styles.right_button}>{buttonText}</div>
-                    </Link>
-                </div>
+  
+  const {t} = useTranslation()
+  
+  return (
+    <div className={styles.container}>
+      <div className={styles.imageWrapper}>
+        <img src={imageSrc} />
+      </div>
+      <div className={styles.content}>
+        <div className={styles.heading}> {t(`${page}.imageBoxLeft.heading`)}</div>
+        <div className={styles.sub_heading}>
+        {t(`${page}.imageBoxLeft.description1`)}
+          <br />
+          <br />
+          {description2 && t(`${page}.imageBoxLeft.description2`)}
+        </div>
+        <Link to="/contact">
+          <div className={styles.button}>
+          {t(`${page}.imageBoxLeft.buttonText`)}
+            <div className={styles.arrow}>
+              <BsArrowRight />
             </div>
-        </>
-    )
-}
+          </div>
+        </Link>
+      </div>
+    </div>
+  );
+};
 
-export default ImageBoxLeft
+export default ImageBoxLeft;

@@ -1,30 +1,47 @@
-import React from 'react'
-import styles from './ImageBox.module.css';
-import { Link } from 'react-router-dom'
+import React from "react";
+import styles from "./ImageBox.module.css";
+import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
-const ImageBoxRight = ({ imageSrc, heading, text, buttonText }) => {
-    return (
-        <>
-            <div className={styles.container}>
+const ImageBoxRight = ({
+  imageSrc,
+  subheading,
+  heading,
+  description1,
+  description2,
+  button,
+  bacground,
+  page
+}) => {
 
-                <div className={styles.right}>
-                    <div className={styles.right_heading}>
-                        {heading} 
-                        <div className={styles.right_line}></div>
-                    </div>
-                    <div className={styles.right_text}>{text}</div>
-                    <Link to='/contact'>
-                        <div className={styles.right_button}>{buttonText}</div>
-                    </Link>
-                </div>
+  const {t} = useTranslation()
 
-                <div className={styles.left}>
-                    {/* <img src='https://thumbs.dreamstime.com/b/bengal-tiger-tige-basking-sun-zoo-51748104.jpg' alt="" /> */}
-                    <img src={imageSrc} alt="" />
-                </div>
+  return (
+    <div className={bacground ? styles.containerActive : styles.container}>
+      <div className={styles.content}>
+        <span className={styles.subheading}>{subheading}</span>
+        <div className={styles.heading}> {t(`${page}.imageBoxRight.heading`)}</div>
+        <div className={styles.sub_heading}>
+        {t(`${page}.imageBoxRight.description1`)}
+          <br />
+          <br />
+          {description2 &&  t(`${page}.imageBoxRight.description2`)}
+        </div>
+        <Link to="/contact">
+          <div className={styles.button}>
+          {t(`${page}.imageBoxRight.buttonText`)}
+            <div className={styles.arrow}>
+              <BsArrowRight />
             </div>
-        </>
-    )
-}
+          </div>
+        </Link>
+      </div>
+      <div className={styles.imageWrapper}>
+        <img src={imageSrc} />
+      </div>
+    </div>
+  );
+};
 
-export default ImageBoxRight
+export default ImageBoxRight;
